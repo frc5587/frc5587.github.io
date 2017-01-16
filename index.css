@@ -6,15 +6,14 @@
 
 .title {
    position: absolute;
-   top: 0px;
+   top: -100px;
    left: 0;
    width: 100%;
-   color: white;
+   color: rgba(255,255,255,.7);
    font: bold 100px Helvetica, Sans-Serif;
    letter-spacing: 1px;
    background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0);
-   padding: 3em;
+   background: rgba(0, 0, 0, .2);
    text-align: center;
 }
 /*Carosel Code */
