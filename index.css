@@ -47,6 +47,10 @@ html{
 	font-weight:bold;
 	font-size: 30px;
 }
+.subsubTitle{
+	font-weight: bold;
+	font-size: 50px;
+}
 .col-md-6 p{
 	font-size:16px;
 }
