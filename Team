@@ -1,0 +1,145 @@
+<head>
+	<title>Titans Robotics</title>
+	<link rel="stylesheet" href="team.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+		  <div class="navbar-header">
+				<a class="navbar-brand" href="index.html">Titan Robotics</a></font>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="index.html">Home</a><span class="sr-only">(current)</span></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Robots<span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="#">2015</a></li>
+	            <li><a href="#">2016</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="#">All Robots</a></li>
+	          </ul>
+	        </li>
+					<li><a href="#">Sponsors</a></li>
+					<li><a href="#">The Team</a></li>
+
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+</head>
+<body>
+	<div class="panel panel-body b">
+	  <h1 class="title mainTitle jumbotron">Our Team</h1>
+	</div>
+<div class="panel panel-body b">
+  <div class="panel-body background1">
+    <div class="container-fluid info ">
+
+      <p>
+Team 5587, made of 35+ students and 5+ mentors, design, build and program a robot,
+either from scratch or from a kit that can be bought from FRC. Our team is given six
+ weeks from “kickoff day”, where we receive the goals of the competition, to build and
+program the robot. Our team consists of several sub-teams, which are tasked to different
+aspects of the robot. In addition, There are sub-teams responsible for the fundraising and
+publicity efforts of the team. Bellow is a full list of all current members.
+      </p>
+</div>
+</div>
+</div>
+<br>
+
+
+
+
+
+
+<div class="panel-body background1 col-md-5 b red">
+  <div class="container-fluid info ">
+    <div class="row">
+<p>
+<h1>Mentors</h1>
+<li>Dan Solomon: Team Founder and Head Mentor</li>
+<li>Joey Kerns: Mentor</li>
+<li>Alexandra Silberglied: Mentor</li>
+<li>Marcus Hughes: Mentor</li>
+<li>Christina Lytle: Mentor</li>
+<li>Lou Fisher: Mentor</li>
+</p>
+
+<p>
+<h1>Programming</h1>
+<li>Michael Morris: Head of programming</li>
+<li>Andrew "Drew" Fisher: Programming and Head Driver</li>
+<li>Marty Christina: Programming </li>
+<li>Owen Cardwell: Programmer</li>
+<li>Gavriel Cambridge: Programmer</li>
+<li>Brendan Doney: Programmer</li>
+<li>Noah Khan: Programmer</li>
+<li>Hamza Elmissouab: Programmer</li>
+<li>Matt Lusting: Programmer</li>
+</p>
+<p>
+<h1>Electrical</h1>
+<li>Saleh Hassen: Head of Electronics</li>
+<li>Abby Solomon: Electronics Technician.</li>
+<li>Ethan Quill: Electronics Technician.</li>
+<li>James Jones: Electronics Technician.</li>
+<li>Janelle Krupica: Electronics Technician.</li>
+<li>Josh Habib: Electronics Technician.</li>
+<li>Shannia De Paz: Electronics Technician.</li>
+<li>Willem Kupec: Electronics Technician.</li>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-body background1 col-md-5 b blue">
+  <div class="container-fluid info">
+    <div class="row">
+
+<h1>Build</h1>
+<p>
+<li>William Ipsen: Head of Building</li>
+<li>Zachary Khan: Building Mod and Pit Master</li>
+<li>Justin Nickelsburg: Building Mod</li>
+<li>Abel Tekle: Builder</li>
+<li>Aiden Crowe: Builder</li>
+<li>Cameron Luther: Builder</li>
+<li>Geo Rivera: Builder</li>
+<li>Jatsuka Pozo: Builder</li>
+<li>Leslie Lytle: Builder</li>
+<li>Mason Fiedler: Builder</li>
+<li>Mikias Bekele: Builder</li>
+<li>Octavio Orona: Builder</li>
+<li>Owen Ehret: Builder</li>
+<li>Peter Moser: Builder</li>
+<li>Sander Lockett: Builder</li>
+<li>Theodore "Max" Belmont: Builder</li>
+<li>Thompson Eskew: Builder</li>
+<li>Toby Berman:</li>
+<li>Zac Krieger: Builder</li>
+</p>
+<h1>Marketing and Business</h1>
+<li>Meg Schaedel: Marketing Team Head</li>
+<p>
+<h1>Webmasters</h1>
+<li>Owen Cardwell: Webmaster</li>
+<li>Gavriel Cambridge: Webmaster</li>
+<li>Noah Khan: Webmaster</li>
+</p>
+</div>
+</div>
+</div>
+</div>

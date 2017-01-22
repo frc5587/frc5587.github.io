@@ -3,6 +3,9 @@
 	padding:0px;
 }
 
+html{
+	margin-top: 10px;
+}
 .carousel-inner .item{
 	position:relative;
 	display:none;
@@ -23,6 +26,7 @@
 }
 .title{
 	text-align:center;
+	font-weight: bold;
 }
 .blue{
 	border: blue 4px solid;
@@ -34,11 +38,14 @@
 .row{
 	padding:5px;
 }
+
 .mainTitle{
 	font-weight:bold;
+	font-size: 60px;
 }
 .subTitle{
 	font-weight:bold;
+	font-size: 30px;
 }
 .col-md-6 p{
 	font-size:16px;
