@@ -41,15 +41,20 @@ html{
 
 .mainTitle{
 	font-weight:bold;
-	font-size: 60px;
+	font-size: 80px;
+  font-family: "Adam","Roboto",sans-serif;
 }
 .subTitle{
 	font-weight:bold;
 	font-size: 30px;
+  font-family: "Adam","Roboto",sans-serif;
+
 }
+
 .subsubTitle{
 	font-weight: bold;
-	font-size: 50px;
+	font-size: 30px;
+	padding-left: 11cm;
 }
 .col-md-6 p{
 	font-size:16px;
@@ -71,4 +76,7 @@ html{
 .techshop{
 	width:30%;
 	height: 17%;
+}
+h2{
+	padding-left: 6cm;
 }

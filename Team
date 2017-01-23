@@ -44,9 +44,8 @@
 	  <h1 class="title mainTitle jumbotron">Our Team</h1>
 	</div>
 <div class="panel panel-body b">
-  <div class="panel-body background1">
-    <div class="container-fluid info ">
-
+  <div class="panel-body background1 red">
+    <div class="container-fluid info">
       <p>
 Team 5587, made of 35+ students and 5+ mentors, design, build and program a robot,
 either from scratch or from a kit that can be bought from FRC. Our team is given six
@@ -59,11 +58,6 @@ publicity efforts of the team. Bellow is a full list of all current members.
 </div>
 </div>
 <br>
-
-
-
-
-
 
 <div class="panel-body background1 col-md-5 b red">
   <div class="container-fluid info ">
@@ -131,6 +125,7 @@ publicity efforts of the team. Bellow is a full list of all current members.
 <li>Thompson Eskew: Builder</li>
 <li>Toby Berman: Builder</li>
 <li>Zac Krieger: Builder</li>
+<li>Fariha Rafa</li>
 </p>
 <h1>Marketing and Business</h1>
 <li>Meg Schaedel: Marketing Team Head</li>

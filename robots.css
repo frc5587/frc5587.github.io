@@ -1,14 +1,14 @@
-@font-face {
-    font-family: Jockey One;
-    src: url(https://fonts.google.com/specimen/Jockey+One);
-}
+
 .mainTitle{
 	font-weight:bold;
-	font-size: 60px;
+	font-size: 80px;
+  font-family: "Adam","Roboto",sans-serif;
 }
 .subTitle{
 	font-weight:bold;
 	font-size: 30px;
+  font-family: "Adam","Roboto",sans-serif;
+
 }
 .title{
   text-align: center;
@@ -17,8 +17,7 @@ font-family: Jockey One;
 font-weight: bold;
 }
 .background{
-  background-color:#777575 ;
-
+  background-color:#000 ;
 }
 .background1{
   background-color:#eee;
@@ -61,4 +60,8 @@ body{
 .b{
   margin-left: 1cm;
   margin-right: 1cm;
+}
+
+h2{
+	padding-left: 6cm;
 }
