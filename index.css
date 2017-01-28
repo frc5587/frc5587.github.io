@@ -19,7 +19,21 @@ html{
 .item{
 	margin:auto;
 }
+/*Donate buttons*/
+.donate-btns{
+	text-align: center;
+}
+.donate{
+	align: center;
 
+}
+.btn{
+	align: center;
+}
+.donate a{
+	font-size: 175%;
+	color:black;
+}
 /*main information about team*/
 .info{
 	padding: -5px;
