@@ -36,17 +36,27 @@ html{
 }
 /*main information about team*/
 .info{
-	padding: -5px;
+	padding: -1em;
 }
 .title{
 	text-align:center;
 	font-weight: bold;
 }
 .blue{
+<<<<<<< Updated upstream
 	border: #2a377c 4px solid;
 }
 .red{
 	border: #c00917 4px solid;
+=======
+	border: blue 4px solid;
+	border-radius: 1em;
+}
+.red{
+	border: red 4px solid;
+	border-radius: 1em;
+
+>>>>>>> Stashed changes
 }
 .row{
 	padding:5px;
