@@ -1,5 +1,9 @@
 body{
   padding: 1em;
+  font-family: "Adam", "Roboto";
+}
+nav{
+  padding: 0%;
 }
 .title{
   text-align: center;
@@ -13,12 +17,14 @@ body{
 }
 .section{
   background-color: #eee;
-  padding: 15px;
+  padding: 1%;
   border-bottom: none;
 
 }
 p{
   font-size: 1.5em;
+  font-family: "Adam", "Roboto";
+
 }
 
 .mainTitle{
