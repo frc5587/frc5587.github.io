@@ -1,5 +1,6 @@
-.body{
-	padding:
+body{
+	padding: 1cm;
+	font-size: 18px;
 }
 .mainTitle{
 	font-weight:bold;
@@ -32,10 +33,13 @@ p{
   text-align: left;
   color: #000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 1.42857143;
   padding-left: 11cm;
   padding-right: 5cm;
+}
+.b ul{
+	font-size: 20px;
 }
 h1{
   text-align: left;
@@ -66,7 +70,4 @@ body{
 
 h2{
 	padding-left: 6cm;
-}
-.c{
-  padding-left: 1cm
 }
