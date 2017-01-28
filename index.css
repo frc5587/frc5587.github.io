@@ -43,10 +43,10 @@ html{
 	font-weight: bold;
 }
 .blue{
-	border: blue 4px solid;
+	border: #2a377c 4px solid;
 }
 .red{
-	border: red 4px solid;
+	border: #c00917 4px solid;
 }
 .row{
 	padding:5px;
