@@ -1,0 +1,95 @@
+/*Carosel Code*/
+#myCarousel{
+	padding:0px;
+}
+
+html{
+	margin-top: 10px;
+}
+.carousel-inner .item{
+	position:relative;
+	display:none;
+	width:50em;
+	height:30em;
+}
+	.carousel-inner .item img{
+    display:block;
+    margin:auto;
+  }
+.item{
+	margin:auto;
+}
+/*Donate buttons*/
+.donate-btns{
+	text-align: center;
+}
+.donate{
+	align: center;
+
+}
+.btn{
+	align: center;
+}
+.donate a{
+	font-size: 175%;
+	color:black;
+}
+/*main information about team*/
+.info{
+	padding: -5px;
+}
+.title{
+	text-align:center;
+	font-weight: bold;
+}
+.blue{
+	border: blue 4px solid;
+}
+.red{
+	border: red 4px solid;
+}
+.row{
+	padding:5px;
+}
+
+.mainTitle{
+	font-weight:bold;
+	font-size: 80px;
+  font-family: "Adam","Roboto",sans-serif;
+}
+.subTitle{
+	font-weight:bold;
+	font-size: 30px;
+  font-family: "Adam","Roboto",sans-serif;
+
+}
+
+.subsubTitle{
+	font-weight: bold;
+	font-size: 30px;
+	padding-left: 11cm;
+}
+.col-md-6 p{
+	font-size:16px;
+}
+.col-md-6 p a{
+	font-style:none;
+	font-weight:bold;
+	color:black;
+}
+.follow{
+	width: 15%;
+	height: 15%;
+	padding: .5em;
+}
+.sponsor{
+	width: 20%;
+	height:20%;
+}
+.techshop{
+	width:30%;
+	height: 17%;
+}
+h2{
+	padding-left: 6cm;
+}
