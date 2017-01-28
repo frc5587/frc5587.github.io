@@ -44,14 +44,10 @@ html{
 }
 .blue{
 	border: #2a377c 4px solid;
-}
-.red{
-	border: #c00917 4px solid;
-	border: blue 4px solid;
 	border-radius: 1em;
 }
 .red{
-	border: red 4px solid;
+	border: #c00917 4px solid;
 	border-radius: 1em;
 }
 .row{
