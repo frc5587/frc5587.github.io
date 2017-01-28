@@ -1,8 +1,14 @@
-@font-face {
-    font-family: Jockey One;
-    src: url(https://fonts.google.com/specimen/Jockey+One);
+.mainTitle{
+	font-weight:bold;
+	font-size: 80px;
+  font-family: "Adam","Roboto",sans-serif;
 }
+.subTitle{
+	font-weight:bold;
+	font-size: 30px;
+  font-family: "Adam","Roboto",sans-serif;
 
+}
 .title{
   text-align: center;
   color: #000;
@@ -10,8 +16,7 @@ font-family: Jockey One;
 font-weight: bold;
 }
 .background{
-  background-color:#777575 ;
-
+  background-color:#000 ;
 }
 .background1{
   background-color:#eee;
@@ -26,10 +31,24 @@ p{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 18px;
       line-height: 1.42857143;
-  padding-left: 5cm;
+  padding-left: 11cm;
   padding-right: 5cm;
 }
-
+h1{
+  text-align: left;
+  color: #000;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-size: 18px;
+      line-height: 1.42857143;
+  padding-left: 1cm;
+  padding-right: 5cm;
+}
+h2{
+  padding-left: 6cm;
+}
+body{
+  margin-left:10cm;
+}
 .red
 {
   border:red 4px solid;
@@ -38,23 +57,13 @@ p{
     border:blue 4px solid;
 }
 .b{
-  margin-left: 50px;
-  margin-right:50px;
-
+  margin-left: 1cm;
+  margin-right: 1cm;
 }
 
-.row{
-	padding:1px;
-
+h2{
+	padding-left: 6cm;
 }
-.col-md-5 p{
-	font-size:16px;
-  font-style:none;
-  font-weight:bold;
-  color:black;
-}
-.col-md-5 p a{
-	font-style:none;
-	font-weight:bold;
-	color:black;
+.c{
+  padding-left: 1cm
 }

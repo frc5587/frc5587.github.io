@@ -41,7 +41,7 @@ h1{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-size: 18px;
       line-height: 1.42857143;
-  padding-left: 11cm;
+  padding-left: 2cm;
   padding-right: 5cm;
 }
 h2{
@@ -61,7 +61,6 @@ body{
   margin-left: 1cm;
   margin-right: 1cm;
 }
-
-h2{
-	padding-left: 6cm;
+.c{
+	padding-left: 11cm
 }
