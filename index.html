@@ -20,11 +20,11 @@
 			    <div class="container-fluid">
 			    <!-- Brand and toggle get grouped for better mobile display -->
 			    <div class="navbar-default">
-					<img src="photos/roboticslogo.webp" style="float:left;width:170px;height:120px" alt="roboticslogo"/>
+					<img src="photos/roboticslogo.webp" style="float:left;width:200px;height:140px" alt="roboticslogo"/>
 		      		<h1 class="mainTitle" href="index.html">Titan Robotics</h1>
 					<h3 class="subTitle">FRC Team 5587  - T.C. Williams High School</h3>
 			    </div><!-- /.navbar-default -->
-			    <div class="collapse navbar-collapse listEntry navbar-inverse" id="bs-example-navbar-collapse-1">
+			    <div class="collapse navbar-collapse listEntry navbar-inverse" id="navbar-collapse-1">
 				    <ul class="nav navbar-nav navbar-left">
 				        <li><a href="index.html">Home</a><span class="sr-only">(current)</span></li>
 			            <li><a href="About.html">About</a></li>
@@ -48,47 +48,45 @@
 		</nav>
 	</head>
 
+	<body>	
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+		    </ol>
 
-	<body>
-		<!--Carousel-->
-		<div class="container">
-		  <div id="myCarousel" class="carousel slide" data-ride="carousel">
 		    <!-- Wrapper for slides -->
 		    <div class="carousel-inner" role="listbox">
-		      <div class="carousel-item item active">
-		        <img class="d-block img-fluid" src="photos\IMG_3542.JPG" alt="First Slide">
-		      </div>
+		        <div class="item active">
+		        	<img src="photos\IMG_3542.jpg" alt="slide1" width="600" height="345">
+		        </div>
 
-		      <div class="carousel-item item">
-		        <img class="d-block img-fluid" src="photos\IMG_3549.JPG" alt="Second Slide">
-		      </div>
+		        <div class="item">
+		        	<img src="photos\IMG_3551.jpg" alt="slide2" width="600" height="345">
+		        </div>
+		    
+		        <div class="item">
+		        	<img src="photos\IMG_3618.jpg" alt="slide3" width="600" height="345">
+		        </div>
 
-		      <div class="carousel-item item">
-		        <img class="d-block img-fluid" src="photos\IMG_3551.JPG" alt="Third SLide">
-		      </div>
+		      	<div class="item">
+		        	<img src="photos\IMG_3622.jpg" alt="slide4" width="600" height="345">
+		        </div>
+		    </div>
 
-		      <div class="carousel-item item">
-		        <img class="d-block img-fluid" src="photos\IMG_3618.JPG" alt="Fourth SLide">
-		      </div>
-
-				<div class="carousel-item item">
-					<img class="d-block img-fluid" src="photos\IMG_3622.JPG" alt="Fifth SLide">
-				</div>
-			</div>
-
-				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-	    <span class="sr-only">Previous</span>
-	  </a>
-	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-	    <span class="sr-only">Next</span>
-	  </a>
-		</div>
-	</div>
-
-
-			<h1 class="title  jumbotron">Titan Robotics FIRST Robotics Team 5587</h1>
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		        <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		        <span class="sr-only">Next</span>
+		    </a>
+		</div><!-- /.myCarousel -->
 
 		<div class="container-fluid info">
 			<div class="row">
@@ -97,7 +95,7 @@
 					<p>	Titans Robotics is the robotics team from <a href="http://www.acps.k12.va.us/">TC Williams High School</a>.
 					Titans Robotics was started in the 2014-2015 school year with one goal:
 					to spread awareness of science, technology, engineering,and mathematics (STEM) to the local community by competing every season in the FIRST Robotics competition.
-					The team is mostly <a href="team.html">student led</a> with a small number of mentors helping to supervise operations.
+					<a href="team.html">The team</a> is mostly student led with a small number of mentors helping to supervise operations.
 					Our mentors come from a variety of backgrounds including the Navy, CSC, past FIRST Competitors, and even TV Production.
 					Our operations Going forward Titans Robotics looks to further involve and educate our community in
 					STEM and to continue to represent the ACPS and the Alexandria community in the <a href="http://www.firstinspires.org/" target="_blank">FIRST Competition</a>.
@@ -110,7 +108,7 @@
 					programs that motivate young people to pursue education and career opportunities in science, technology, engineering,
 					and math, while building self-confidence, knowledge, and life skills. In the robotics challenge, teams made of an unlimited number of students and mentors, design,
 					build, and program a robot in six weeks to complete that years challenge. <br><br>
-					<button class="btn btn-default"><a href="About.html">Read More</a></button>
+					<a href="About.html"><button class="btn btn-default">Read More</button></a>
 					</p>
 				</div>
 			</div>
@@ -123,18 +121,15 @@
 					<br>
 				</div>
 				<div class="col-md-6">
-						<h1 class="subTitle ">Thank You To Our Sponsors</h1>
+					<h1 class="subTitle ">Thank You To Our Sponsors</h1>
 
-						<a href="http://www.ssp.navy.mil/"><img src="photos/navy.jpg" class="sponsor"></a>
-						<a href="http://www.techshop.ws/"><img src="photos/techshoplogo.webp" class="sponsor techshop"></a>
-						<a href="https://www.kbqbar.com/"><img src="photos/koreanbbq.png" class="sponsor"></a>
-
-
+					<a href="http://www.ssp.navy.mil/"><img src="photos/navy.jpg" class="sponsor"></a>
+					<a href="http://www.techshop.ws/"><img src="photos/techshoplogo.webp" class="sponsor techshop"></a>
+					<a href="https://www.kbqbar.com/"><img src="photos/koreanbbq.png" class="sponsor"></a>
 				</div>
 			</div>
 		</div>
-		<div class="jumbotron">
-
+		<h1 class="title jumbotron">Titan Robotics FIRST Robotics Team 5587</h1>
 		</div>
 	</body>
 </html>

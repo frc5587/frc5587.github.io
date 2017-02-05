@@ -4,11 +4,13 @@
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    margin-bottom: 0;
 }
 .navbar.navbar-default .navbar-collapse {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+    max-height: 10px;
 }
 .navbar.navbar-default .navbar-collapse .container-fluid .navbar-default{
     background-color: white;
@@ -43,10 +45,16 @@
 }
 .color-me {
 	color: white;
+    padding: 0px;
+    margin: 0px;
 }
 /*Fonts*/
 .mainTitle {
     font-size: 40px;
+}
+.jumbotron {
+    padding: 50px;
+    margin-bottom: 0px;
 }
 .listEntry {
     font-size: 17px;

@@ -2,15 +2,14 @@
 #myCarousel{
 	padding:0px;
 }
-
 html{
 	margin-top: 10px;
 }
 .carousel-inner .item{
 	position:relative;
 	display:none;
-	width:50em;
-	height:30em;
+	width:900;
+	height:200;
 }
 .carousel-inner .item img{
     display:block;
@@ -20,9 +19,6 @@ html{
 	margin:auto;
 }
 /*main information about team*/
-.info{
-	padding: -1em;
-}
 .title{
 	text-align:center;
 	font-weight: bold;
@@ -36,7 +32,9 @@ html{
 	border-radius: 1em;
 }
 .row{
-	padding: 5px;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .col-md-6 p{
 	font-size:16px;
