@@ -1,23 +1,14 @@
+html{
+  margin-top: 10px;
+}
 body{
-	padding: 1cm;
 	font-size: 18px;
-}
-.mainTitle{
-	font-weight:bold;
-	font-size: 80px;
-  font-family: "Adam","Roboto",sans-serif;
-}
-.subTitle{
-	font-weight:bold;
-	font-size: 30px;
-  font-family: "Adam","Roboto",sans-serif;
-
 }
 .title{
   text-align: center;
   color: #000;
-font-family: Jockey One;
-font-weight: bold;
+  font-family: Jockey One;
+  font-weight: bold;
 }
 .background{
   background-color:#000 ;
@@ -33,7 +24,7 @@ p{
   text-align: left;
   color: #000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 20px;
+  font-size: 20px;
   padding-left: 1cm;
   padding-right: 5cm;
 
@@ -45,8 +36,8 @@ p{
   text-align: left;
   color: #000;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-size: 18px;
-      line-height: 1.42857143;
+  font-size: 18px;
+  line-height: 1.42857143;
   padding-left: 1cm;
   padding-right: 5cm;
 }
@@ -66,8 +57,4 @@ body{
 .b{
   margin-left: 1cm;
   margin-right: 1cm;
-}
-
-h2{
-	padding-left: 6cm;
 }

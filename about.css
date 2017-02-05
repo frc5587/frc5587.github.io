@@ -1,9 +1,8 @@
-body{
-  
-  font-family: "Adam", "Roboto";
+html{
+  margin-top: 10px;
 }
-nav{
-  padding: 0em;
+body{
+  font-family: "Adam", "Roboto";
 }
 .title{
   text-align: center;
@@ -26,23 +25,15 @@ p{
   font-family: "Adam", "Roboto";
 
 }
-
-.mainTitle{
-	font-weight:bold;
-	font-size: 80px;
-  font-family: "Adam","Roboto",sans-serif;
-}
-.subTitle{
-	font-weight:bold;
-	font-size: 30px;
-  font-family: "Adam","Roboto",sans-serif;
-
-}
 .title{
   text-align: center;
   color: #000;
-font-family: Jockey One;
-font-weight: bold;
+  font-family: Jockey One;
+  font-weight: bold;
+}
+.caption {
+  font-style: italic;
+  font-size: 18px;
 }
 .background{
   background-color:#000 ;

@@ -19,32 +19,6 @@ html{
 .item{
 	margin:auto;
 }
-/*Donate buttons*/
-.button {
-    background-color: #c00917;
-    border: none;
-    border-radius: 25px 25px 25px 25px;
-    color: white;
-    padding: 15px 32px;
-    width: 300px;
-    height: 45px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-family: sans-serif;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-.button:hover {
-	background-color: #2a377c !important;
-	color: white !important;
-}
-.color-me{
-	color: white;
-} 
 /*main information about team*/
 .info{
 	padding: -1em;
@@ -63,24 +37,6 @@ html{
 }
 .row{
 	padding: 5px;
-}
-
-.mainTitle{
-	font-weight: bold;
-	font-size: 70px;
-  	font-family: "Adam","Roboto",sans-serif;
-}
-.subTitle{
-	font-weight: bold;
-	font-size: 25px;
-  	font-family: "Adam","Roboto",sans-serif;
-
-}
-
-.subsubTitle{
-	font-weight: bold;
-	font-size: 30px;
-	padding-left: 11cm;
 }
 .col-md-6 p{
 	font-size:16px;
