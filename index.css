@@ -2,42 +2,23 @@
 #myCarousel{
 	padding:0px;
 }
-
 html{
 	margin-top: 10px;
 }
 .carousel-inner .item{
 	position:relative;
 	display:none;
-	width:50em;
-	height:30em;
+	width:900;
+	height:200;
 }
-	.carousel-inner .item img{
+.carousel-inner .item img{
     display:block;
     margin:auto;
   }
 .item{
 	margin:auto;
 }
-/*Donate buttons*/
-.donate-btns{
-	text-align: center;
-}
-.donate{
-	align: center;
-
-}
-.btn{
-	align: center;
-}
-.donate a{
-	font-size: 175%;
-	color:black;
-}
 /*main information about team*/
-.info{
-	padding: -1em;
-}
 .title{
 	text-align:center;
 	font-weight: bold;
@@ -51,25 +32,9 @@ html{
 	border-radius: 1em;
 }
 .row{
-	padding:5px;
-}
-
-.mainTitle{
-	font-weight:bold;
-	font-size: 80px;
-  font-family: "Adam","Roboto",sans-serif;
-}
-.subTitle{
-	font-weight:bold;
-	font-size: 30px;
-  font-family: "Adam","Roboto",sans-serif;
-
-}
-
-.subsubTitle{
-	font-weight: bold;
-	font-size: 30px;
-	padding-left: 11cm;
+	padding-top: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 .col-md-6 p{
 	font-size:16px;
@@ -94,4 +59,17 @@ html{
 }
 h2{
 	padding-left: 6cm;
+}
+.c{
+	padding-left: 13%;
+	padding-bottom: .5%
+}
+.d{
+	padding-bottom: .5%;
+}
+.mainTitle{
+	font-weight: bold;
+}
+.subTitle{
+	font-weight: bold;
 }

@@ -1,0 +1,61 @@
+/*Navbar settings*/
+.navbar.navbar-default {
+    background-color: white;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    max-height: 10px;
+}
+.navbar.navbar-default .navbar-collapse .container-fluid .navbar-default{
+    background-color: white;
+}
+.navbar.navbar-default .navbar-collapse .container-fluid .navbar-collapse{
+    max-height: 48px;
+}
+/*Donate button*/
+.button {
+    background-color: #c00917;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    padding: 0px;
+    width: 300px;
+    height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 3px 3px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:focus {
+	background-color: #c00917 !important;
+}
+.button:hover {
+    background-color: #2a377c !important;
+}
+.color-me {
+	color: white;
+    padding: 0px;
+    margin: 0px;
+}
+/*Fonts*/
+.mainTitle {
+    font-size: 40px;
+}
+.jumbotron {
+    padding: 50px;
+    margin-bottom: 0px;
+}
+.listEntry {
+    font-size: 17px;
+}
