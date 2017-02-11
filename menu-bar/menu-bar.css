@@ -23,21 +23,6 @@
     padding-bottom: 0px;
 }
 /*Donate button*/
-/* Popover Header */
-.popover-title {
-  font-size: 32px;
-  color: black;
-  text-align:center;
-}
-/* Popover Body */
-.popover-content {
-  margin: 0px;
-  color: white;
-  padding: 0px;
-  min-width: 200px;
-  min-height: 60px;
-  vertical-align: center;
-}
 .button {
     background-color: #c00917;
     border: none;
@@ -61,15 +46,6 @@
 }
 .button:hover {
     background-color: #2a377c !important;
-}
-.donate-one {
-    margin-top: 100px;
-    margin-left: 10px;
-    padding: 10px;
-}
-.donate-two {
-    margin-top: 100px;
-    padding: 10px;
 }
 .color-me {
 	color: white;
