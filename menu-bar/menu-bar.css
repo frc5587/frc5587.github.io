@@ -18,6 +18,9 @@
 .navbar.navbar-default .navbar-collapse .container-fluid .navbar-collapse{
     max-height: 48px;
 }
+.d{
+    padding-bottom: 0px;
+}
 /*Donate button*/
 .button {
     background-color: #c00917;
