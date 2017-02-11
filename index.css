@@ -60,3 +60,16 @@ html{
 h2{
 	padding-left: 6cm;
 }
+.c{
+	padding-left: 13%;
+	padding-bottom: .5%
+}
+.d{
+	padding-bottom: .5%;
+}
+.mainTitle{
+	font-weight: bold;
+}
+.subTitle{
+	font-weight: bold;
+}
