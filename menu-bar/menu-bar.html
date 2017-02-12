@@ -13,7 +13,7 @@
 	    <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-default">
-			<img src="../photos/roboticslogo.webp" style="float:left;width:170px;height:120px" alt="roboticslogo"/>
+			<img class="trlogo" src="../photos/roboticslogo.png" alt="roboticslogo"/>
       		<h1 class="mainTitle" href="../index.html">Titan Robotics</h1>
 			<h3 class="subTitle">FRC Team 5587  - T.C. Williams High School</h3>
 	    </div><!-- /.navbar-default -->
@@ -33,9 +33,35 @@
 				<li><a href="../Team.html">The Team</a></li>
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
-				<li><a href="https://www.razoo.com/story/Titans-Robotics" class="button" target="_blank"><span class="color-me">Donate Online Here</span></a></li>
+				<li>
+					<a href="#" class="button" id="donate-btn" data-content="" data-container="body"  data-toggle="popover" data-placement="left" data-original-title="" title="Are you a..."><span class="color-me">Donate Online Here</span></a> 
+				</li>
 			</ul>
 		</div>
     	</div><!-- /.container-fluid -->
   	</div><!-- /.navbar-collapse -->
 </nav>
+
+<div id="popover_content_wrapper" style="display: none">
+	<h4></h4>
+  	<a href="#" class="button donate-one"><span class="color-me">Business?</span></a>
+  	<a href="https://www.razoo.com/story/Titans-Robotics" class="button donate-two" target="_blank"><span class="color-me">Individual?</span></a>
+</div>
+
+<script>
+//enable popover
+$('[data-toggle="popover"]').popover({ 
+    html: true,
+    content: function() {
+    	return $('#popover_content_wrapper').html();
+    },
+});
+$('body').on('click', function (e) {
+    $('[data-toggle="popover"]').each(function(){//only buttons
+	    if ($(e.target).data('toggle') !== 'popover'
+	        && $(e.target).parents('.popover.in').length === 0) { 
+	        $('[data-toggle="popover"]').popover('hide').data('bs.popover').inState.click = false;
+	    }
+	});
+});
+</script>

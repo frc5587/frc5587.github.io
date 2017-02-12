@@ -1,7 +1,8 @@
 /*Navbar settings*/
-.navbar .navbar-default {
+.navbar.navbar-default {
     background-color: white;
-    border: 0;
+    border: none;
+    border-color: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-bottom: 0;
@@ -52,6 +53,30 @@
     padding: 0px;
     margin: 0px;
 }
+.donate-one {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.donate-two {
+    margin-top: 100px;
+    padding: 10px;
+}
+/* Popover Header */
+.popover-title {
+  font-size: 32px;
+  color: black;
+  text-align:center;
+}
+/* Popover Body */
+.popover-content {
+  margin: 0px;
+  color: white;
+  padding: 0px;
+  min-width: 200px;
+  min-height: 60px;
+  vertical-align: center;
+}
 /*Fonts*/
 .mainTitle {
     font-size: 40px;
@@ -62,4 +87,13 @@
 }
 .listEntry {
     font-size: 17px;
+}
+/*TR Logo*/
+.trlogo {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 150px;
+    height: 100px;
 }
