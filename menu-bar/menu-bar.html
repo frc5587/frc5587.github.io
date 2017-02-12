@@ -34,7 +34,7 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="#" class="button" id="donate-btn" data-content="" data-container="body"  data-toggle="popover" data-placement="left" data-original-title="" title="Are you a..."><span class="color-me">Donate Online Here</span></a> 
+					<a href="#" class="button" id="donate-btn" data-content="" data-container="body"  data-toggle="popover" data-placement="left" data-original-title="" title="Are you a..."><span class="color-me">Donate Online Here</span></a>
 				</li>
 			</ul>
 		</div>
@@ -50,7 +50,7 @@
 
 <script>
 //enable popover
-$('[data-toggle="popover"]').popover({ 
+$('[data-toggle="popover"]').popover({
     html: true,
     content: function() {
     	return $('#popover_content_wrapper').html();
@@ -59,7 +59,7 @@ $('[data-toggle="popover"]').popover({
 $('body').on('click', function (e) {
     $('[data-toggle="popover"]').each(function(){//only buttons
 	    if ($(e.target).data('toggle') !== 'popover'
-	        && $(e.target).parents('.popover.in').length === 0) { 
+	        && $(e.target).parents('.popover.in').length === 0) {
 	        $('[data-toggle="popover"]').popover('hide').data('bs.popover').inState.click = false;
 	    }
 	});
