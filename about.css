@@ -10,9 +10,11 @@ body{
 }
 .red-top{
   border: red 5px solid;
+  margin: 5px;
 }
 .blue-top{
   border: blue 5px solid;
+  margin: 5px;
 }
 .section{
   background-color: #eee;
