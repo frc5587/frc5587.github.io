@@ -95,7 +95,7 @@
 				<a href="http://www.techshop.ws/"><img src="photos/techshoplogo.png" class="sponsor techshop"></a>
 				<a href="https://www.kbqbar.com/"><img src="photos/koreanbbq.png" class="sponsor"></a>
 				<a href="http://www.prestovalet.net/"><img src="photos/prestopasta.jpg" class="sponsor techshop"></a>
-				<a href="http://www.rustconstructionco.net/"><img src="photos/RUSTlogo.JPG" class="sponsor"></a>
+				<a href="http://www.rustconstructionco.net/"><img src="photos/RUSTlogo.jpg" class="sponsor"></a>
 				<a href="http://www.alexandriatoyota.com/"><img src="photos/toyota.png" class="sponsor techshop"></a>
 				<a href="http://alkemscalemodels.com/"><img src="photos/ALKEM.png" class="sponsor techshop"></a>
 			</div>
