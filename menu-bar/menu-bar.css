@@ -80,6 +80,17 @@
 /*Fonts*/
 .mainTitle {
     font-size: 40px;
+    font-weight: bold;
+}
+.c{
+    padding-left: 13%;
+    padding-bottom: .5%
+}
+.d{
+    padding-bottom: .5%;
+}
+.subTitle {
+    font-weight: bold;
 }
 .jumbotron {
     padding: 50px;
