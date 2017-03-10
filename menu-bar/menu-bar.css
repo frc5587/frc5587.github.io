@@ -1,4 +1,5 @@
 /*Navbar settings*/
+
 .navbar.navbar-default {
     background-color: white;
     border: none;
@@ -6,24 +7,36 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     margin-bottom: 0;
-    padding:0px
+    padding: 0px
 }
+
 .navbar.navbar-default .navbar-collapse {
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
     max-height: 10px;
 }
-.navbar.navbar-default .navbar-collapse .container-fluid .navbar-default{
+
+.navbar.navbar-default .navbar-collapse .navbar-default {
     background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
 }
-.navbar.navbar-default .navbar-collapse .container-fluid .navbar-collapse{
+
+.container-fluid {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar.navbar-default .navbar-collapse .container-fluid .navbar-collapse {
     max-height: 48px;
 }
-.d{
-    padding-bottom: 0px;
-}
+
+
 /*Donate button*/
+
 .button {
     background-color: #c00917;
     border: none;
@@ -38,46 +51,61 @@
     font-size: 16px;
     font-family: sans-serif;
     margin: 3px 3px;
-    -webkit-transition-duration: 0.4s; /* Safari */
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
     transition-duration: 0.4s;
     cursor: pointer;
 }
+
 .button:focus {
-	background-color: #c00917 !important;
+    background-color: white !important;
 }
+
 .button:hover {
     background-color: #2a377c !important;
 }
+
 .color-me {
-	color: white;
+    color: white;
     padding: 0px;
     margin: 0px;
 }
+
 .donate-one {
     margin-top: 100px;
     margin-left: 10px;
     padding: 10px;
 }
+
 .donate-two {
     margin-top: 100px;
     padding: 10px;
 }
+
+
 /* Popover Header */
+
 .popover-title {
-  font-size: 32px;
-  color: black;
-  text-align:center;
+    font-size: 32px;
+    color: black;
+    text-align: center;
 }
+
+
 /* Popover Body */
+
 .popover-content {
-  margin: 0px;
-  color: white;
-  padding: 0px;
-  min-width: 200px;
-  min-height: 60px;
-  vertical-align: center;
+    margin: 0px;
+    color: white;
+    padding: 0px;
+    min-width: 200px;
+    min-height: 60px;
+    vertical-align: center;
 }
+
+
 /*Fonts*/
+
 .mainTitle {
     font-size: 40px;
     font-weight: bold;
@@ -92,14 +120,19 @@
 .subTitle {
     font-weight: bold;
 }
+
 .jumbotron {
     padding: 50px;
     margin-bottom: 0px;
 }
+
 .listEntry {
     font-size: 17px;
 }
+
+
 /*TR Logo*/
+
 .trlogo {
     float: left;
     margin: 0px;
