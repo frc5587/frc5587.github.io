@@ -95,7 +95,7 @@
 					<li><strong>Thompson</strong>: Builder</li>
 					<li><strong>Zac</strong>: Builder</li>
 				</div>
-				<span>More<span>
+				<b>More</b>
 			</td>
 			<td>
 				<div class="text-align-left">
@@ -176,9 +176,9 @@
 </html>
 
 <script>
-$('span').prev('div').css('height',(parseInt($('span').prev('div').css('line-height')))*12+'px')
-$('span').click(function() {
-    var p = $('span').prev('div')
+$('b').prev('div').css('height',(parseInt($('b').prev('div').css('line-height')))*12+'px')
+$('b').click(function() {
+    var p = $('b').prev('div')
     var lineheight = parseInt(p.css('line-height'))
     if (parseInt(p.css('height')) == lineheight*12) {
        p.css('height','auto');

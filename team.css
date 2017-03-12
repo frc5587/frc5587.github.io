@@ -47,14 +47,11 @@ td {
 	list-style-type: none;
 	font-size: 16px;
 }
-span {
+b {
     cursor: pointer;
     color: #337ab7;
 }
-span:hover {
+b:hover {
      color: #555;
      text-decoration: underline;
-}
-#follow2 {
-
 }
