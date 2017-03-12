@@ -1,0 +1,60 @@
+.center {
+	text-align: center;
+	width: 100% !important;
+}
+.no-margin {
+	margin-top: 0px !important;
+}
+.no-padding {
+	padding: 0px !important;
+}
+table.center1 {
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+tbody {
+	text-align: center;
+}
+th, tr {
+	text-align: center !important;
+	padding-bottom: 2% !important;
+}
+td {
+	vertical-align: top;
+	text-align: center;
+}
+.icon {
+	width: 65%;
+}
+.text-align-left {
+	text-align: left;
+	display: inline-block;
+}
+.expandable {
+	line-height: inherit;
+	height: inherit;
+	overflow: hidden;
+}
+#paragraph01 {
+	font-size: 19px;
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+#list01 {
+	list-style-type: none;
+	font-size: 16px;
+}
+span {
+    cursor: pointer;
+    color: #337ab7;
+}
+span:hover {
+     color: #555;
+     text-decoration: underline;
+}
+#follow2 {
+
+}
