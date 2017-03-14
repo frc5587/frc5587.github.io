@@ -94,20 +94,10 @@ h2 {
 .subTitle {
     font-weight: bold;
 }
-
-.red-top {
-    border: #c00917 5px solid;
-    margin: 5px;
-    border-radius: 1em;
-}
-
-.blue-top {
-    border: #2a377c 5px solid;
-    margin: 5px;
-    border-radius: 1em;
-}
-
-
 .dropdown-hover:hover .dropdown-menu{
   display:block
+}
+.section{
+  margin-left: 5%;
+  margin-right: 5%;
 }
