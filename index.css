@@ -34,12 +34,10 @@ html {
 
 .blue {
     border: #2a377c 4px solid;
-    border-radius: 1em;
 }
 
 .red {
-    border: #c00917 4px solid;
-    border-radius: 1em;
+    border: #c00917 4px solid
 }
 
 .row {
@@ -84,7 +82,7 @@ h2 {
 }
 
 .d {
-    padding-bottom: .5%;
+    padding-bottom: .50%;
 }
 
 .mainTitle {
