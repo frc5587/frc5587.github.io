@@ -33,13 +33,11 @@ html {
 }
 
 .blue {
-    border: #2a377c 4px solid;
-    border-radius: 1em;
+    border: #2a377c 4px solid;  
 }
 
 .red {
-    border: #c00917 4px solid;
-    border-radius: 1em;
+    border: #c00917 4px solid
 }
 
 .row {
