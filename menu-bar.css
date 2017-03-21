@@ -1,0 +1,156 @@
+/*Navbar settings*/
+
+.navbar.navbar-default {
+    background-color: white;
+    border: none;
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-bottom: 0;
+    padding: 0px
+}
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    max-height: 10px;
+}
+
+.navbar.navbar-default .navbar-collapse .navbar-default {
+    background-color: white;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar.navbar-default .navbar-collapse .container-fluid .navbar-collapse {
+    max-height: 48px;
+}
+
+/*sticky navbar*/
+.fixed{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index: 10;
+}
+
+.shrink{
+height: 100px;
+padding-top: 0px;
+background-color: #000;
+ }
+
+/*Donate button*/
+
+.button {
+    background-color: #c00917;
+    border: none;
+    border-radius: 25px 25px 25px 25px;
+    color: white;
+    padding: 0px;
+    width: 300px;
+    height: 41px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 3px 3px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: white !important;
+}
+
+.button:hover {
+    background-color: #2a377c !important;
+}
+
+.color-me {
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.donate-one {
+    margin-top: 100px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.donate-two {
+    margin-top: 100px;
+    padding: 10px;
+}
+
+
+/* Popover Header */
+
+.popover-title {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+
+
+/* Popover Body */
+
+.popover-content {
+    margin: 0px;
+    color: white;
+    padding: 0px;
+    min-width: 200px;
+    min-height: 60px;
+    vertical-align: center;
+}
+
+
+/*Fonts*/
+
+.mainTitle {
+    font-size: 40px;
+    font-weight: bold;
+}
+.c{
+    padding-left: 13%;
+    padding-bottom: .5%
+}
+.d{
+    padding-bottom: .5%;
+}
+.subTitle {
+    font-weight: bold;
+}
+
+.jumbotron {
+    padding: 50px;
+    margin-bottom: 0px;
+}
+
+.listEntry {
+    font-size: 17px;
+}
+
+
+/*TR Logo*/
+
+.trlogo {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    width: 150px;
+    height: 100px;
+}
