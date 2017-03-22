@@ -77,8 +77,8 @@
 			<td>
 				<div class="text-align-left expandable">
 					<li><strong>William</strong>: Head of Build </li>
-					<li><strong>Zachary</strong>: Build Moderator  </li>
-					<li><strong>Justin</strong>: Build Moderator</li>
+					<li><strong>Zachary</strong>: Builder</li>
+					<li><strong>Justin</strong>: Builder</li>
 					<li><strong>Abel</strong>: Builder</li>
 					<li><strong>Aiden</strong>: Builder</li>
 					<li><strong>Cameron</strong>: Builder</li>
@@ -114,7 +114,7 @@
 			<td>
 				<div class="text-align-left">
 					<li><strong>Michael</strong>: Head of Programming</li>
-					<li><strong>Drew</strong>: Programming Vice Captain</li>
+					<li><strong>Drew</strong>: Programmer</li>
 					<li><strong>Marty</strong>: Programmer</li>
 					<li><strong>Owen</strong>: Programmer</li>
 					<li><strong>Gavriel</strong>: Programmer</li>
@@ -134,8 +134,7 @@
 					<li><strong>Fariha</strong>: Marketer</li>
 					<li><strong>Owen</strong>: Webmaster</li>
 					<li><strong>Gavriel</strong>: Webmaster</li>
-					<li><strong>Peter</strong>: Webmaster</li>
-					<li><strong>Brendan</strong>: Webaster</li>
+					<li><strong>Brendan</strong>: Webmaster</li>
 				</div>
 			</td>
 		</tr>
@@ -177,15 +176,16 @@
 </html>
 
 <script>
-$('b').prev('div').css('height',(parseInt($('b').prev('div').css('line-height')))*12+'px')
+//To change the starting line, change the "11" to the desired starting line number
+$('b').prev('div').css('height',(parseInt($('b').prev('div').css('line-height')))*11+'px')
 $('b').click(function() {
     var p = $('b').prev('div')
     var lineheight = parseInt(p.css('line-height'))
-    if (parseInt(p.css('height')) == lineheight*12) {
+    if (parseInt(p.css('height')) == lineheight*11) {
        p.css('height','auto');
        $(this).text('Less')
     } else {
-       p.css('height',lineheight*12+'px');
+       p.css('height',lineheight*11+'px');
        $(this).text('More')
     }
 });
