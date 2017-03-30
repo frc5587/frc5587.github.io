@@ -1,7 +1,7 @@
 /*There is no ROBOTS.CSS so i have to put it here... dont mind me.*/
 .fullscreen-bg {
     position: fixed;
-    top: 100px;
+    top: 50px;
     left: 50px;
     width:auto;
     overflow: hidden;
@@ -20,19 +20,19 @@
   position: relative;
   top: 600px;
   background: #212322;
-  color: white;
-}
-.content p{
-  font-family:arial;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  padding-left:30px;
 }
+
 .grayscale {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
 .opacity {
-    -webkit-filter: opacity(1.75);
-    filter: opacity(1.75);
+    -webkit-filter: opacity(.90);
+    filter: opacity(.90);
 }
 .blur {
     -webkit-filter: blur(3px);
