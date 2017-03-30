@@ -50,8 +50,8 @@ border-color: white;
     filter: blur(3px);
 }
 .brightness {
-    -webkit-filter: brightness(.25);
-    filter: brightness(.25);
+    -webkit-filter: brightness(.5);
+    filter: brightness(.5);
 }
 
 .fullscreen-bg__video {
