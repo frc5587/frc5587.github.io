@@ -24,7 +24,7 @@
 <div class="navbar-collapse collapse">
 <div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-default d">
+<div class="opacity navbar-default d">
 <img src="photos/roboticslogo.png" style="float:left;width:150px;height:100px" alt="roboticslogo" />
 <h1 class="mainTitle c" href="index.html">Titan Robotics</h1>
 <h3 class="subTitle c">FRC Team 5587 - T.C. Williams High School</h3>
@@ -61,11 +61,9 @@
 
 <body>
   <!-- Video background -->
-	<div class="fullscreen-bg opacity blur brightness">
-    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-        <source src="photos/balls.mp4" type="video/mp4">
-    </video>
-  </div>
+	<video autoplay loop id="video-background" muted class="brightness">
+  <source src="photos/balls.mp4" type="video/mp4">
+</video>
 <div class="contents">
 <h1 class="header">Outreach</h1>
 <p>Team 5587 has been involved in many different activities in order to both increase awarness of FIRST and promote the advancement of youth in STEM. Our team believes that
