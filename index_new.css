@@ -1,0 +1,29 @@
+/*Carosel Code*/
+
+#myCarousel {
+    padding: 0px;
+}
+
+html {
+    margin-top: 10px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.carousel-inner .item {
+    position: relative;
+    display: none;
+    width: 900;
+    height: 200;
+}
+
+.carousel-inner .item img {
+    display: block;
+    margin: auto;
+}
+
+.item {
+    margin: auto;
+}
