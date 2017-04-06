@@ -9,7 +9,6 @@ html {
 }
 .back{
   padding-top: 13%;
-  background: linear-gradient(white,white,gray,black);
 }
 p{
 
@@ -100,7 +99,7 @@ h2 {
 
 .subTitle {
     font-weight: bold;
-      font-family: 'Roboto';
+    font-family: 'Roboto';
 }
 .dropdown-hover:hover .dropdown-menu{
   display:block
