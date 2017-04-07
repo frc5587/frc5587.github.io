@@ -1,29 +1,60 @@
-/*Carosel Code*/
-
-#myCarousel {
-    padding: 0px;
+/*Navbar*/
+nav {
+  border-radius: 0;
 }
-
-html {
-    margin-top: 10px;
+/*Titan Robotics Logo in navbar*/
+.navbar-brand {
+  margin-top: 0;
+  padding-top: 0;
 }
-
-p{
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+/*Links in navbar*/
+.robotics-logo{
+  width: 69px;
+  height: 50px;
+  padding: 0;
+  margin: 10px;
 }
-.carousel-inner .item {
-    position: relative;
-    display: none;
-    width: 900;
-    height: 200;
+.link-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
 }
-
-.carousel-inner .item img {
-    display: block;
-    margin: auto;
+.link-button a {
+  font-size: 115%;
+  width: inherit;
+  height: 50px;
 }
-
-.item {
-    margin: auto;
+.active {
+  background-color: black;
+}
+li:hover {
+  background-color: black;
+}
+.sponsor-button {
+  background: red;
+  border: none;
+  color: white;
+  width: 175px;
+  margin: 0;
+  height: 69px;
+  text-align: center;
+  font-size: 110%;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: 0.5s;
+  padding-top: 25px;
+}
+.sponsor-button:hover {
+  color: white;
+  background-color: #2a377c;
+}
+/*Button for showing pages in compact view*/
+.expand-button {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 12.5px;
+  height: 50px;
+  width: 50px;
 }

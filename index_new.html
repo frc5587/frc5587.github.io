@@ -1,13 +1,45 @@
-<ul class="slideshow">
-  <li><span>Image 01</span><div><h3>A little something something</h3></div></li>
-  <li><span>Image 02</span></li>
-  <li><span>Image 03</span></li>
-  <li><span>Image 04</span></li>
-  <li><span>Image 05</span></li>
-  <li><span>Image 06</span></li>
-</ul>
-  <div class="container">
-    <header>
-      <h1>CSS3 <span>Fullscreen Slideshow</span></h1>
-  </header>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Navbar Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="index_new.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle expand-button" data-toggle="collapse" data-target="#header">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="nav navbar-nav navbar-left align-middle"><img class="robotics-logo" src="photos/TShirtLogo.svg"></span>
+    </div>
+    <div class="collapse navbar-collapse" id="header">
+      <ul class="nav navbar-nav">
+        <li class="active link-button"><a href="#">Home</a></li>
+        <li class="link-button"><a href="sponsours.html">Our Sponsors</a></li>
+        <li class="link-button"><a href="RobotsPage.html">Our Robots</a></li>
+        <li class="link-button"><a href="outreach.html">Outreach</a></li>
+        <li class="link-button"><a href="Team.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <a href="#" class="btn btn-default sponsor-button" role="button"><strong>Donate Online Here</strong></a>
+      </ul>
+    </div>
+  </div>
+</nav>
+</body>
+</html>
+
+<script>
+  $(".btn").mouseup(function(){
+    $(this).blur();
+  })
+</script>
