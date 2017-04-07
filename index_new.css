@@ -1,6 +1,7 @@
 /*Navbar*/
 nav {
-  border-radius: 0;
+  border-radius: 0 !important;
+  z-index: 1000 !important;
 }
 /*Titan Robotics Logo in navbar*/
 .navbar-brand {
@@ -27,7 +28,7 @@ nav {
 .active {
   background-color: black;
 }
-li:hover {
+.link-button:hover {
   background-color: black;
 }
 .sponsor-button {
@@ -57,4 +58,12 @@ li:hover {
   padding: 12.5px;
   height: 50px;
   width: 50px;
+}
+
+/*sticky navbar*/
+.fixed{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index: 10;
 }

@@ -18,38 +18,35 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<link rel="stylesheet" href="menu-bar/menu-bar.css"> <!-- Menu bar's CSS stylesheet-->
-<!-- Nav Bar-->
-<nav class="navbar navbar-default fixed">
-<div class="navbar-collapse collapse">
-<div class="container-fluid">
-<!-- Brand and toggle get grouped for better mobile display -->
-<div class="opacity navbar-default d">
-<img src="photos/roboticslogo.png" style="float:left;width:150px;height:100px" alt="roboticslogo" />
-<h1 class="mainTitle c" href="index.html">Titan Robotics</h1>
-<h3 class="subTitle c">FRC Team 5587 - T.C. Williams High School</h3>
-</div>
-<!-- /.navbar-default -->
-<div class="collapse navbar-collapse listEntry navbar-inverse" id="navbar-collapse-1">
-<ul class="nav navbar-nav navbar-center">
-<li><a href="index.html">Home</a><span class="sr-only">(current)</span></li>
-			<li><a href="sponsours.html"> Our Sponsors</a></li>
-<li><a href="RobotsPage.html">Our Robots</a></li><li><a href="Team.html">The Team</a></li>
-<li><a href="outreach.html">Outreach</a></li>
-</ul>
-<ul class="nav navbar-nav navbar-right">
-<li><a href="https://www.razoo.com/story/Titans-Robotics" class="button" target="_blank"><span class="color-me">Donate Online Here</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-<!-- /.container-fluid -->
-</div>
-<!-- /.navbar-collapse -->
-</nav>
+<link rel="stylesheet" href="index_new.css"> <!-- Menu bar's CSS stylesheet-->
+
 </head>
 
 <body class="back">
+  <nav class="navbar navbar-inverse fixed">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle expand-button" data-toggle="collapse" data-target="#header">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <span class="nav navbar-nav navbar-left align-middle"><img class="robotics-logo" src="photos/TShirtLogo.svg"></span>
+    </div>
+    <div class="collapse navbar-collapse" id="header">
+      <ul class="nav navbar-nav">
+        <li class="active link-button"><a href="#">Home</a></li>
+        <li class="link-button"><a href="sponsours.html">Our Sponsors</a></li>
+        <li class="link-button"><a href="RobotsPage.html">Our Robots</a></li>
+        <li class="link-button"><a href="outreach.html">Outreach</a></li>
+        <li class="link-button"><a href="Team.html">About</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <a href="https://www.razoo.com/story/Titans-Robotics" target="_blank" class="btn btn-default sponsor-button" role="button"><strong>Donate Online Here</strong></a>
+      </ul>
+    </div>
+  </div>
+</nav>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -147,3 +144,9 @@
 </body>
 
 </html>
+
+<script>
+  $(".btn").mouseup(function(){
+    $(this).blur();
+  })
+</script>
