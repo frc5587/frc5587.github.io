@@ -31,7 +31,6 @@ video {
   padding-left:30px;
   margin-bottom: 0px;
 }
-
 .grayscale {
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -47,6 +46,11 @@ video {
 .brightness {
     -webkit-filter: brightness(.25);
     filter: brightness(.25);
+}
+
+.robot-picture {
+  width:350px;
+  height:350px;
 }
 
 @media (max-width: 1247px) {
@@ -71,12 +75,18 @@ video {
   /*Offically mobile view (the navbar has compacted)*/
   /*Content is more focused on being scrollable*/
   .robot-card {
-    width: 70%;
-    margin-right: 15%;
-    margin-left: 15%;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
   }
   .content {
     top: 500px;
+  }
+  .robot-picture {
+    width: 100%;
+  }
+  p {
+    font-size: 75%;
   }
 }
 
