@@ -64,3 +64,9 @@ b:hover {
   padding: 50px;
   margin-bottom: 0px;
 }
+
+@media (max-width: 768px) {
+	.content {
+		padding-top: 117px;
+	}
+}
