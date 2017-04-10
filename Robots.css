@@ -1,7 +1,9 @@
+
 #video-background {
 /*  making the video centered horizontally*/
-  left: 50%;
-  margin: 0 auto;
+  background-color:;
+  padding-left: 100%;
+  margin: auto;
   position: relative;
   top: 50%;
   transform: translate(-50%);
@@ -12,6 +14,7 @@ video {
 }
 .video-container {
   /*Making sure the video remains within the bounds of the screen*/
+  background-color: #212322;
   width: 100%;
   max-height: 600px;
   overflow: hidden;
