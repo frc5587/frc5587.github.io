@@ -1,0 +1,12 @@
+-=- INSTRUCTIONS FOR USING THE SPONSOR NAMES TOOL -=-
+
+1) Create a text file containing all of the names^* from the razoo page and call it "RazooNames.txt" ON YOUR DESKTOP
+
+2) Navigate to the file that holds sponsorNames.py in cmd/terminal
+
+3) Type "python sponsorNames.py" (assuming you have python installed, otherwise, install its)
+
+4) Copy the output from the console (sucks for you windows users have fun copying)
+
+
+^* NOTE: all of the names should be pre-alphabetized and filtered through for repeats
