@@ -1,7 +1,7 @@
 #video-background {
 /*  making the video centered horizontally*/
-  left: 50%;
-  margin: 0 auto;
+  padding-left: 100%;
+  margin: auto;
   position: relative;
   top: 50%;
   transform: translate(-50%);
@@ -12,6 +12,7 @@ video {
 }
 .video-container {
   /*Making sure the video remains within the bounds of the screen*/
+  background-color: #212322;
   width: 100%;
   max-height: 600px;
   overflow: hidden;
@@ -19,17 +20,6 @@ video {
   top: 0;
   right: 0;
   z-index: -100;
-}
-.content{
-  width: 100%;
-  position: relative;
-  top: 425px;
-  background: #212322;
-  color:#fff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  padding-left:30px;
-  margin-bottom: 0px;
 }
 .grayscale {
     -webkit-filter: grayscale(1);
@@ -48,6 +38,23 @@ video {
     filter: brightness(.25);
 }
 
+/*Everything excluding the header*/
+.content{
+  width: 100%;
+  position: relative;
+  top: 425px;
+  background: #212322;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  padding-left:30px;
+  margin-bottom: 0px;
+}
+
+/*The div ("cards") for each robot*/
+.robot-card {
+  text-align: center;
+}
 .robot-picture {
   width:350px;
   height:350px;
@@ -57,7 +64,6 @@ video {
   /*Three cards begin to overlap*/
   .robot-card {
     width: 50%;
-    text-align: center;
   }
 }
 
@@ -67,7 +73,6 @@ video {
     width: 75%;
     margin-right: 12.5%;
     margin-left: 12.5%;
-    text-align: center;
   }
 }
 
