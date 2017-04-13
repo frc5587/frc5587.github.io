@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="index_new.css"> <!-- Menu bar's CSS stylesheet-->
 </head>
 
-<body>
+<body onload="freezeVideoForMobile();">
   <nav class="navbar navbar-inverse fixed">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -50,7 +50,7 @@
     </div>
   </nav>
   <!-- Video background -->
-	<video autoplay loop id="video-background" muted class="brightness">
+	<video autoplay loop id="video-background" muted class="brightness" playsinline>
     <source src="photos/balls.mp4" type="video/mp4">
   </video>
   <div class="content">
@@ -61,7 +61,7 @@
     <div class="event-card-collection">
       <div class="event-card clearfix" id="BN-Mini-Maker-Faire">
         <h1 class="subHeader">Barnes and Noble Mini Maker Faire</h1>
-        <p class="col-md-5">During the 2016 off-season, our team was involved in the second annual Barnes and Noble Mini Maker Faire. At the event, our team displayed the 2016 robot to interested youth and parents. We also provided detailed descriptions of the functions of the robot and information about the team, and answered questions about STEM and FRC. </p>
+        <p class="col-md-5">During the 2016 off-season, our team was involved in the second annual Barnes and Noble Mini Maker Faire. At the event, our team displayed the 2016 robot to interested youth and parents. We also provided detailed descriptions of the functions of the robot and information about the team, and answered questions about STEM and FIRST. </p>
         <img src="photos/IMG_3172.JPG" alt="minimakerfaire" class="border"/>
       </div>
       
@@ -93,3 +93,27 @@
   <br>
   </div>
 </body>
+
+<script>
+  function freezeVideoForMobile() {
+    if($(document).width() <= 700) {
+      //Only screens with the compacted navbar come through (mobile or tablet) + kid not visible
+      const ballsVideo = document.getElementById("video-background");
+      //Set the video to the optimal time and then make freezeframe
+      ballsVideo.currentTime = 4.9;
+      ballsVideo.pause();
+    }
+    else if ($(document).width() > 700){
+      //If the window is now larger than, start runnign the video again
+      const ballsVideo = document.getElementById("video-background");
+      if(ballsVideo.currentTime >= 0) {
+        ballsVideo.play()
+      }
+    }
+  }
+
+  $(window).resize(function() {
+    //Redirect to freezeVideoForMobile to check if video needs to be frozen now
+    freezeVideoForMobile();
+  });
+</script>
