@@ -62,20 +62,6 @@ border-color: white;
   height: auto;
   z-index: -100;
   top: 0px;
-
-}
-.fullscreen-bg {
-    position: fixed;
-    top: 190px;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 div .outreach-brief {
