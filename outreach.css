@@ -105,12 +105,10 @@ div .outreach-brief {
   display: table;
 }
 #BN-Mini-Maker-Faire p{
-  width: 50%;
-  float: left;
+  width: 25%;
 }
 #BN-Mini-Maker-Faire img {
   width: 50%;
-  float: right;
 }
 #STEM-Night-Event {
   text-align: center;
@@ -120,10 +118,23 @@ div .outreach-brief {
   height: 315px;
 }
 
+@media (max-width: 1236px) {
+  /*changing the width of the BN-Mini-Maker-Faire <p>, 
+  which is optimized for larger screens*/
+  #BN-Mini-Maker-Faire p {
+    width: 35%;
+  }
+}
+
 @media (max-width: 1061px) {
   /*The images in BN-Mini-Maker-Faire move to two rows (which is ugly)*/
   .removable-image {
     display: none;
+  }
+
+  /*Optimizing the <p> in BN-Mini-Maker-Faire again*/
+  #BN-Mini-Maker-Faire p {
+    width: 50%;
   }
 }
 
