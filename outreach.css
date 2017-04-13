@@ -15,7 +15,7 @@
     font-weight: bold;
     font-size: 30px;
 }
-.contents{
+.content {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 540px;
@@ -76,4 +76,132 @@ border-color: white;
     height: auto;
     min-width: 100%;
     min-height: 100%;
+}
+
+div .outreach-brief {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+}
+
+.event-card-collection {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+}
+
+.event-card {
+  margin-bottom: 50px;
+}
+
+#BN-Mini-Maker-Faire {
+  text-align: center;
+}
+.clearfix::after {
+  /*Because html sucks sometimes*/
+  content: "";
+  clear: both;
+  display: table;
+}
+#BN-Mini-Maker-Faire p{
+  width: 25%;
+}
+#BN-Mini-Maker-Faire img {
+  width: 50%;
+}
+#STEM-Night-Event {
+  text-align: center;
+}
+#STEM-Night-Event img {
+  width: 340px;
+  height: 315px;
+}
+
+@media (max-width: 1236px) {
+  /*changing the width of the BN-Mini-Maker-Faire <p>, 
+  which is optimized for larger screens*/
+  #BN-Mini-Maker-Faire p {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1061px) {
+  /*The images in BN-Mini-Maker-Faire move to two rows (which is ugly)*/
+  .removable-image {
+    display: none;
+  }
+
+  /*Optimizing the <p> in BN-Mini-Maker-Faire again*/
+  #BN-Mini-Maker-Faire p {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1027px) {
+  /*The FLL section starts to freak out*/
+  #BN-Mini-Maker-Faire p{
+    float: top;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #BN-Mini-Maker-Faire img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 940px){ 
+  div .outreach-brief {
+    /*Making the brief more obvious now that the text is multiple lines*/
+    border: solid black;
+    box-shadow: 0 12px 80px 0 rgba(255, 255, 255, 0.2), 0 4px 20px 0 rgba(255, 255, 255, 0.2);
+    background-color: rgba(255,255,255,0.2);
+
+    margin-bottom: 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  /*The top of the video is no longer visible (which includes the head of the kid that catches)*/
+  #video-background {
+    top: 115px;
+  }
+
+  /*Padding begins to interfere with readability*/
+  .content {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+
+    padding-left: 5%;
+    padding-right: 5%;
+
+    text-align: center;
+  }
+} 
+
+@media (max-width: 700px) {
+  /*Text starts to offset wierdly*/
+  .header {
+    font-size: 190%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  p {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 461px) {
+  /*Kid is no longer visible, so removing the space so the video is in focus*/
+  .content {
+    padding-top: 150px;
+  }
+
+  /*The pictures in the BN-Mini-Maker-Faire card are too large to be centered*/
+  #STEM-Night-Event img {
+    width: 90%;
+    height: auto;
+  }
 }
