@@ -1,35 +1,80 @@
-.sponsour {
-	width: 70%;
-	padding: 0px;
-	margin: 0px;
+.content {
+  padding-top: 79px;
+  text-align: center;
 }
 
-tbody {
+a {
+	overflow: auto;
+	display: inline-block;
+}
+
+#logo-table-group {
+	width: 75%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
 	text-align: center;
+	overflow: auto;
 }
-table.center{
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+#logo-table-group ul {
+	width: 33%;
+	float: left;
+	padding-left: 0;
 }
-table {
-	table-layout: fixed;
-	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+#logo-table-group li{
+	margin-bottom: 20px;
+	list-style-type: none;
 }
-td {
-	margin-left: auto;
-	margin-right: auto;
-}
-.sponsour-title {
+
+#donors-table-group {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
 	text-align: center;
+	overflow: auto;
+}
+#donors-table-group ul {
+	width: 33%;
+	float: left;
+	padding-left: 0;
+}
+#donors-table-group li {
+	list-style-type: none;
+}
+
+.sponsor {
+	width: 70%;
+	padding: 0;
+	margin: 0;
+}
+.sponsor-title {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 hr {
 	margin-right: 10%;
 	margin-left: 10%;
 }
 
-.content {
-  padding-top: 79px;
+@media (max-width: 1098px) {
+	/*The longer names begin to wrap (no-no)*/
+	#donors-table-group ul {
+		width: 50%;
+	}
+}
+
+@media (max-width: 768px) {
+	.content {
+		padding-top: 125px;
+	}
+}
+
+@media (max-width: 690px) {
+	/*the longer names begin to wrap again*/
+	#donors-table-group ul, #logo-table-group ul {
+		width: 100%;
+	}
+	#donors-table-group br {
+		display: none;
+	}
 }
