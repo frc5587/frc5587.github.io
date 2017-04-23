@@ -71,7 +71,7 @@
         <li><strong>Peter</strong>: Builder</li>
         <li><strong>Thompson</strong>: Builder</li>
         <li><strong>Mason</strong>: Builder</li>
-      <span id="demo" class="collapse">
+      <span id="BuildCollapse" class="collapse">
         <li><strong>Jake</strong>: Builder</li>
         <li><strong>Aiden</strong>: Builder</li>
         <li><strong>Geo</strong>: Builder</li>
@@ -83,7 +83,7 @@
         <li><strong>Zac</strong>: Builder</li>
         <li><strong>Rosie</strong>: Builder</li>
       </span>
-      <button type="button" class="btn btn-active center" data-toggle="collapse" data-target="#demo">More</button>
+      <button type="button" class="btn btn-active center" data-toggle="collapse" data-target="#BuildCollapse" onclick="changeCollapseText(this)">More</button>
       </span>
 
     </div>
@@ -177,6 +177,16 @@ $('b').click(function() {
        $(this).text('More')
     }
 });
+
+function changeCollapseText(objButton) {
+  if (objButton.innerText == "More") {
+    objButton.innerText = "Less";
+  }
+  else if (objButton.innerText == "Less") {
+    objButton.innerText = "More";
+  }
+}
+
 </script>
 
 <script>
