@@ -9,7 +9,7 @@ from textwrap import indent
 import os
 
 #File that contains names is moved into an array
-namesFile = open(os.path.expanduser("~/Desktop/RazooNames.txt"))
+namesFile = open(os.path.expanduser("RazooNames.txt"))
 names = namesFile.read().splitlines()
 
 #TABLES: UNCOMMENT TO USE

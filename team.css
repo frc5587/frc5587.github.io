@@ -34,6 +34,7 @@ div.team{
 .icon {
 	width: 100%;
 	height: 100%;
+	margin-bottom: 10px;
 }
 .caption {
     display: block;
@@ -55,11 +56,11 @@ div.team{
 	margin-left: 20%;
 	margin-right: 20%;
 }
-#list01 {
+#Mentors-List {
 	list-style-type: none;
 	font-size: 16px;
 	text-align: center;
-	padding-right: 3.5%;
+	padding: 0px;
 }
 b {
     cursor: pointer;
@@ -73,6 +74,15 @@ b:hover {
   padding-top: 72px;
 }
 
+.social-media-icons {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.social-media-icons a {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
 .jumbotron {
   text-align: center;
   padding: 50px;
@@ -81,5 +91,11 @@ b:hover {
 @media (max-width: 768px) {
 	.content {
 		padding-top: 117px;
+	}
+}
+
+@media (max-width: 410px) {
+	.social-media-icons img {
+		width: 28%;
 	}
 }
