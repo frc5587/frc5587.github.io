@@ -10,6 +10,11 @@ p{
 
   font-size: 18px;
 }
+
+.carousel-inner {
+    background: black;
+}
+
 .carousel-inner .item {
     position: relative;
     display: none;
