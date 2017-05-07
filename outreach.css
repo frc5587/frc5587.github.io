@@ -100,7 +100,7 @@ div .outreach-brief {
 #STEM-Night-Event {
   text-align: center;
 }
-#STEM-Night-Event img {
+.smallImage {
   width: 340px;
   height: 315px;
 }
@@ -187,7 +187,7 @@ div .outreach-brief {
   }
 
   /*The pictures in the BN-Mini-Maker-Faire card are too large to be centered*/
-  #STEM-Night-Event img {
+  .smallImage {
     width: 90%;
     height: auto;
   }
