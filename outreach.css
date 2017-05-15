@@ -27,11 +27,6 @@
 .image{
   align: center;
 }
-.border{
-border-style: solid;
-border-width: 4px;
-border-color: white;
-}
 .dark{
   background:#212322;
 }
@@ -80,60 +75,35 @@ div .outreach-brief {
 
 .event-card {
   margin-bottom: 50px;
-}
-
-#BN-Mini-Maker-Faire {
   text-align: center;
 }
-.clearfix::after {
-  /*Because html sucks sometimes*/
-  content: "";
-  clear: both;
-  display: table;
+.event-card img{
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
 }
-#BN-Mini-Maker-Faire p{
-  width: 25%;
+.event-card a {
+  /*Visible links with dark background*/
+  color: #8eb9ff;
 }
-#BN-Mini-Maker-Faire img {
-  width: 50%;
-}
+
 #STEM-Night-Event {
   text-align: center;
 }
-.smallImage {
+.small-image {
   width: 340px;
   height: 315px;
 }
-
-@media (max-width: 1236px) {
-  /*changing the width of the BN-Mini-Maker-Faire <p>, 
-  which is optimized for larger screens*/
-  #BN-Mini-Maker-Faire p {
-    width: 35%;
-  }
+.medium-image {
+  margin-top: 10px;
+  width: 408.5px;
+  height: 306.5px;
 }
 
 @media (max-width: 1061px) {
-  /*The images in BN-Mini-Maker-Faire move to two rows (which is ugly)*/
+  /*The images in TC Stem Night moves to two rows (which is ugly)*/
   .removable-image {
     display: none;
-  }
-
-  /*Optimizing the <p> in BN-Mini-Maker-Faire again*/
-  #BN-Mini-Maker-Faire p {
-    width: 50%;
-  }
-}
-
-@media (max-width: 1027px) {
-  /*The FLL section starts to freak out*/
-  #BN-Mini-Maker-Faire p{
-    float: top;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  #BN-Mini-Maker-Faire img {
-    width: 100%;
   }
 }
 
@@ -186,8 +156,8 @@ div .outreach-brief {
     padding-top: 150px;
   }
 
-  /*The pictures in the BN-Mini-Maker-Faire card are too large to be centered*/
-  .smallImage {
+  /*Images are too large to be centered*/
+  .small-image, .medium-image {
     width: 90%;
     height: auto;
   }
