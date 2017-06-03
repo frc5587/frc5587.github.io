@@ -1,55 +1,10 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-</style>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="SHORTCUT ICON" HREF="photos/roboticslogo.png">
-<title>Titans Robotics</title>
-<link rel="stylesheet" href="team.css"> <!-- Your pages CSS stylesheet-->
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-<link rel="stylesheet" href="index_new.css"> <!-- Menu bar's CSS stylesheet-->
-</head>
-
-<body>
-  <nav class="navbar navbar-inverse fixed">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle expand-button" data-toggle="collapse" data-target="#header">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <span class="nav navbar-nav navbar-left align-middle"><img class="robotics-logo" src="photos/TShirtLogo.svg"></span>
-    </div>
-    <div class="collapse navbar-collapse" id="header">
-      <ul class="nav navbar-nav">
-        <li class="link-button"><a href="index.html">Home</a></li>
-        <li class="link-button"><a href="sponsours.html">Our Sponsors</a></li>
-        <li class="link-button"><a href="RobotsPage.html">Our Robots</a></li>
-        <li class="link-button"><a href="outreach.html">Outreach</a></li>
-        <li class="active link-button"><a href="#">About</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <a href="https://www.razoo.com/story/Titans-Robotics" target="_blank" class="btn btn-default sponsor-button" role="button"><strong>Donate Online Here</strong></a>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  <div class="content" id="bodyContent">
+---
+layout: default
+permalink: /team
+stylesheets:
+  - team
+---
+<div class="content" id="bodyContent">
 	<div class="background panel-body no-margin no-padding">
 		<h1 class="center">Our Team</h1>
 	</div>
@@ -83,7 +38,7 @@
         <li><strong>Zac</strong>: Builder</li>
         <li><strong>Rosie</strong>: Builder</li>
       </span>
-      <button type="button" class="btn btn-active center" data-toggle="collapse" data-target="#BuildCollapse" onclick="changeCollapseText(this)">More</button>
+      <button type="button" class="btn dropdown-btn btn-active center" data-toggle="collapse" data-target="#BuildCollapse" onclick="changeCollapseText(this)">More</button>
       </span>
 
     </div>
