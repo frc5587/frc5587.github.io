@@ -1,3 +1,5 @@
+---
+---
 /*Navbar*/
 nav {
   border-radius: 0 !important;
@@ -32,7 +34,7 @@ nav {
   background-color: black;
 }
 .sponsor-button {
-  background: #c00917;
+  background: #c00917 !important;
   border: none;
   color: white;
   width: 175px;
@@ -49,7 +51,7 @@ nav {
 }
 .sponsor-button:hover {
   color: white;
-  background-color: #2a377c;
+  background-color: #2a377c !important;
 }
 /*Button for showing pages in compact view*/
 .expand-button {
