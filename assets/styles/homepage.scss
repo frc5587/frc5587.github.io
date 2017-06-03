@@ -1,38 +1,12 @@
 ---
 ---
-/*Carosel Code*/
-
-#myCarousel {
-    padding: 0px;
-}
-.back{
-  padding-top: 72px;
-}
-p{
-
-  font-size: 18px;
+.carousel {
+    background-color: black;
 }
 
-.carousel-inner {
-    background: black;
+.carousel-inner > .item > img {
+    margin: 0 auto;
 }
-
-.carousel-inner .item {
-    position: relative;
-    display: none;
-    width: 900;
-    height: 200;
-}
-
-.carousel-inner .item img {
-    display: block;
-    margin: auto;
-}
-
-.item {
-    margin: auto;
-}
-
 
 /*main information about team*/
 
@@ -66,12 +40,6 @@ p{
     color: black;
 }
 
-.follow {
-    width: 15%;
-    height: 15%;
-    padding: .5em;
-}
-
 .sponsor {
     width:33%;
     height:33%;
@@ -86,15 +54,6 @@ h2 {
     padding-left: 6cm;
 }
 
-.c {
-    padding-left: 13%;
-    padding-bottom: .5%
-}
-
-.d {
-    padding-bottom: .50%;
-}
-
 .mainTitle {
     font-weight: bold;
       font-family: 'Roboto';
@@ -104,13 +63,30 @@ h2 {
     font-weight: bold;
     font-family: 'Roboto';
 }
-.dropdown-hover:hover .dropdown-menu{
-  display:block
-}
 .section{
   margin-left: 5%;
   margin-right: 5%;
 }
-.hyperlink{
-  color: blue;
+.jumbotron {
+    margin-bottom: 0;
+}
+.social-media-icons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.social-media-icons a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .carousel {
+        margin-top: 98px;
+    }
+    .jumbotron {
+        font-size: 30px;
+    }
+    .social-media-icons img {
+        width: 28%;
+    }
 }
