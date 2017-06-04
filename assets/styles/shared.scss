@@ -1,0 +1,15 @@
+---
+---
+html body {
+    background-color: #212322;
+    color: white;
+}
+
+//Clearfix, which fixes the issues with the bounding-boxes of images
+.clearfix:after {
+   content: ""; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}

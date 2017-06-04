@@ -1,92 +1,107 @@
 ---
 ---
+$secondary-color: #353839;
+
+//carousel stuff
 .carousel {
     background-color: black;
 }
-
-.carousel-inner > .item > img {
+.carousel-inner .item img {
     margin: 0 auto;
 }
 
-/*main information about team*/
+//the classes used to make responsive divs
+.card {
+    width: 45%;
+    margin: 2.5%;
+}
+.card-row {
+    display: flex;
+}
 
+//colored borders for divs
+.blue {
+    border: #2a377c 4px solid;
+}
+.red {
+    border: #c00917 4px solid;
+}
+
+//font presets
 .title {
     text-align: center;
     font-weight: bold;
 }
-
-.blue {
-    border: #2a377c 4px solid;
-    background: white;
+.subTitle {
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.jumbotron {
+    margin-bottom: 0;
+    background-color: $secondary-color;
 }
 
-.red {
-    border: #c00917 4px solid;
-    background: white;
+//Container for buttons
+.button-container {
+    text-align: center;
+}
+.button-container a button {
+    background-color: $secondary-color;
+    color: white;
 }
 
-.row {
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+//sponsors' box
+.sponsor-collection {
+    margin-bottom: 15px;
+    text-align: center;
 }
-
-.col-md-6 p {
-    font-size: 16px;
+.sponsor-collection a img {
+    width:29%;
 }
-
-.col-md-6 p a {
-      font-family: 'Roboto', sans-serif;
-    color: black;
-}
-
-.sponsor {
-    width:33%;
-    height:33%;
-}
-
 .techshop {
     width: 30%;
     height: 17%;
 }
 
-h2 {
-    padding-left: 6cm;
-}
-
-.mainTitle {
-    font-weight: bold;
-      font-family: 'Roboto';
-}
-
-.subTitle {
-    font-weight: bold;
-    font-family: 'Roboto';
-}
-.section{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.jumbotron {
-    margin-bottom: 0;
-}
+//social media icon box
 .social-media-icons {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    text-align: center;
 }
 .social-media-icons a {
     margin-right: 5px;
     margin-left: 5px;
 }
 
+
+@media (max-width: 941px) {
+    //social media icons become two lines
+    .social-media-icons a img {
+        width: 28%;
+    }
+}
+
 @media (max-width: 768px) {
+    //updating everything for the mobile view (navbar collapses)
     .carousel {
         margin-top: 98px;
     }
     .jumbotron {
         font-size: 30px;
     }
-    .social-media-icons img {
-        width: 28%;
+    .card {
+        width: 80%;
+        margin: 10%;
+    }
+    .card-row {
+        display: block;
+    }
+}
+
+@media (max-width: 510px) {
+    //the margins for the "cards" looks large for this width
+    .card {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 }

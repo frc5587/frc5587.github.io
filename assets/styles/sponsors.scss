@@ -5,11 +5,21 @@
   text-align: center;
 }
 
-a {
-	overflow: auto;
-	display: inline-block;
+//Font presets
+.sponsor-title {
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
 }
 
+//Custom hr for seperation of sections
+hr {
+	margin-right: 10%;
+	margin-left: 10%;
+	border-color: #353839;
+}
+
+//Box for sponsor logos
 #logo-table-group {
 	width: 75%;
 	margin-left: 12.5%;
@@ -22,11 +32,18 @@ a {
 	float: left;
 	padding-left: 0;
 }
-#logo-table-group li{
+#logo-table-group ul li{
 	margin-bottom: 20px;
 	list-style-type: none;
 }
+#logo-table-group ul li a img {
+	//Sponsor images
+	width: 70%;
+	padding: 0;
+	margin: 0;
+}
 
+//Box for donors' names
 #donors-table-group {
 	width: 60%;
 	margin-left: 20%;
@@ -43,40 +60,30 @@ a {
 	list-style-type: none;
 }
 
-.sponsor {
-	width: 70%;
-	padding: 0;
-	margin: 0;
-}
-.sponsor-title {
-	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
-}
-hr {
-	margin-right: 10%;
-	margin-left: 10%;
-}
 
 @media (max-width: 1098px) {
-	/*The longer names begin to wrap (no-no)*/
+	//The longer names begin to wrap (no-no)
 	#donors-table-group ul {
 		width: 50%;
 	}
 }
 
 @media (max-width: 768px) {
+	//Mobile view
 	.content {
 		padding-top: 125px;
 	}
 }
 
 @media (max-width: 690px) {
-	/*the longer names begin to wrap again*/
+	//the longer names begin to wrap again
 	#donors-table-group ul, #logo-table-group ul {
 		width: 100%;
 	}
 	#donors-table-group br {
 		display: none;
+	}
+	.sponsor-title {
+		font-size: 32px;
 	}
 }

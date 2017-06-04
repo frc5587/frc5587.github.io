@@ -1,5 +1,6 @@
 ---
 ---
+//Font presets
 .mainTitle {
     font-size: 40px;
     font-weight: bold;
@@ -17,6 +18,7 @@
     font-weight: bold;
     font-size: 30px;
 }
+
 .content {
   padding-left: 150px;
   padding-right: 150px;
@@ -26,14 +28,20 @@
   font-size: 18px;
   position: relative;
 }
-.image{
-  align: center;
-}
-.dark{
-  background:#212322;
-}
 
-
+//Video and video filters
+#video-background {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  top: 0px;
+  transform: translate3d(0,0,0);
+}
 .opacity {
     -webkit-filter: opacity(1.75);
     filter: opacity(1.75);
@@ -47,35 +55,22 @@
     filter: brightness(.5);
 }
 
-
-#video-background {
-/*  making the video fullscreen  */
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  top: 0px;
-  transform: translate3d(0,0,0);
-}
-
+//The first div on the page
 div .outreach-brief {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 2px;
   padding-bottom: 5px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
+//The collection of outreach events
 .event-card-collection {
   margin-left: 5%;
   margin-right: 5%;
   width: 90%;
 }
-
 .event-card {
   margin-bottom: 50px;
   text-align: center;
@@ -86,13 +81,11 @@ div .outreach-brief {
   border-color: white;
 }
 .event-card a {
-  /*Visible links with dark background*/
+  //Visible links for the dark background
   color: #8eb9ff;
 }
 
-#STEM-Night-Event {
-  text-align: center;
-}
+//Image presets for responsiveness
 .small-image {
   width: 340px;
   height: 315px;
@@ -104,7 +97,7 @@ div .outreach-brief {
 }
 
 @media (max-width: 1061px) {
-  /*The images in TC Stem Night moves to two rows (which is ugly)*/
+  //The images in TC Stem Night moves to two rows (which is ugly)
   .removable-image {
     display: none;
   }
@@ -112,36 +105,32 @@ div .outreach-brief {
 
 @media (max-width: 940px){ 
   div .outreach-brief {
-    /*Making the brief more obvious now that the text is multiple lines*/
+    //Making the brief more obvious now that the text is multiple lines
     border: solid black;
     box-shadow: 0 12px 80px 0 rgba(255, 255, 255, 0.2), 0 4px 20px 0 rgba(255, 255, 255, 0.2);
     background-color: rgba(255,255,255,0.2);
-
     margin-bottom: 15%;
   }
 }
 
 @media (max-width: 768px) {
-  /*The top of the video is no longer visible (which includes the head of the kid that catches)*/
+  //The top of the video is no longer visible (which includes the head of the kid that catches)
   #video-background {
     top: 115px;
   }
-
-  /*Padding begins to interfere with readability*/
+  //Padding begins to interfere with readability
   .content {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-
     padding-left: 5%;
     padding-right: 5%;
-
     text-align: center;
   }
 } 
 
 @media (max-width: 700px) {
-  /*Text starts to offset wierdly*/
+  //Text starts to offset wierdly
   .header {
     font-size: 190%;
     width: 90%;
@@ -154,12 +143,11 @@ div .outreach-brief {
 }
 
 @media (max-width: 461px) {
-  /*Kid is no longer visible, so removing the space so the video is in focus*/
+  //Kid is no longer visible, so removing the space so the video is in focus
   .content {
     padding-top: 150px;
   }
-
-  /*Images are too large to be centered*/
+  //Images are too large to be centered
   .small-image, .medium-image {
     width: 90%;
     height: auto;

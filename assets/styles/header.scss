@@ -1,22 +1,25 @@
 ---
 ---
-/*Navbar*/
 nav {
   border-radius: 0 !important;
   z-index: 1000 !important;
 }
-/*Titan Robotics Logo in navbar*/
-.navbar-brand {
-  margin-top: 0;
-  padding-top: 0;
+//Making the navbar sticky
+.fixed{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index: 10;
 }
-/*Links in navbar*/
+//logo in the left corner
 .robotics-logo{
   width: 69px;
   height: 50px;
   padding: 0;
   margin: 10px;
 }
+
+//classes for link buttons in navbar
 .link-button {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -33,6 +36,7 @@ nav {
 .link-button:hover {
   background-color: black;
 }
+//"Donate Online Here!" button
 .sponsor-button {
   background: #c00917 !important;
   border: none;
@@ -53,27 +57,11 @@ nav {
   color: white;
   background-color: #2a377c !important;
 }
-/*Button for showing pages in compact view*/
+//Button for showing pages in compact view
 .expand-button {
   margin-top: 30px;
   margin-bottom: 15px;
   padding: 12.5px;
   height: 50px;
   width: 50px;
-}
-
-/*sticky navbar*/
-.fixed{
-  position:fixed;
-  width:100%;
-  top:0;
-  z-index: 10;
-}
-
-.clearfix:after {
-   content: ""; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
 }
