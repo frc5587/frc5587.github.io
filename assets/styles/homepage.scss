@@ -4,10 +4,21 @@ $secondary-color: #353839;
 
 //carousel stuff
 .carousel {
-    background-color: black;
+  margin-bottom: 3em;
 }
+.carousel .item {
+    background-color: #222222;
+}
+
 .carousel-inner .item img {
     margin: 0 auto;
+}
+//override default gradient on buttons
+.carousel-control.left {
+  background-image: none;
+}
+.carousel-control.right {
+  background-image: none;
 }
 
 //the classes used to make responsive divs
