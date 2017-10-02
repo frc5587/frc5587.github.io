@@ -6,22 +6,21 @@
   padding-left: 100%;
   margin: auto;
   position: relative;
-  top: 50%;
   transform: translate(-50%);
   z-index: -100;
 }
-video {
-  display: block;
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -50;
 }
 .video-container {
   //Making sure the video remains within the bounds of the screen
   background-color: #212322;
   width: 100%;
-  max-height: 600px;
+  height: 100%;
   overflow: hidden;
   position: fixed;
-  top: 0;
-  right: 0;
   z-index: -100;
 }
 //Video filters
@@ -47,21 +46,22 @@ video {
   width: 100%;
   position: relative;
   top: 425px;
-  background: #212322;
+  bottom: 0;
   color:#fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.5em;
   padding-left:30px;
-  margin-bottom: 0px;
 }
 
 //The div ("card") for each robot
 .robot-card {
   text-align: center;
+  padding-right: 2px;
 }
 .robot-card img {
-  width:350px;
-  height:350px;
+    border-radius: 50%;
+  width: 19em;
+  height: 19em;
 }
 
 
