@@ -62,8 +62,13 @@
     border-radius: 50%;
   width: 19em;
   height: 19em;
-}
 
+.robot-picture {
+    width:350px;
+    height:350px;
+    margin: auto;
+  }
+}
 
 @media (max-width: 1247px) {
   //Three cards begin to overlap
