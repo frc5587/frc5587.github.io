@@ -40,10 +40,17 @@ div.team{
 	//The dropdown button for build team
 	margin-top: 7px;
 	background-color: #23A7F1;
-} 
+}
 
 //The "Thank you to our mentors" box
 #Mentors-List {
+	list-style-type: none;
+	font-size: 16px;
+	text-align: center;
+	padding: 0px;
+}
+
+#Alumni-List {
 	list-style-type: none;
 	font-size: 16px;
 	text-align: center;
