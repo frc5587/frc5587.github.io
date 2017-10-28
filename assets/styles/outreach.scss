@@ -114,10 +114,6 @@ div .outreach-brief {
 }
 
 @media (max-width: 768px) {
-  //The top of the video is no longer visible (which includes the head of the kid that catches)
-  #video-background {
-    top: 115px;
-  }
   //Padding begins to interfere with readability
   .content {
     width: 95%;
