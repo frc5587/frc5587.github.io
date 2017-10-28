@@ -1,0 +1,113 @@
+---
+---
+nav {
+	border-radius: 0 !important;
+	z-index: 1000 !important;
+	height: 70px;
+	border-left: none !important;
+	border-right: none !important;
+}
+.navbar-nav {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+.container-fluid {
+	background-color: #222222;
+}
+
+//Making the navbar sticky
+.fixed{
+	position:fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10;
+}
+//logo in the left corner
+.robotics-logo{
+	width: 69px;
+	height: 50px;
+	padding: 0;
+	margin: 10px;
+}
+
+//classes for link buttons in navbar
+.link-button {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
+}
+.link-button a {
+	font-size: 115%;
+	width: inherit;
+	height: 50px;
+}
+.active {
+	background-color: black;
+}
+.link-button:hover {
+	background-color: black;
+}
+//"Donate Online Here!" button
+.sponsor-button {
+	background: #c00917 !important;
+	border: none;
+	color: white;
+	width: 175px;
+	margin: 0;
+	height: 69px;
+	text-align: center;
+	font-size: 110%;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	padding-top: 25px;
+}
+.sponsor-button:hover {
+	color: white;
+	background-color: #2a377c !important;
+}
+//Button for showing pages in compact view
+.expand-button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 12.5px;
+	height: 50px;
+	width: 50px;
+}
+
+@media (max-width: 815px) {
+    .navbar-header {
+        float: none;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-nav {
+        float: none !important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    .navbar-collapse.collapse.in { 
+        display: block !important;
+    }
+    .collapsing {
+        overflow: hidden !important;
+    }
+}
