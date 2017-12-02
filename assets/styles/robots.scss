@@ -59,11 +59,14 @@
   padding-right: 2px;
 }
 .robot-card img {
-    border-radius: 50%;
-  width: 19em;
-  height: 19em;
+  border-radius: 50px;
+  object-fit: cover;
+  width: 350px;
+  height: 350px;
 
 .robot-picture {
+  object-fit: cover;
+
     width:350px;
     height:350px;
     margin: auto;
@@ -98,7 +101,8 @@
     top: 500px;
   }
   .robot-card img {
-    width: 100%;
+    object-fit: cover;
+    width: 350px;
   }
   p {
     font-size: 75%;
@@ -109,6 +113,5 @@
   /*Images start to move (0.7 * screenRes < 350px)*/
   .robot-card img {
     width: 90%;
-    height: 90%;
   }
 }
