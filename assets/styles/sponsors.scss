@@ -28,6 +28,7 @@ hr {
 	overflow: auto;
 	display: table;
 }
+
 #logo-table-group ul li{
 	display: table-cell;
 	vertical-align: middle;
@@ -73,14 +74,6 @@ hr {
 	}
 }
 
-@media (max-width: 768px) {
-	//Mobile view
-	.content {
-		padding-top: 125px;
-	}
-
-}
-
 @media (max-width: 690px) {
 	//the longer names begin to wrap again
 	#donors-table-group ul, #logo-table-group ul {
@@ -91,5 +84,9 @@ hr {
 	}
 	.sponsor-title {
 		font-size: 32px;
+
+    a{
+      font-size:22px;
+    }
 	}
 }

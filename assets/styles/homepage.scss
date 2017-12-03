@@ -3,9 +3,7 @@
 $secondary-color: #353839;
 
 //carousel stuff
-.carousel {
-  margin-bottom: 3em;
-}
+
 .carousel .item {
     background-color: #222222;
 }
@@ -93,10 +91,7 @@ $secondary-color: #353839;
 }
 
 @media (max-width: 768px) {
-    //updating everything for the mobile view (navbar collapses)
-    .carousel {
-        margin-top: 98px;
-    }
+    //updating everything for the mobile view
     .jumbotron {
         font-size: 30px;
     }
