@@ -47,27 +47,33 @@ nav {
 .link-button:hover {
 	background-color: black;
 }
-//"Donate Online Here!" button
-.sponsor-button {
-	background: #c00917 !important;
-	border: none;
-	color: white;
-	width: 175px;
-	margin: 0;
-	height: 69px;
-	text-align: center;
-	font-size: 110%;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-	padding-top: 25px;
+
+//"Donate Online Here!" button 
+.sponsor-button { 
+  width: 165px; 
+  margin: 0; 
+  height: 69px; 
+  padding-top: 24px; 
+  font-size: 115%; 
+} 
+
+.red-btn { 
+  text-align: center; 
+  border: none; 
+  color: white; 
+  background: #c00917 !important; 
+  -o-transition: 0.5s; 
+  -ms-transition: 0.5s; 
+  -moz-transition: 0.5s; 
+  -webkit-transition: 0.5s; 
+  transition: 0.5s; 
+} 
+
+.red-btn:hover { 
+  color: white; 
+  background-color: #2a377c !important; 
 }
-.sponsor-button:hover {
-	color: white;
-	background-color: #2a377c !important;
-}
+
 //Button for showing pages in compact view
 .expand-button {
 	margin-top: 10px;
@@ -75,6 +81,143 @@ nav {
 	padding: 12.5px;
 	height: 50px;
 	width: 50px;
+}
+
+// The Modal (background) 
+.modal { 
+    display: none; // Hidden by default 
+    position: fixed; // Stay in place 
+    z-index: 15; // Sit on top 
+    padding-top: 100px; // Location of the box 
+    left: 0; 
+    top: 0; 
+    width: 100%; // Full width 
+    height: 100%; // Full height 
+    overflow: auto; // Enable scroll if needed 
+    background-color: rgb(0,0,0); // Fallback color 
+    background-color: rgba(0,0,0,0.4); // Black w/ opacity 
+} 
+ 
+// Modal Content 
+.modal-content { 
+    position: relative; 
+    background-color: #fefefe; 
+    margin: auto; 
+    padding: 0; 
+    width: 60%; 
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
+    -webkit-animation-name: animatetop; 
+    -webkit-animation-duration: 0.4s; 
+    animation-name: animatetop; 
+    animation-duration: 0.4s; 
+}
+ 
+// Add Animation 
+@-webkit-keyframes animatetop { 
+    from {top:-300px; opacity:0}  
+    to {top:0; opacity:1} 
+} 
+ 
+@keyframes animatetop { 
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1} 
+} 
+ 
+
+// The Close Button 
+.close { 
+    color: white; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    margin-top: 15px !important; 
+} 
+.close:hover, .close:focus { 
+    color: #000; 
+    text-decoration: none; 
+    cursor: pointer; 
+} 
+ 
+.modal-header { 
+    padding: 2px 16px; 
+    background-color: #212322; 
+    color: white; 
+} 
+ 
+.modal-body { 
+	height: 25%; 
+	color: black; 
+} 
+.specifier-container { 
+	padding-left: 0; 
+	padding-right: 0; 
+	position: relative; 
+	margin-bottom: 10px; 
+
+    hr {
+        display: none;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: lightgrey;
+        background-color: lightgrey;
+        height: 2px;
+        border: none;
+    }
+} 
+.specifier-box { 
+	width: 42%; 
+	margin-right: 4%; 
+	margin-left: 4%; 
+	text-align: center; 
+	padding-top: 50px; 
+	padding-bottom: 50px; 
+ 	float: left;
+
+	h3 { 
+		margin-top: 35px; 
+	} 
+ 
+	a { 
+		width: 175px; 
+		margin-top: 25px; 
+		margin-left: 0; 
+		margin-right: 0; 
+		margin-bottom: 35px; 
+		height: 45px; 
+		padding-top: 12.5px; 
+		padding-bottom: 12.5px; 
+	} 
+} 
+ 
+.vertical-line { 
+	border-left: 2px solid lightgrey; 
+    height: 90%; 
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    position: absolute; 
+    left: 50%; 
+    margin-left: -1px; 
+    top: 0; 
+    width: 0; 
+} 
+.check-info-box { 
+	margin-left: 10%; 
+	margin-right: 10%; 
+	width: 80%; 
+    text-align: center; 
+} 
+.centered { 
+    display: inline-block; 
+    text-align: center; 
+    width: 100%;
+} 
+
+@media (max-width: 1247px) {
+    // h3 set to have donate buttons at the same height
+    .specifier-box h3 {
+        height: 52px;
+    }
 }
 
 @media (max-width: 815px) {
@@ -109,5 +252,51 @@ nav {
     }
     .collapsing {
         overflow: hidden !important;
+    }
+
+    // Adjust the modal for the new view 
+    .modal {
+        padding-top: 75px;
+    }
+    .modal-content {
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-right: 10%;
+    }
+	.vertical-line { 
+	  	display: none; 
+	} 
+	.specifier-container { 
+	  	flex-direction: column; 
+        hr {
+            display: block;
+        }
+	} 
+	.specifier-box { 
+		width: 80%; 
+		margin-left: 10%; 
+		margin-right: 10%; 
+		padding-top: 0; 
+		padding-bottom: 0; 
+        h3 {
+            height: inherit;
+        }
+	} 
+	.check-info-box {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+	}
+}
+
+@media (max-width: 410px) {
+    .modal-header h2 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .modal-header h2 {
+        font-size: 20px;
     }
 }

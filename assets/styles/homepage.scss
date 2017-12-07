@@ -3,7 +3,6 @@
 $secondary-color: #353839;
 
 //carousel stuff
-
 .carousel .item {
     background-color: #222222;
 }
@@ -17,6 +16,10 @@ $secondary-color: #353839;
 }
 .carousel-control.right {
   background-image: none;
+}
+//remove the z-index priority for indicators (covers modal)
+.carousel-indicators {
+    z-index: 1;
 }
 
 //the classes used to make responsive divs
