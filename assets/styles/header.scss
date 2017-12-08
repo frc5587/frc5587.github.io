@@ -177,6 +177,12 @@ nav {
 	h3 { 
 		margin-top: 35px; 
 	} 
+
+    p {
+        display: inline-block; 
+        text-align: center; 
+        width: 100%;
+    }
  
 	a { 
 		width: 175px; 
@@ -206,11 +212,6 @@ nav {
 	margin-right: 10%; 
 	width: 80%; 
     text-align: center; 
-} 
-.centered { 
-    display: inline-block; 
-    text-align: center; 
-    width: 100%;
 } 
 
 @media (max-width: 1247px) {
