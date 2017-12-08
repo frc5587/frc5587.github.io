@@ -87,13 +87,13 @@ div .outreach-brief {
 
 //Image presets for responsiveness
 .small-image {
-  width: 340px;
-  height: 315px;
+  max-width: 340px;
+  max-height: 315px;
 }
 .medium-image {
   margin-top: 10px;
-  width: 408.5px;
-  height: 306.5px;
+  max-width: 408.5px;
+  max-height: 306.5px;
 }
 
 @media (max-width: 1061px) {
