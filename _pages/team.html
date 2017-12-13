@@ -30,15 +30,14 @@ stylesheets:
       <span class="text-align-left expandable">
         <h3>Build</h3>
         <li><strong>William</strong>: Head of Build </li>
-        <li><strong>Justin</strong>: Chief Operations Officer</li>
         <li><strong>Abel</strong></li>
         <li><strong>Peter</strong></li>
         <li><strong>Thompson</strong></li>
         <li><strong>Mason</strong></li>
-      <span id="BuildCollapse" class="collapse">
         <li><strong>Jake</strong></li>
-	<li><strong>Martha</strong></li>
-	<li><strong>Aiden</strong></li>
+      	<li><strong>Martha</strong></li>
+      	<li><strong>Aiden</strong></li>
+        <span id="BuildCollapse" class="collapse">
         <li><strong>Octavio</strong></li>
         <li><strong>Owen E</strong></li>
         <li><strong>Max</strong></li>
@@ -81,12 +80,12 @@ stylesheets:
       <div class="text-align-left">
         <h3>Business</h3>
         <li><strong>Zachary</strong>:President</li>
-        <li><strong>Noah</strong>: Fundraising Lead</li>
+        <li><strong>Justin</strong>: Chief Operations Officer</li>
         <li><strong>Leslie</strong>:Chief Administrative Officer</li>
+        <li><strong>Noah</strong>: Fundraising Lead</li>
         <li><strong>Fariha</strong>: Awards Lead</li>
         <li><strong>Matt</strong>: Safety Officer</li>
         <li><strong>Owen C</strong>: Scouting Lead</li>
-        <li><strong>Gavriel</strong>: Webmaster</li>
         <li><strong>Brendan</strong>: Webmaster</li>
       </div>
     </div>
@@ -94,7 +93,7 @@ stylesheets:
     <div class="mentors">
       <h3>Thank you to our Mentors</h3>
       <ul id="Mentors-List">
-        <li> Ms. Silberglied </li>
+        <li>Ms. Silberglied</li>
         <li>Mr. Solomon</li>
         <li>Mr. Kerns</li>
         <li>Mr. Sample</li>
@@ -105,16 +104,6 @@ stylesheets:
       </ul>
     </div>
 
-    <div class="alumni">
-      <h3>Alumni<h3>
-        <ul id="Alumni-List">
-          <li>Saleh: Former Head of Electrical<li>
-          <li>Michael: Former Head of Programming<li>
-          <li>Josh: Former member of Electrical<li>
-          <li>Mikias: Former member of Build and president<li>
-        </ul>
-    </div>
-
     <div class="contact-info clearfix">
         <div>
   				<h3>Contact Us</h3>
@@ -123,10 +112,9 @@ stylesheets:
         <div>
   				<h3>Social Media</h3>
   				<div class="col-md-6 center social-media-icons">
-    				<a href="https://twitter.com/titansrobotics" target="_blank"><img class="follow" src="photos/twitter.png" alt="twitter"></a>
-    				<a href="https://www.facebook.com/tcwilliamsrobotics/" target="_blank"><img class="follow" src="photos/facebook.png" alt="facebook"></a>
-    				<a href="https://www.instagram.com/titansrobotics/" target="_blank"><img class="follow" src="photos/instagram.png" alt="instagram"></a>
-    				<br>
+            <a href="https://twitter.com/frc5587" target="_blank"><img class="follow" src="photos/twitter.png" alt="twitter"></a>
+            <a href="https://www.instagram.com/frc5587/" target="_blank"><img class="follow" src="photos/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/tcwilliamsrobotics/" target="_blank"><img class="follow" src="photos/facebook.png" alt="facebook"></a>
   			  </div>
         </div>
       </div>
@@ -135,20 +123,6 @@ stylesheets:
 </html>
 
 <script>
-//To change the starting line, change the "11" to the desired starting line number
-$('b').prev('div').css('height',(parseInt($('b').prev('div').css('line-height')))*8+'px')
-$('b').click(function() {
-    var p = $('b').prev('div')
-    var lineheight = parseInt(p.css('line-height'))
-    if (parseInt(p.css('height')) == lineheight*11) {
-       p.css('height','auto');
-       $(this).text('Less')
-    } else {
-       p.css('height',lineheight*11+'px');
-       $(this).text('More')
-    }
-});
-
 function changeCollapseText(objButton) {
   if (objButton.innerText == "More") {
     objButton.innerText = "Less";
