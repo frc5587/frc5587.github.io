@@ -5,6 +5,35 @@ stylesheets:
     - outreach
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 600) {
+      $("body").addClass("Lemonaide");
+    } else {
+      $("body").removeClass("Lemonaide");
+    }
+
+    if (scroll >= 800) {
+      $("body").addClass("NOVA");
+    } else {
+      $("body").removeClass("NOVA");
+    }
+
+    if (scroll >= 1000) {
+      $("body").addClass("BN");
+    } else {
+      $("body").removeClass("BN");
+    }
+
+    if (scroll >= 1200) {
+      $("body").addClass("NOS");
+    } else {
+      $("body").removeClass("NOS");
+    }
+  });
+</script>
 
 <body class="background">
   <div class="content">
@@ -60,4 +89,8 @@ stylesheets:
     </div>
   </div>
 </body>
+</div>
+</main>
+</body>
+
 </html>
