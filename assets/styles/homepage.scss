@@ -7,9 +7,6 @@ $secondary-color: #353839;
     background-color: #222222;
 }
 
-.carousel{
-    padding-bottom: 2%;
-}
 .carousel-inner .item img {
     margin: 0 auto;
 }
@@ -23,14 +20,12 @@ $secondary-color: #353839;
 //remove the z-index priority for indicators (covers modal)
 .carousel-indicators {
     z-index: 1;
-    padding-bottom:2%;
 }
 
 //the classes used to make responsive divs
 .card {
     width: 45%;
     margin: 2.5%;
-    font-size: 1.3em;
 }
 .card-row {
     display: flex;
@@ -74,7 +69,7 @@ $secondary-color: #353839;
     text-align: center;
 }
 .sponsor-collection a img {
-    width:32%;
+    width:29%;
 }
 .techshop {
     width: 30%;
@@ -106,7 +101,6 @@ $secondary-color: #353839;
     .card {
         width: 80%;
         margin: 10%;
-	font-size: 1em;
     }
     .card-row {
         display: block;
@@ -119,6 +113,5 @@ $secondary-color: #353839;
         width: 90%;
         margin-right: 5%;
         margin-left: 5%;
-	font-size: 1em;
     }
 }
