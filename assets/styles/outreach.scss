@@ -72,12 +72,12 @@ div .outreach-brief {
   width: 408.5px;
   height: 306.5px;
 }
+
 @media (max-width: 1061px) {
   .removable-image {
     display: none;
   }
 }
-
 
 @media (max-width: 700px) {
   .header {
@@ -92,11 +92,11 @@ div .outreach-brief {
   }
 
   div .outreach-brief {
-    text-align: center;
+    text-align: left;
   }
 
   .event-card {
-    text-align: center;
+    text-align: left;
   }
 }
 @media (max-width: 461px) {
@@ -108,11 +108,11 @@ div .outreach-brief {
   }
 
 div .outreach-brief {
-  text-align: center;
+  text-align: justify;
 }
 
 .event-card {
-  text-align: center;
+  text-align: justify;
 }
 
   .medium-image,
@@ -135,45 +135,45 @@ body {
   background-repeat: no-repeat;
 
   width: 100%;
-  transition: background-image 0.5s ease;
+  transition: background-image 1.5s ease;
 }
 
-// .Lemonaide {
-//   background-image: url("/photos/Outreach-Images/Lemonaide.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .NOVA {
-//   background-image: url("/photos/Outreach-Images/NVCC_2.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .BN {
-//   background-image: url("/photos/Outreach-Images/IMG_3172.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .NOS {
-//   background-image: url("/photos/Outreach-Images/IMG_3126.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 100%;
-//   transition: background-image 0.5s ease;
-// }
+.Lemonaide {
+  background-image: url("/photos/Outreach-Images/Lemonaide.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  transition: background-image 1.5s ease;
+}
+
+.AOTA {
+  background-image: url("/photos/Outreach-Images/ArtOnTheAve.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  transition: background-image 1.5s ease;
+}
+
+.BN {
+  background-image: url("/photos/Outreach-Images/IMG_3172.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: background-image 1.5s ease;
+}
+
+.NOS {
+  background-image: url("/photos/Outreach-Images/IMG_3126.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: background-image 1.5s ease;
+}

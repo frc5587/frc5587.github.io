@@ -49,17 +49,17 @@
   bottom: 0;
   color:#fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   padding-left:30px;
 }
 
 //The div ("card") for each robot
 .robot-card {
-  text-align: justify;
+  text-align: left;
   padding-right: 2px;
 }
 .robot-card img {
-  border-radius: 50px;
+  //border-radius: 50px;
   object-fit: cover;
   width: 350px;
   height: 350px;
@@ -87,6 +87,9 @@
     margin-right: 12.5%;
     margin-left: 12.5%;
   }
+  .content {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -96,10 +99,13 @@
     width: 90%;
     margin-right: 5%;
     margin-left: 5%;
+    text-align: justify;
   }
   .content {
     top: 500px;
+    font-size: 1.5em;
   }
+
   .robot-card img {
     object-fit: cover;
     width: 350px;
