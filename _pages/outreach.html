@@ -6,38 +6,42 @@ stylesheets:
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script>
-  $(window).scroll(function() {
+  const imageUrls = ["/photos/Outreach-Images/ArtOnTheAvenue.JPG", "/photos/Outreach-Images/Lemonaide.JPG", "/photos/Outreach-Images/ArtOnTheAve.JPG", "/photos/Outreach-Images/IMG_3172.JPG", "/photos/Outreach-Images/IMG_3126.JPG"];
+  
+  var imageDisplayRange = undefined;
+  $(window).on('load', function() {
+    // Runs after entire page is rendered, for accurate height
+    imageDisplayRange = ($(document).height() / (imageUrls.length + 1));
+  });
+
+  $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-
-    if (scroll >= 2000 && scroll < 3000) {
-      $("body").addClass("Lemonaide");
-    }else{
-      $("body").removeClass("Lemonaide");
-    }
-
-    if (scroll > 3000) {
-      $("body").addClass("AOTA");
-    }else{
-      $("body").removeClass("AOTA");
+    
+    for (var i = 0; i < imageUrls.length; i++) {
+      if (imageDisplayRange * i <= scroll && scroll < imageDisplayRange * (i + 1)) {
+        $("body").css("background-image", "url(" + imageUrls[i] + ")");
+      }
     }
   });
 </script>
 
-<body class = "background">
+<body class="background">
   <div class="content">
     <div class="outreach-brief">
       <h1 class="header">Outreach</h1>
-      <p>Titan Robotics has taken part in many different activities in order to increase awareness of the various FIRST programs and promote STEM in the local community. Our team strongly believes that giving back to the community is an integral part of
-        the FIRST experience, and we do this through the various events that we take part in or help to create. From teaching youth about STEM opportunities to creating educational and hands-on learning experiences, our team is committed to supporting
-        our community.</p>
+      <p>Titan Robotics has taken part in many different activities in order to increase awareness of the various FIRST programs
+        and promote STEM in the local community. Our team strongly believes that giving back to the community is an integral
+        part of the FIRST experience, and we do this through the various events that we take part in or help to create. From
+        teaching youth about STEM opportunities to creating educational and hands-on learning experiences, our team is committed
+        to supporting our community.</p>
     </div>
 
     <div class="event-card-collection">
       <div class="event-card clearfix">
         <h1 class="subHeader">ALIVE food drive</h1>
         <p class="col-md-3.5">
-          Titan Robotics team members realize how fortunate we are to have the opportunities we have.
-          To help those not as fortunate, we collected food for ALIVE at our December Boosters Open House.
+          Titan Robotics team members realize how fortunate we are to have the opportunities we have. To help those not as fortunate,
+          we collected food for ALIVE at our December Boosters Open House.
         </p>
         <br>
       </div>
@@ -45,10 +49,9 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Barnes and Noble Mini Maker Faire</h1>
         <p class="col-md-3.5">
-          Team members demonstrated their robot and shared turns driving it with many excited children at this
-          event. Drivers ranged in age from one and one half years to over 50! Parents and children alike
-          enjoyed this event! As a surprise, Barnes & Noble presented the team with a drone in thanks for
-          our support of the event!
+          Team members demonstrated their robot and shared turns driving it with many excited children at this event. Drivers ranged
+          in age from one and one half years to over 50! Parents and children alike enjoyed this event! As a surprise, Barnes
+          & Noble presented the team with a drone in thanks for our support of the event!
         </p>
         <br>
       </div>
@@ -56,8 +59,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Barnes & Noble Potomac Yards Holiday Gift Wrap Events</h1>
         <p class="col-md-3.5">
-          The team enjoyed spreading cheer wrapping gifts for Hannukah, Christamas, Birthdays & other celebrations.
-          They met new friends as they wrapped and showed videos of past competitions and team building events.
+          The team enjoyed spreading cheer wrapping gifts for Hannukah, Christamas, Birthdays & other celebrations. They met new friends
+          as they wrapped and showed videos of past competitions and team building events.
         </p>
         <br>
       </div>
@@ -65,8 +68,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Barnes & Noble Potomac Yards Holiday Gift Wrap Events</h1>
         <p class="col-md-3.5">
-          The team enjoyed spreading cheer wrapping gifts for Hannukah, Christamas, Birthdays & other celebrations.
-          They met new friends as they wrapped and showed videos of past competitions and team building events.
+          The team enjoyed spreading cheer wrapping gifts for Hannukah, Christamas, Birthdays & other celebrations. They met new friends
+          as they wrapped and showed videos of past competitions and team building events.
         </p>
         <br>
       </div>
@@ -74,10 +77,9 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">DelRay Halloween Parade</h1>
         <p class="col-md-3.5">
-          This year the team was able to modify the demo robot to comfortably travel the parade route in full
-          costume! Team members created a costume for the robot that accommodated a candy bowl for children
-          to get candy from the robot! The children really enjoyed approaching the robot to get their “treat”
-          throughout the route!
+          This year the team was able to modify the demo robot to comfortably travel the parade route in full costume! Team members
+          created a costume for the robot that accommodated a candy bowl for children to get candy from the robot! The children
+          really enjoyed approaching the robot to get their “treat” throughout the route!
         </p>
         <br>
       </div>
@@ -85,8 +87,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Noche de Ciencias (Night of Science for ACPS)</h1>
         <p class="col-md-3.5">
-          Team members were on location at the USPTO to demonstrate our robot to ACPS students from all over
-          the city. The students enjoyed taking turns driving the robot and learning how it works.
+          Team members were on location at the USPTO to demonstrate our robot to ACPS students from all over the city. The students
+          enjoyed taking turns driving the robot and learning how it works.
         </p>
         <br>
       </div>
@@ -94,11 +96,10 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Del Ray Art on the Avenue</h1>
         <p class="col-md-3.5">
-          Titan Robotics team members offered so many STEM learning opportunities to the Alexandria community
-          at this event! They enjoyed demonstrating the robot for the kids and letting them each take a turn
-          at driving it themselves. Team members also helped students design colorful catapults and build light
-          up sculptures that taught them about circuits by using conductive play dough. Little ones even had
-          the opportunity to color robot pictures! It was a fun event for all!
+          Titan Robotics team members offered so many STEM learning opportunities to the Alexandria community at this event! They enjoyed
+          demonstrating the robot for the kids and letting them each take a turn at driving it themselves. Team members also
+          helped students design colorful catapults and build light up sculptures that taught them about circuits by using
+          conductive play dough. Little ones even had the opportunity to color robot pictures! It was a fun event for all!
         </p>
         <br>
       </div>
@@ -106,8 +107,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Back to School Night at T.C. Williams High School</h1>
         <p class="col-md-3.5">
-          Titan Robotics Team members were front & center at the T.C. Williams Back to School Night showing
-          off our demo robot and answering questions to high school students and parents of T.C. Williams.
+          Titan Robotics Team members were front & center at the T.C. Williams Back to School Night showing off our demo robot and
+          answering questions to high school students and parents of T.C. Williams.
         </p>
         <br>
       </div>
@@ -115,9 +116,9 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Tom Locke Rust Design Build Summer Camp</h1>
         <p class="col-md-3.5">
-          Team members enjoyed explaining FIRST Robotics Competition to campers. Then, campers enjoyed seeing
-          two robots in action-- Titan Robotics’ competition robot PLUS we arranged to have our mentor team
-          from Hayfield bring their robot for demonstration too! It was a day with double the fun.
+          Team members enjoyed explaining FIRST Robotics Competition to campers. Then, campers enjoyed seeing two robots in action--
+          Titan Robotics’ competition robot PLUS we arranged to have our mentor team from Hayfield bring their robot for
+          demonstration too! It was a day with double the fun.
         </p>
         <br>
       </div>
@@ -125,9 +126,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Mount Vernon Community School visit</h1>
         <p class="col-md-3.5">
-          Team members demonstrated our 2017 competition robot to over 150 eager students at MVCS. The students
-          were excited to see the robot close-up in action and to learn about STEM opportunities for their
-          school.
+          Team members demonstrated our 2017 competition robot to over 150 eager students at MVCS. The students were excited to see
+          the robot close-up in action and to learn about STEM opportunities for their school.
         </p>
         <br>
       </div>
@@ -135,9 +135,9 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Titan Robotics Robot Demo & Open House for ACPS and Alexandria City officials</h1>
         <p class="col-md-3.5">
-          It’s important that adults in the community are informed on STEM skill development and opportunities
-          available to ACPS students through Titan Robotics. This is why we hosted multiple open houses for
-          ACPS staff, administration and City Council members in 2017.
+          It’s important that adults in the community are informed on STEM skill development and opportunities available to ACPS students
+          through Titan Robotics. This is why we hosted multiple open houses for ACPS staff, administration and City Council
+          members in 2017.
         </p>
         <br>
       </div>
@@ -145,9 +145,8 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">NOVA STEM Day</h1>
         <p class="col-md-3.5">
-          Titan Robotics was thrilled to work with students of all ages on the NVCC campus to help them learn
-          STEM skills through our two fun projects; Building colorful catapults and Creating circuits utilizing
-          colored conductive play-dough.
+          Titan Robotics was thrilled to work with students of all ages on the NVCC campus to help them learn STEM skills through our
+          two fun projects; Building colorful catapults and Creating circuits utilizing colored conductive play-dough.
         </p>
         <br>
       </div>
@@ -155,9 +154,9 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">“Lemonaide” Day</h1>
         <p class="col-md-3.5">
-          Titan Robotics team members love to give back to the Alexandria community. We used our robot demo
-          to raise funds for our community friends in need. We raised over $400 for local kids’ programs that
-          day! Thanks to Safeway for lending space to our event!
+          Titan Robotics team members love to give back to the Alexandria community. We used our robot demo to raise funds for our
+          community friends in need. We raised over $400 for local kids’ programs that day! Thanks to Safeway for lending
+          space to our event!
         </p>
         <br>
       </div>
@@ -165,8 +164,7 @@ stylesheets:
       <div class="event-card clearfix">
         <h1 class="subHeader">Science Unrestricted</h1>
         <p class="col-md-3.5">
-          Team members enjoyed sharing our competition robot with ACPS grade school students at this exciting
-           STEM event at Mark Center.
+          Team members enjoyed sharing our competition robot with ACPS grade school students at this exciting STEM event at Mark Center.
         </p>
         <br>
       </div>
@@ -174,4 +172,5 @@ stylesheets:
     </div>
   </div>
 </body>
+
 </html>
