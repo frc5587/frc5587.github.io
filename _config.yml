@@ -22,7 +22,7 @@ url: "http://titansrobotics.com" # the base hostname & protocol for your site, e
 # Build settings
 markdown: kramdown
 # theme: minima
-gems:
+plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
