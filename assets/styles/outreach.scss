@@ -1,6 +1,7 @@
 ---
 ---
-// Font presets
+//Font presets
+
 .mainTitle {
   font-size: 40px;
   font-weight: bold;
@@ -27,11 +28,10 @@
   padding-right: 150px;
   padding-top: 100px;
   color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   position: relative;
   text-shadow: 6px 6px 8px black;
-  box-shadow: 0;
 }
 
 
@@ -71,12 +71,12 @@ div .outreach-brief {
   width: 408.5px;
   height: 306.5px;
 }
-
 @media (max-width: 1061px) {
   .removable-image {
     display: none;
   }
 }
+
 
 @media (max-width: 700px) {
   .header {
@@ -91,11 +91,11 @@ div .outreach-brief {
   }
 
   div .outreach-brief {
-    text-align: left;
+    text-align: justify;
   }
 
   .event-card {
-    text-align: left;
+    text-align: justify;
   }
 }
 @media (max-width: 461px) {
@@ -106,15 +106,16 @@ div .outreach-brief {
     width:100%;
   }
 
-  div .outreach-brief {
-    text-align: justify;
-  }
+div .outreach-brief {
+  text-align: justify;
+}
 
-  .event-card {
-    text-align: justify;
-  }
+.event-card {
+  text-align: justify;
+}
 
-  .medium-image, .small-image {
+  .medium-image,
+  .small-image {
     width: 90%;
     height: auto;
   }
@@ -132,5 +133,45 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  transition: background-image 1.5s ease;
+  transition: background-image 0.5s ease;
 }
+
+// .Lemonaide {
+//   background-image: url("/photos/Outreach-Images/Lemonaide.JPG");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   transition: background-image 0.5s ease;
+// }
+//
+// .NOVA {
+//   background-image: url("/photos/Outreach-Images/NVCC_2.JPG");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   transition: background-image 0.5s ease;
+// }
+//
+// .BN {
+//   background-image: url("/photos/Outreach-Images/IMG_3172.JPG");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   height: 100%;
+//   transition: background-image 0.5s ease;
+// }
+//
+// .NOS {
+//   background-image: url("/photos/Outreach-Images/IMG_3126.JPG");
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   height: 100%;
+//   transition: background-image 0.5s ease;
+// }

@@ -7,13 +7,16 @@ stylesheets:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <!-- <script>
   const imageUrls = ["/photos/Outreach-Images/ArtOnTheAvenue.JPG", "/photos/Outreach-Images/Lemonaide.JPG", "/photos/Outreach-Images/ArtOnTheAve.JPG", "/photos/Outreach-Images/IMG_3172.JPG", "/photos/Outreach-Images/IMG_3126.JPG"];
+
   var imageDisplayRange = undefined;
   $(window).on('load', function() {
     // Runs after entire page is rendered, for accurate height
     imageDisplayRange = ($(document).height() / (imageUrls.length + 1));
   });
+
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
+
     for (var i = 0; i < imageUrls.length; i++) {
       if (imageDisplayRange * i <= scroll && scroll < imageDisplayRange * (i + 1)) {
         $("body").css("background-image", "url(" + imageUrls[i] + ")");
