@@ -22,10 +22,14 @@
 //Classes each team entry
 div.team{
 	vertical-align: top;
-    display: inline-block;
+	display: inline-block;
     width: 250px;
 	margin: 20px;
 }
+.team ul {
+	list-style-type: none;
+}
+
 .icon {
 	//The team icons
 	width: 100%;

@@ -176,7 +176,7 @@ nav {
 
 	h3 {
 		margin-top: 35px;
-	}
+    }
 
     p {
         display: inline-block;
@@ -212,6 +212,18 @@ nav {
 	margin-right: 10%;
 	width: 80%;
     text-align: center;
+
+    .amazon-smile {
+        margin-top: 20px;
+        margin-bottom: 35px;
+
+        h3 {
+            margin: 0;
+        }
+        h4 {
+            margin-bottom: 4px;
+        }
+    }
 }
 
 @media (max-width: 1247px) {
