@@ -45,7 +45,7 @@ This is the public website for FRC Team 5587, Titan Robotics. The website is hos
     ```Shell
     $ bundle exec jekyll serve
     ```
-4. Open link next to "Server address" in output to view the website
+4. Open link next to "Server address" in output in your favourite web browser to view the website with any changes you make
 
 ## License
 
