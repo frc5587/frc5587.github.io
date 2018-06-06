@@ -10,7 +10,7 @@ This is the public website for FRC Team 5587, Titan Robotics. The website is hos
     ```Shell
     $ ruby -v
     ```
-    However, the installation listed is not necessarily the most up-to-date version of ruby your system will use. Research information about Ruby your operating system if your Ruby version is severely out of date.
+    However, the installation listed is not necessarily the most up-to-date version of ruby your system will use. Research information about Ruby for your operating system if your Ruby version is severely out of date.
 
 * Install [RubyGems](https://rubygems.org/pages/download) through download links on their website. If RubyGems is already installed, run
 
@@ -45,7 +45,7 @@ This is the public website for FRC Team 5587, Titan Robotics. The website is hos
     ```Shell
     $ bundle exec jekyll serve
     ```
-4. Open link next to "Server address" in output in your favourite web browser to view the website with any changes you make
+4. Open the link next to `Server address` in the output of the previous command in your favorite web browser to view the website with any changes you make locally
 
 ## License
 
