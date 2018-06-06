@@ -1,5 +1,4 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 #video-background {
 //making the video centered horizontally
@@ -51,6 +50,11 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
   padding-left:30px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 //The div ("card") for each robot
