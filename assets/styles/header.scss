@@ -69,6 +69,24 @@ nav {
   transition: 0.5s;
 }
 
+.banner{
+	text-align: left;
+	color: white;
+	background: #2a377c !important;
+	padding-bottom: .05px;
+	padding-left: 40px;
+	padding-top: .05px;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.banner:hover{
+	background-color: #c00917 !important;
+}
+
 .red-btn:hover {
   color: white;
   background-color: #2a377c !important;
