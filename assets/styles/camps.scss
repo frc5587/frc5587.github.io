@@ -1,0 +1,108 @@
+---
+---
+//Font presets
+
+.background {
+  background-image: url("/photos/Outreach-Images/ArtOnTheAve.JPG");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  transition: background-image 0.5s ease;
+}
+
+div .camp-brief {
+  margin-bottom: 50px;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.content {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  position: relative;
+  text-shadow: 6px 6px 8px black;
+}
+
+.header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.forms {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 20%;
+}
+
+.form-card {
+  margin-bottom: 50px;
+  text-align: justify;
+}
+
+.field{
+  color: black;
+}
+
+.submitButton{
+    text-align: center;
+    border: none;
+    color: white;
+    background: #2a377c !important;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.submitButton:hover{
+  background: #c00917 !important;
+}
+
+@media (max-width: 700px) {
+  .header {
+    font-size: 190%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  p {
+    font-size: 90%;
+  }
+
+  div .camp-brief {
+    text-align: justify;
+  }
+
+  .form-card {
+    text-align: justify;
+  }
+}
+@media (max-width: 461px) {
+  .content {
+    padding-top: 50%;
+    padding-left:0%;
+    padding-right:0%;
+    width:100%;
+  }
+
+div .camp-brief {
+  text-align: justify;
+}
+
+.form-card {
+  text-align: justify;
+}
+}
