@@ -69,6 +69,18 @@ nav {
   transition: 0.5s;
 }
 
+.blue-btn {
+  text-align: center;
+  border: none;
+  color: white;
+  background: #2a377c !important;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .banner{
 	text-align: left;
 	color: white;
@@ -90,6 +102,11 @@ nav {
 .red-btn:hover {
   color: white;
   background-color: #2a377c !important;
+}
+
+.blue-btn:hover {
+  color: white;
+  background-color: #c00917 !important;
 }
 
 //Button for showing pages in compact view

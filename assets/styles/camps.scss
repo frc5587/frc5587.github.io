@@ -1,8 +1,6 @@
 ---
 ---
-//Font presets
-
-.background {
+body {
   background-image: url("/photos/Outreach-Images/ArtOnTheAve.JPG");
   background-attachment: fixed;
   background-size: cover;
@@ -19,7 +17,11 @@ div .camp-brief {
   padding-right: 5%;
 }
 
-.content {
+.form-block {
+  margin-bottom: 50px;
+}
+
+.wrapper {
   padding-left: 150px;
   padding-right: 150px;
   padding-top: 150px;
@@ -37,37 +39,34 @@ div .camp-brief {
   font-size: 50px;
 }
 
-.forms {
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 20%;
-}
-
-.form-card {
-  margin-bottom: 50px;
+form {
   text-align: justify;
+  margin-bottom: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
 }
 
-.field{
+form input{
   color: black;
 }
 
-.submitButton{
-    text-align: center;
-    border: none;
-    color: white;
-    background: #2a377c !important;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+form > span {
+  white-space: nowrap;
+  display: block;
 }
 
-.submitButton:hover{
-  background: #c00917 !important;
+.submit-btn{
+  height: 35px;
+  font-size: 18px;
+}
+
+input[type="radio"] {
+  // display:none;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 700px) {
@@ -85,24 +84,17 @@ div .camp-brief {
   div .camp-brief {
     text-align: justify;
   }
-
-  .form-card {
-    text-align: justify;
-  }
 }
+
 @media (max-width: 461px) {
-  .content {
+  .wrapper {
     padding-top: 50%;
     padding-left:0%;
     padding-right:0%;
     width:100%;
   }
 
-div .camp-brief {
-  text-align: justify;
-}
-
-.form-card {
-  text-align: justify;
-}
+  div .camp-brief {
+    text-align: justify;
+  }
 }
