@@ -26,5 +26,6 @@ plugins_dir:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - image_cleaner.py
 include:
   - _pages

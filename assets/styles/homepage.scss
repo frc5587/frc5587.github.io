@@ -69,22 +69,12 @@ $secondary-color: #353839;
     color: white;
 }
 
-//sponsors' box
-.sponsor-collection {
-    margin-bottom: 15px;
-    text-align: center;
-}
-.sponsor-collection a img {
-    width:32%;
-}
-.techshop {
-    width: 30%;
-    height: 17%;
-}
-
 //social media icon box
 .social-media-icons {
     text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 .social-media-icons a {
     margin-right: 5px;
@@ -107,7 +97,7 @@ $secondary-color: #353839;
     .card {
         width: 80%;
         margin: 10%;
-	font-size: 1em;
+	    font-size: 1em;
     }
     .card-row {
         display: block;
@@ -120,6 +110,6 @@ $secondary-color: #353839;
         width: 90%;
         margin-right: 5%;
         margin-left: 5%;
-	font-size: 1em;
+	    font-size: 1em;
     }
 }
