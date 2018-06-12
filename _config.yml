@@ -17,7 +17,7 @@ title: Titan Robotics
 description: > # this means to ignore newlines until "baseurl:"
   Team 5587 Titan Robotics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://titansrobotics.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://frc5587.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
