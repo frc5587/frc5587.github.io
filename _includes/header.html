@@ -22,7 +22,9 @@
         </ul>
       </div>
     </div>
-
+    <div class = "banner" id="bnr">
+      <h4>Register for our Summer Camp!</h4>
+    </div>
   </nav>
 </header>
 
@@ -71,7 +73,8 @@
   var collapseButton = document.getElementsByClassName("navbar-toggle")[0];
   // Get body to toggle noscroll when modal opens
   var pageContent = document.getElementsByClassName("page-content")[0];
-
+  //Get the banner
+  var bnr = document.getElementById('bnr');
   // Get the modal
   var modal = document.getElementById('myModal');
   // Get the button that opens the modal
@@ -100,5 +103,9 @@
     if (event.target == modal) {
       modal.style.display = "none";
     }
+  }
+
+  bnr.onclick = function(){
+    location.href = "/camps"
   }
   </script>

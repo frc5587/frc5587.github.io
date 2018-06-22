@@ -1,0 +1,108 @@
+<header class="site-header" role="banner">
+  <nav class="navbar navbar-inverse fixed">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle expand-button" data-toggle="collapse" data-target="#header">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="nav navbar-nav navbar-left align-middle"><a href="/"><img class="robotics-logo" src="/photos/TShirtLogo.svg"></a></span>
+      </div>
+      <div class="collapse navbar-collapse" id="header">
+        <ul class="nav navbar-nav">
+          <li class="link-button"><a href="/">Home</a></li>
+          <li class="link-button"><a href="/sponsors">Our Sponsors</a></li>
+          <li class="link-button"><a href="/robots">Our Robots</a></li>
+          <li class="link-button"><a href="/outreach">Outreach</a></li>
+          <li class="link-button"><a href="/team">Our Team</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <a id="supportBtn" class="red-btn btn btn-default sponsor-button" role="button"><strong>Support Us</strong></a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Sponsorship modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Support Our Team</h2>
+    </div>
+    <div class="modal-body">
+      <div class="specifier-container clearfix">
+        <div class="specifier-box">
+          <h3>Are you an individual?</h3>
+          <div class="button-container"><a href="https://www.givegab.com/donations/new?group_id=titan-robotics-t-c-williams-h-s-frc-5587" target="_blank", class="btn red-btn" role="button">Donate Here</a></div>
+        </div>
+        <div class="vertical-line"></div>
+        <hr>
+        <div class="specifier-box">
+          <h3>Are you a corporate entity?</h3>
+          <div class="button-container"><a href="mailto:5587boosters@gmail.com" class="btn red-btn" role="button">Contact Us</a></div>
+        </div>
+      </div>
+      <div class="check-info-box">
+
+        <div class="amazon-smile">
+          <h4><span style="color:lightgrey">―</span> and <span style="color:lightgrey">―</span></h4>
+          <h3>Support us through our <a href="http://smile.amazon.com/ch/82-1619633">Amazon Smile</a></h3>
+        </div>
+
+        <h4>Alternatively, checks can be made payable to "Titan Robotics 5587 Boosters" and mailed to:</h4>
+        <p>Titan Robotics 5587 Boosters<br>
+        121 Longview Drive<br>
+        Alexandria, VA  22314<br></span></p>
+        <h4>Our information for your tax records:</h4>
+        <p>EIN# 82-1619633</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  // Get the collapsible portion of the navbar and collapse button
+  var collapsibleRegion = document.getElementById("header");
+  var collapseButton = document.getElementsByClassName("navbar-toggle")[0];
+  // Get body to toggle noscroll when modal opens
+  var pageContent = document.getElementsByClassName("page-content")[0];
+  //Get the banner
+  var bnr = document.getElementById('bnr');
+  // Get the modal
+  var modal = document.getElementById('myModal');
+  // Get the button that opens the modal
+  var btn = document.getElementById("supportBtn");
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+    if(modal.style.display == "block") {
+      modal.style.display = "none";
+    }
+    else {
+      // Check to ensure that the navbar is closed; otherwise, close it
+      if($(collapsibleRegion).attr("aria-expanded")) {
+        $(collapseButton).click();
+      }
+      modal.style.display = "block";
+    }
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+  bnr.onclick = function(){
+    location.href = "/camps"
+  }
+  </script>
