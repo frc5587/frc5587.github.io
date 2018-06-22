@@ -12,13 +12,9 @@ body {
 
 div .camp-brief {
   margin-bottom: 50px;
-  text-align: justify;
+  text-align: left;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-.form-block {
-  margin-bottom: 50px;
 }
 
 .wrapper {
@@ -39,42 +35,12 @@ div .camp-brief {
   font-size: 50px;
 }
 
-form {
-  text-align: justify;
-  margin-bottom: 50px;
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
-}
-
-form input{
-  color: black;
-}
-
-form > span {
-  white-space: nowrap;
-  display: block;
-}
-
-.submit-btn{
-  height: 35px;
-  font-size: 18px;
-}
-
-input[type="radio"] {
-  // display:none;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
 @media (max-width: 700px) {
   .header {
     font-size: 190%;
     width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   p {
@@ -82,7 +48,7 @@ input[type="radio"] {
   }
 
   div .camp-brief {
-    text-align: justify;
+    text-align: left;
   }
 }
 
@@ -95,6 +61,6 @@ input[type="radio"] {
   }
 
   div .camp-brief {
-    text-align: justify;
+    text-align: left;
   }
 }
