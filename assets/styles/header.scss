@@ -7,6 +7,11 @@ nav {
     padding-top: 1px;
     height: 70px;
 }
+
+.nav-link{
+    color:white !important; 
+}
+
 .navbar-nav {
 	margin-right: 0 !important;
 	margin-left: 0 !important;
@@ -48,15 +53,31 @@ nav {
 	background-color: black;
 }
 
+.social-icons{
+    width: 50px !important;
+    height: auto !important;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-filter: invert(40%); /* Safari 6.0 - 9.0 */
+    filter: invert(40%);
+}
+
+.social-icons:hover{
+    -webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */
+    filter: invert(0%);
+}
 //"Donate Online Here!" button
 .sponsor-button {
-  width: 165px;
+  width: 155px;
   margin: 0;
-  height: 69px;
-  padding-top: 24px;
+  height: 50px;
+  padding-top: 10px;
   font-size: 115%;
 }
 
+.button-container{
+    padding-top:7px;
+}
 .red-btn {
   text-align: center;
   border: none;
@@ -79,24 +100,6 @@ nav {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.banner{
-	text-align: left;
-	color: white;
-	background: #2a377c !important;
-	padding-bottom: .05px;
-	padding-left: 40px;
-	padding-top: .05px;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-}
-
-.banner:hover{
-	background-color: #c00917 !important;
 }
 
 .red-btn:hover {
@@ -165,7 +168,6 @@ nav {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    margin-top: 15px !important;
 }
 .close:hover, .close:focus {
     color: #000;
@@ -268,15 +270,18 @@ nav {
     }
 }
 
-@media (max-width: 815px) {
-    .navbar-header {
-        float: none;
-        margin-left: -15px !important;
-        margin-right: -15px !important;
+@media(max-width: 1030px){
+    .social-icons{
+        display:none;
     }
+}
+
+@media (max-width: 825px) {
+   
     .navbar-toggle {
         display: block;
     }
+
     .navbar-collapse.collapse {
         display: none !important;
     }
@@ -298,9 +303,9 @@ nav {
     .navbar-collapse.collapse.in {
         display: block !important;
     }
-    .collapsing {
-        overflow: hidden !important;
-    }
+    // .collapsing {
+    //     overflow: hidden !important;
+    // }
 
     // Adjust the modal for the new view
     .modal {
@@ -347,8 +352,4 @@ nav {
     .modal-header h2 {
         font-size: 20px;
     }
-}
-
-.festive{
-	background-color: #c00917;
 }
