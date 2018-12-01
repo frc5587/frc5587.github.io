@@ -1,115 +1,100 @@
 ---
 ---
-$secondary-color: #353839;
-
 //carousel stuff
-.carousel .item {
-    background-color: #222222;
+.carousel{
+    background-color: #000000 !important;
 }
 
 .carousel{
     padding-bottom: 2%;
-    padding-top: 80px;
+    padding-top: 6%;
 }
-.carousel-inner .item img {
-    margin: 0 auto;
+
+.btn-primary{
+   background-color: #2a377c !important;
+   border-color: #2a377c !important;
+   -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: #3d50af !important;
+   border-color: #3d50af !important;
+}
+
+// .carousel-control-prev{
+//  background-color: white !important;
+// }
+
+// .carousel-control-next{
+//  background-color: white !important;
+// }
+
+.slides{
+display:block;
+width:75% !important;
+margin: auto !important;
+-webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
+    filter: brightness(40%);
 }
 //override default gradient on buttons
-.carousel-control.left {
-  background-image: none;
-}
-.carousel-control.right {
-  background-image: none;
-}
+
 //remove the z-index priority for indicators (covers modal)
 .carousel-indicators {
     z-index: 1;
     padding-bottom:2%;
 }
 
-//the classes used to make responsive divs
-.card {
-    width: 45%;
-    margin: 2.5%;
-    font-size: 1.3em;
-}
-.card-row {
-    display: flex;
+.text-left{
+    padding: 1%;
+    width:40% !important;
+    text-shadow: 4px 4px 6px#000000 !important;
 }
 
-//colored borders for divs
-.blue {
-    border: #2a377c 4px solid;
-}
-.red {
-    border: #c00917 4px solid;
+p{
+    font-size:1.5em !important;
 }
 
-//font presets
-.title {
-    text-align: center;
-    font-weight: bold;
-}
-.subTitle {
-    font-weight: bold;
-    font-family: 'Roboto';
-}
-.jumbotron {
-    margin-bottom: 0;
-    background-color: $secondary-color;
+.row{
+    background-color: #353839 !important;
+    padding: 5%;;
 }
 
-//Container for buttons
-.button-container {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.button-container a button {
-    background-color: $secondary-color;
-    color: white;
-}
-
-//social media icon box
-.social-media-icons {
-    text-align: center;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.social-media-icons a {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-
-@media (max-width: 941px) {
-    //social media icons become two lines
-    .social-media-icons a img {
-        width: 28%;
+@media(max-width:815px){
+    p{
+        font-size:1em !important;
     }
-}
+    .carousel-inner{
+        padding-bottom: 5% !important;
+    }
+    .slides{
+        padding-top:15%;
+        width:100% !important;
+        margin: auto !important;
+        -webkit-filter: brightness(.4); /* Safari 6.0 - 9.0 */
+        filter: brightness(.4);
+    }
 
-@media (max-width: 768px) {
-    //updating everything for the mobile view
-    .jumbotron {
-        font-size: 30px;
+    h1{
+        font-size:1.5em !important;
     }
-    .card {
-        width: 80%;
-        margin: 10%;
-	    font-size: 1em;
-    }
-    .card-row {
-        display: block;
-    }
-}
 
-@media (max-width: 510px) {
-    //the margins for the "cards" looks large for this width
-    .card {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-	    font-size: 1em;
+    .carousel-caption p{
+        display: none !important;
+    }
+
+    .carousel-control-prev .carousel-control-next{
+        display: none !important;
+    }
+
+    .text-left{
+        width:75% !important;
+    }
+
+    .btn-primary{
+        font-size: 1em !important;
     }
 }
