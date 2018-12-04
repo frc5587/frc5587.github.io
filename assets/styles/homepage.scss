@@ -1,13 +1,52 @@
 ---
 ---
 //carousel stuff
-.carousel{
-    background-color: #000000 !important;
+body{
+    padding-top:6%;
+    width:100%;
+}
+.left-text{
+    width:100% !important;
+    margin:auto !important;
+    text-shadow: 4px 4px 8px black;
+    // background-color: rgba(104, 104, 104, 0.6);
+    padding:10% !important;
 }
 
-.carousel{
-    padding-bottom: 2%;
-    padding-top: 6%;
+.parallax-1{
+    background-image: url("/photos/Index-Images/tucker.JPG") !important;
+    /* Set a specific height */
+    height: 100%; 
+    padding: 5%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2{
+    background-image: url("/photos/Index-Images/DSC_1145.JPG") !important;
+    /* Set a specific height */
+    height: 100%; 
+    padding-top: 5%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3{
+    background-image: url("/photos/Index-Images/DSC_1179.JPG") !important;
+    /* Set a specific height */
+    height: 100%; 
+    padding-top: 5%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btn-primary{
@@ -18,40 +57,12 @@
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-size: 1em !important;
 }
 
 .btn-primary:hover{
     background-color: #3d50af !important;
    border-color: #3d50af !important;
-}
-
-// .carousel-control-prev{
-//  background-color: white !important;
-// }
-
-// .carousel-control-next{
-//  background-color: white !important;
-// }
-
-.slides{
-display:block;
-width:75% !important;
-margin: auto !important;
--webkit-filter: brightness(40%); /* Safari 6.0 - 9.0 */
-    filter: brightness(40%);
-}
-//override default gradient on buttons
-
-//remove the z-index priority for indicators (covers modal)
-.carousel-indicators {
-    z-index: 1;
-    padding-bottom:2%;
-}
-
-.text-left{
-    padding: 1%;
-    width:40% !important;
-    text-shadow: 4px 4px 6px#000000 !important;
 }
 
 p{
@@ -60,41 +71,35 @@ p{
 
 .row{
     background-color: #353839 !important;
-    padding: 5%;;
+    padding: 7% 5%;
 }
 
 @media(max-width:815px){
+    .parallax-1{
+        background-attachment: scroll;
+    }
+
+    .parallax-2{
+        background-attachment: scroll;
+    }
+
     p{
         font-size:1em !important;
-    }
-    .carousel-inner{
-        padding-bottom: 5% !important;
-    }
-    .slides{
-        padding-top:15%;
-        width:100% !important;
-        margin: auto !important;
-        -webkit-filter: brightness(.4); /* Safari 6.0 - 9.0 */
-        filter: brightness(.4);
     }
 
     h1{
         font-size:1.5em !important;
     }
 
-    .carousel-caption p{
-        display: none !important;
-    }
-
-    .carousel-control-prev .carousel-control-next{
-        display: none !important;
-    }
-
-    .text-left{
-        width:75% !important;
+    .left-text{
+        width:100% !important;
     }
 
     .btn-primary{
         font-size: 1em !important;
+    }
+
+    body{
+        padding-top:20%;
     }
 }

@@ -48,8 +48,8 @@ hr {
 	transition: 0.3s;
 }
 
-#logo-table-group div:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+#logo-table-group div:hover, #food-donor-group div:hover{
+	box-shadow: 0px 0px 16px rgba(255,255,255,.75);
 }
 
 #logo-table-group a div img {
