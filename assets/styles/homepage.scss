@@ -1,50 +1,23 @@
 ---
 ---
-//carousel stuff
 body{
-    padding-top:6%;
-    width:100%;
+    padding-top:70px;
 }
+
 .left-text{
     width:100% !important;
     margin:auto !important;
     text-shadow: 4px 4px 8px black;
-    // background-color: rgba(104, 104, 104, 0.6);
     padding:10% !important;
 }
 
-.parallax-1{
-    background-image: url("/photos/Index-Images/tucker.JPG") !important;
+.parallax{
     /* Set a specific height */
     height: 100%; 
     padding: 5%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-2{
-    background-image: url("/photos/Index-Images/DSC_1145.JPG") !important;
-    /* Set a specific height */
-    height: 100%; 
-    padding-top: 5%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-3{
-    background-image: url("/photos/Index-Images/DSC_1179.JPG") !important;
-    /* Set a specific height */
-    height: 100%; 
-    padding-top: 5%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -58,29 +31,31 @@ body{
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 1em !important;
+  text-shadow: none;
 }
 
 .btn-primary:hover{
-    background-color: #3d50af !important;
+   background-color: #3d50af !important;
    border-color: #3d50af !important;
+   text-shadow: none;
 }
 
 p{
     font-size:1.5em !important;
 }
 
+.col-lg-6{
+    padding:7% 5%;
+}
 .row{
     background-color: #353839 !important;
-    padding: 7% 5%;
+    margin:0 !important;
 }
 
 @media(max-width:815px){
-    .parallax-1{
-        background-attachment: scroll;
-    }
-
-    .parallax-2{
-        background-attachment: scroll;
+    .parallax{
+        background-attachment: local;
+        background-position: center;
     }
 
     p{
@@ -97,9 +72,5 @@ p{
 
     .btn-primary{
         font-size: 1em !important;
-    }
-
-    body{
-        padding-top:20%;
     }
 }

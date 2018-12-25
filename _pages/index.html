@@ -4,16 +4,30 @@ permalink: /
 stylesheets:
 - homepage
 ---
+<script type="text/javascript">
+        var images = new Array()
+        function preload() {
+            for (i = 0; i < preload.arguments.length; i++) {
+                images[i] = new Image()
+                images[i].src = preload.arguments[i]
+            }
+        }
+        preload(
+            "/photos/Index-Images/watergate.JPG",
+            "/photos/Index-Images/DSC_1145.JPG",
+            "/photos/Index_Images/DSC_1179.JPG"
+        )
+</script>
 
 <body>
     <main role="main">
-        <div class="parallax-1">
+        <div class="parallax" style="background-image: url(/photos/Index-Images/watergate.JPG)">
             <div class="left-text">
-                <h1>In Our Community and Schools:</h1>
+                <h1>In Our Community and Schools</h1>
                 <p>Titan Robotics gives back to our community and
                     promotes STEM awarness through events in the classroom
                     and in the community</p>
-                <a class="btn  btn-primary" href="/outreach" role="button">Learn more</a>
+                <p><a class="btn  btn-primary" href="/outreach" role="button">Learn more</a></p>
 
 
             </div>
@@ -31,10 +45,10 @@ stylesheets:
             </div>
         </div>
 
-        <div class="parallax-2">
+        <div class="parallax" style="background-image: url(photos/Index-Images/DSC_1145.JPG)">
             <div class="left-text">
                 <h2>What We Do</h2>
-                <p>Titan Robotics designs robots each year for the FIRST Robotics Competition.</p>
+                <p>Titan Robotics builds robots each year for the FIRST Robotics Competition.</p>
                 <p><a class="btn btn-primary" href="https://www.firstinspires.org/" role="button">About FIRST</a></p>
             </div>
         </div>
@@ -55,11 +69,11 @@ stylesheets:
             </div>
         </div>
 
-        <div class="parallax-3">
+        <div class="parallax" style="background-image: url(/photos/Index-Images/DSC_1179.JPG)">
             <div class="left-text">
                 <h1>Our Impact:</h1>
                 <p>Titan Robotics provides high school students with real-world experiences
                     in various fields of interest.</p>
-                <a class="btn btn-primary" href="/outreach" role="button">Learn more</a>
+                <p><a class="btn btn-primary" href="/team" role="button">Learn more</a></p>
             </div>
         </div>
