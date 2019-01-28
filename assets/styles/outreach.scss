@@ -7,16 +7,17 @@ body{
 }
 .mainHeader {
   font-size: 30px;
-  color:black
 }
 
-.subHeader {
-  color:black;
+.card{
+  border: none;
+  border-radius: 0px !important;
+  background-color:rgba(0,0,0,0);  
+  color:white !important;
 }
-
 
 .content {
-  color:black;
+  // color:black;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   position: relative;

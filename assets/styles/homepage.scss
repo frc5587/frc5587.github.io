@@ -4,6 +4,12 @@ body{
     padding-top:70px;
 }
 
+div#preload { display: none; }
+
+.p1{
+    
+}
+
 .left-text{
     width:100% !important;
     margin:auto !important;
@@ -17,7 +23,7 @@ body{
     padding: 5%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: 0%;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -47,6 +53,15 @@ p{
 .col-lg-6{
     padding:7% 5%;
 }
+
+.col-lg-7{
+    padding:5% 4% 2%;
+}
+
+.col-lg-5{
+    padding-top:5%;
+}
+
 .row{
     background-color: #353839 !important;
     margin:0 !important;
@@ -55,7 +70,6 @@ p{
 @media(max-width:815px){
     .parallax{
         background-attachment: local;
-        background-position: center;
     }
 
     p{
