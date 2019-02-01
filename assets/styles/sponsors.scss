@@ -42,15 +42,10 @@ hr {
 	flex-basis: auto;
 }
 
-#logo-table-group a div, #food-donor-group a div {
-	// background-color: white !important;
-	transition: 0.3s;
-}
-
 #logo-table-group a div img {
 	width: 50%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 #food-donor-group a div img {
