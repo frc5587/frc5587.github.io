@@ -9,14 +9,18 @@
 //Font presets
 .sponsor-title {
 	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
+}
+
+.sponsor-subtitle {
+	padding-top: 15px;
+	padding-bottom: 30px;
 }
 
 //Custom hr for seperation of sections
 hr {
 	margin-right: 10%;
 	margin-left: 10%;
+	margin-bottom: 40px;
 	border-color: #353839;
 }
 
