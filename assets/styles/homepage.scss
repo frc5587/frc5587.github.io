@@ -48,7 +48,7 @@ p{
 }
 
 .col-lg-6{
-    padding:7% 5%;
+    padding: 5% 5%;
 }
 
 .col-lg-7{
@@ -62,6 +62,8 @@ p{
 .row{
     background-color: #353839 !important;
     margin:0 !important;
+    display: flex;
+    align-items: center;
 }
 
 @media(max-width:815px){
@@ -71,10 +73,6 @@ p{
 
     p{
         font-size:1em !important;
-    }
-
-    h1{
-        font-size:1.5em !important;
     }
 
     .left-text{
