@@ -1,115 +1,101 @@
 ---
 ---
-$secondary-color: #353839;
-
-//carousel stuff
-.carousel .item {
-    background-color: #222222;
+body{
+    padding-top: 70px;
+    width: 100%;
 }
 
-.carousel{
-    padding-bottom: 2%;
-    padding-top: 80px;
-}
-.carousel-inner .item img {
-    margin: 0 auto;
-}
-//override default gradient on buttons
-.carousel-control.left {
-  background-image: none;
-}
-.carousel-control.right {
-  background-image: none;
-}
-//remove the z-index priority for indicators (covers modal)
-.carousel-indicators {
-    z-index: 1;
-    padding-bottom:2%;
+div#preload { display: none; }
+
+.left-text{
+    width:100% !important;
+    margin:auto !important;
+    text-shadow: 4px 4px 8px black;
+    padding:10% !important;
 }
 
-//the classes used to make responsive divs
-.card {
-    width: 45%;
-    margin: 2.5%;
-    font-size: 1.3em;
+.parallax{
+    /* Set a specific height */
+    height: 100%; 
+    padding: 5%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.card-row {
+
+.btn-primary{
+   background-color: #2a377c !important;
+   border-color: #2a377c !important;
+   -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1em !important;
+  text-shadow: none;
+}
+
+.btn-primary:hover{
+   background-color: #3d50af !important;
+   border-color: #3d50af !important;
+   text-shadow: none;
+}
+
+p{
+    font-size:1.5em !important;
+}
+
+.col-lg-6{
+    padding: 5% 5%;
+}
+
+.col-lg-7{
+    padding:5% 4% 2%;
+}
+
+.col-lg-5{
+    padding-top:5%;
+}
+
+.row{
+    background-color: #353839 !important;
+    margin:0 !important;
     display: flex;
+    align-items: center;
 }
 
-//colored borders for divs
-.blue {
-    border: #2a377c 4px solid;
-}
-.red {
-    border: #c00917 4px solid;
+h1 {
+    font-size: 3.5rem;
 }
 
-//font presets
-.title {
-    text-align: center;
-    font-weight: bold;
-}
-.subTitle {
-    font-weight: bold;
-    font-family: 'Roboto';
-}
-.jumbotron {
-    margin-bottom: 0;
-    background-color: $secondary-color;
+h2 {
+    font-size: 2.5rem;
 }
 
-//Container for buttons
-.button-container {
-    text-align: center;
-    margin-bottom: 10px;
-}
-.button-container a button {
-    background-color: $secondary-color;
-    color: white;
-}
-
-//social media icon box
-.social-media-icons {
-    text-align: center;
-    width: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.social-media-icons a {
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-
-@media (max-width: 941px) {
-    //social media icons become two lines
-    .social-media-icons a img {
-        width: 28%;
+@media(max-width:815px){
+    h1 {
+        font-size: 2.5rem;
     }
-}
 
-@media (max-width: 768px) {
-    //updating everything for the mobile view
-    .jumbotron {
-        font-size: 30px;
+    h2 {
+        font-size: 2rem;
     }
-    .card {
-        width: 80%;
-        margin: 10%;
-	    font-size: 1em;
-    }
-    .card-row {
-        display: block;
-    }
-}
 
-@media (max-width: 510px) {
-    //the margins for the "cards" looks large for this width
-    .card {
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-	    font-size: 1em;
+    .parallax{
+        background-attachment: local;
+    }
+
+    p{
+        font-size:1em !important;
+    }
+
+    .left-text{
+        width:100% !important;
+    }
+
+    .btn-primary{
+        font-size: 1em !important;
     }
 }

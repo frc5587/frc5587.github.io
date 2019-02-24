@@ -2,176 +2,49 @@
 ---
 //Font presets
 
-.mainTitle {
-  font-size: 40px;
-  font-weight: bold;
+body{
+  padding-top: 80px;
 }
-
-.subTitle {
-  font-weight: bold;
-}
-
-.header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-}
-
-.subHeader {
-  text-align: center;
-  font-weight: bold;
+.mainHeader {
   font-size: 30px;
 }
 
+.card{
+  border: none;
+  border-radius: 0px !important;
+  background-color:rgba(0,0,0,0);  
+  color:white !important;
+}
+
 .content {
-  padding-left: 150px;
-  padding-right: 150px;
-  padding-top: 100px;
-  color: #fff;
+  // color:black;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   position: relative;
-  text-shadow: 6px 6px 8px black;
 }
 
-
-div .outreach-brief {
-  margin-bottom: 50px;
-  text-align: justify;
-  padding-left: 5%;
-  padding-right: 5%;
+.list-unstyled{
+  color:black;
 }
 
-.event-card-collection {
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 100%;
-  padding-left: 5%;
-  padding-right: 20%;
+@media (max-width: 576px) {
+  
 }
 
-.event-card {
-  margin-bottom: 50px;
-  text-align: justify;
-}
-
-
-
-.event-card a {
-  color: #8eb9ff;
-}
-
-.small-image {
-  width: 340px;
-  height: 315px;
-}
-
-.medium-image {
-  margin-top: 10px;
-  width: 408.5px;
-  height: 306.5px;
-}
-@media (max-width: 1061px) {
-  .removable-image {
-    display: none;
-  }
-}
-
-
-@media (max-width: 700px) {
-  .header {
-    font-size: 190%;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-
-  p {
-    font-size: 90%;
-  }
-
-  div .outreach-brief {
-    text-align: justify;
-  }
-
-  .event-card {
-    text-align: justify;
-  }
-}
 @media (max-width: 461px) {
-  .content {
-    padding-top: 50%;
-    padding-left:0%;
-    padding-right:0%;
-    width:100%;
-  }
-
-div .outreach-brief {
-  text-align: justify;
-}
-
-.event-card {
-  text-align: justify;
-}
-
-  .medium-image,
-  .small-image {
-    width: 90%;
-    height: auto;
+  .mainHeader{
+    font-size: 30px;
   }
 }
 
-body {
-  height: 100%;
-  padding-top:70px;
+@media (max-width: 815px){
+  .removeWidget{
+    display:none;
+  }
 }
 
-.background {
-  background-image: url("/photos/Outreach-Images/ArtOnTheAvenue.JPG");
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.image{
   width: 100%;
-  transition: background-image 0.5s ease;
+  height: auto;
 }
 
-// .Lemonaide {
-//   background-image: url("/photos/Outreach-Images/Lemonaide.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .NOVA {
-//   background-image: url("/photos/Outreach-Images/NVCC_2.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .BN {
-//   background-image: url("/photos/Outreach-Images/IMG_3172.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 100%;
-//   transition: background-image 0.5s ease;
-// }
-//
-// .NOS {
-//   background-image: url("/photos/Outreach-Images/IMG_3126.JPG");
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   height: 100%;
-//   transition: background-image 0.5s ease;
-// }

@@ -2,81 +2,76 @@
 layout: default
 permalink: /
 stylesheets:
-    - homepage
+- homepage
 ---
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-    <li data-target="#myCarousel" data-slide-to="5"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active"><img src="/photos/Carousel-Images/TeamPhoto.JPG" alt="slideOne"></div>
-
-    <div class="item"><img src="/photos/Carousel-Images/DSC_0002.JPG " alt="slideTwo"></div>
-
-    <div class="item"><img src="/photos/Carousel-Images/Kernbread.png" alt="slideThree"></div>
-
-    <div class="item"><img src="/photos/Carousel-Images/peterrrr.JPG" alt="slideFour"></div>
-
-    <div class="item"><img src="/photos/Carousel-Images/lights.JPG" alt="slideFive"></div>
-
-    <div class="item"><img src="/photos/Carousel-Images/DSC_0201.JPG" alt="slideSix"></div>
 
 
-  </div>
+<body>
+    <div id="preload">
+        <img src="/photos/Index-Images/watergate.JPG" width="1" height="1" alt="Image 01" />
+        <img src="/photos/Index-Images/DSC_1145.JPG" width="1" height="1" alt="Image 02" />
+        <img src="/photos/Index-Images/DSC_1179.JPG" width="1" height="1" alt="Image 03" />
+    </div>
 
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+    <main role="main">
+        <div class="parallax" style="background-image: url(/photos/Index-Images/watergate.JPG)">
+            <div class="left-text">
+                <h1>Titan Robotics</h1>
+                <p>FRC Team 5587 gives back to our community and
+                    promotes STEM awareness through events in the classroom
+                    and in the community</p>
+                <p><a class="btn  btn-primary" href="/outreach" role="button">Learn more</a></p>
 
-<!-- /.myCarousel -->
 
-<div class="container-fluid info">
-	<div class="clearfix card-row">
-		<div class="col-sm-5 red card">
-			<h3 class="title subTitle">Who Are We?</h3>
-			<p>
+            </div>
+        </div>
 
-				Titan Robotics is the robotics team from
-				<a class="hyperlink" href="http://www.acps.k12.va.us/">TC Williams High School</a>.
-				Titan Robotics was started in the 2014-2015 school year with one goal: to spread awareness of science, technology, engineering, and mathematics (STEM) to the local community by competing every season in the FIRST Robotics Competition.
-				<a  class="hyperlink" href="team"> The team</a>
-				is student led with a small number of mentors helping to supervise operations. Our mentors come from a variety of backgrounds including the Navy, CSC, past FIRST Competitors,
-				and even TV Production. Going forward, Titan Robotics looks to further involve and educate our community in STEM and to continue to represent the ACPS and Alexandria in the
-				<a class="hyperlink" href="http://www.firstinspires.org/" target="_blank">FIRST Community</a>.
-			</p>
-		</div>
-		<div class="col-sm-6 blue card">
-			<h3 class="title subTitle">What Do We Do?</h3>
-			<p>
-				We are an FRC team, meaning that we compete in the FIRST Robotics Competition. FIRST is a non-profit public charity that designs accessible, innovative programs that motivate young people to pursue education and career opportunities in science, technology, engineering, and mathematics (STEM), while building self-confidence, knowledge, and life skills. In the robotics competition, teams made of an unlimited number of students and mentors, design, build, and program a robot in six weeks to complete that year's challenge.
-			</p>
-			<div class="button-container">
-				<a href="team"><button class="btn btn-default">Read More</button></a>
-			</div>
-		</div>
-	</div> <!-- End of descriptions -->
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="/photos/Index-Images/TeamPhoto.JPG" width="100%" height="auto">
+            </div>
 
-	<div class="social-media-icons col-sm-6 card">
-		<h1 class="subTitle ">Follow Us</h1>
-		<a href="https://twitter.com/frc5587" target="_blank"><img src="photos/twitter.png" alt="twitter"></a>
-		<a href="https://www.instagram.com/frc5587/" target="_blank"><img src="photos/instagram.png" alt="instagram"></a>
-		<a href="https://www.facebook.com/frc5587/" target="_blank"><img src="photos/facebook.png" alt="facebook"></a>
-		<br>
-	</div>
-</div>
-<h1 class="title jumbotron">Titan Robotics FIRST Robotics Team 5587</h1>
+            <div class="col-lg-6">
+                <h2>Who We Are</h2>
+                <p>Titan Robotics, FRC Team 5587, is a student-run FIRST robotics team from TC Williams High School in Alexandria,
+                    Virginia</p>
+                <p><a class="btn btn-primary" href="https://www.acps.k12.va.us/" role="button">About Our School</a></p>
+            </div>
+        </div>
+
+        <div class="parallax p1" style="background-image: url(/photos/Index-Images/DSC_1145.JPG)">
+            <div class="left-text">
+                <h2>What We Do</h2>
+                <p>Titan Robotics builds robots each year for the FIRST Robotics Competition.</p>
+                <p><a class="btn btn-primary" href="https://www.firstinspires.org/" role="button">About FIRST</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="/photos/Index-Images/camp.JPG" width="100%" height="auto">
+            </div>
+
+            <div class="col-lg-6">
+                <h2>Why We Do It</h2>
+                <p>In addition to competition, Titan Robotics promotes STEM awareness in our school and community
+                    through various outreach events. This not only ensures the longevity of our team,
+                    but allows us to give back to or community for their support through offering opportunities for
+                    hands-on learning.
+                </p>
+                <p><a class="btn btn-primary" href="/outreach" role="button">Outreach</a></p>
+            </div>
+        </div>
+
+        <div class="parallax" style="background-image: url(/photos/Index-Images/DSC_1179.JPG)">
+            <div class="left-text">
+                <h1>Our Impact</h1>
+                <p>Titan Robotics provides high school students with real-world experiences
+                    in various fields of interest.</p>
+                <p><a class="btn btn-primary" href="/team" role="button">Learn more</a></p>
+            </div>
+        </div>
+
+
+    </main>
+</body>

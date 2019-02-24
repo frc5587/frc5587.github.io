@@ -9,14 +9,18 @@
 //Font presets
 .sponsor-title {
 	text-align: center;
-	padding-bottom: 10px;
-	padding-top: 10px;
+}
+
+.sponsor-subtitle {
+	padding-top: 15px;
+	padding-bottom: 30px;
 }
 
 //Custom hr for seperation of sections
 hr {
 	margin-right: 10%;
 	margin-left: 10%;
+	margin-bottom: 40px;
 	border-color: #353839;
 }
 
@@ -42,20 +46,10 @@ hr {
 	flex-basis: auto;
 }
 
-#logo-table-group a div, #food-donor-group a div {
-	background-color: white !important;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-}
-
-#logo-table-group div:hover {
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
 #logo-table-group a div img {
 	width: 50%;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 
 #food-donor-group a div img {

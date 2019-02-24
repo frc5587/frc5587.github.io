@@ -5,8 +5,14 @@ nav {
     z-index: 1000 !important;
     border: none !important;
     padding-top: 1px;
+    // min-height: 70px;
     height: 70px;
 }
+
+.nav-link{
+    line-height: 32px;
+}
+
 .navbar-nav {
 	margin-right: 0 !important;
 	margin-left: 0 !important;
@@ -34,10 +40,12 @@ nav {
 .link-button {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	margin: 0;
+    margin: 0;
+    color:#999 !important;
 }
 .link-button a {
-	font-size: 115%;
+    font-size: 115%;
+    font-weight: 500;
 	width: inherit;
 	height: 50px;
 }
@@ -45,18 +53,41 @@ nav {
 	background-color: black;
 }
 .link-button:hover {
-	background-color: black;
+	color:white !important;
 }
 
+.social-icons a img {
+    width: 50px !important;
+    height: auto !important;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-filter: invert(40%); /* Safari 6.0 - 9.0 */
+    filter: invert(40%);
+}
+
+.social-icons a img:hover{
+    -webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */
+    filter: invert(0%);
+}
 //"Donate Online Here!" button
-.sponsor-button {
-  width: 165px;
+#supportBtn {
+  width: 155px;
   margin: 0;
-  height: 69px;
-  padding-top: 24px;
-  font-size: 115%;
+  height: 53px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
 }
 
+.btn-text {
+  font-size: 115%;
+  font-weight: bold;
+  width: 100%;
+}
+.button-container{
+    display: flex;
+    align-items: center;
+}
 .red-btn {
   text-align: center;
   border: none;
@@ -81,24 +112,6 @@ nav {
   transition: 0.5s;
 }
 
-.banner{
-	text-align: left;
-	color: white;
-	background: #2a377c !important;
-	padding-bottom: .05px;
-	padding-left: 40px;
-	padding-top: .05px;
-	-o-transition: 0.5s;
-	-ms-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	transition: 0.5s;
-}
-
-.banner:hover{
-	background-color: #c00917 !important;
-}
-
 .red-btn:hover {
   color: white;
   background-color: #2a377c !important;
@@ -110,11 +123,9 @@ nav {
 }
 
 //Button for showing pages in compact view
-.expand-button {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	padding: 12.5px;
-	height: 50px;
+.navbar-toggler {
+    margin-right: 10px;
+	height: 45px;
 	width: 50px;
 }
 
@@ -165,7 +176,6 @@ nav {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    margin-top: 15px !important;
 }
 .close:hover, .close:focus {
     color: #000;
@@ -268,22 +278,27 @@ nav {
     }
 }
 
-@media (max-width: 815px) {
-    .navbar-header {
-        float: none;
-        margin-left: -15px !important;
-        margin-right: -15px !important;
+@media(max-width: 1030px){
+    .social-icons{
+        display:none;
     }
-    .navbar-toggle {
-        display: block;
+    .link-button {
+        text-align: center;
     }
-    .navbar-collapse.collapse {
-        display: none !important;
+}
+
+@media (max-width: 825px) {
+
+    nav {
+        min-height: 70px;
+        height: inherit;
     }
+   
     .navbar-nav {
         float: none !important;
         margin: 7.5px -15px;
     }
+    
     .navbar-nav>li {
         float: none;
     }
@@ -296,11 +311,12 @@ nav {
         margin: 15px 0;
     }
     .navbar-collapse.collapse.in {
-        display: block !important;
+        display:block !important;
+        background-color: #fff !important;
     }
-    .collapsing {
-        overflow: hidden !important;
-    }
+    // .collapsing {
+    //     overflow: hidden !important;
+    // }
 
     // Adjust the modal for the new view
     .modal {
@@ -347,8 +363,4 @@ nav {
     .modal-header h2 {
         font-size: 20px;
     }
-}
-
-.festive{
-	background-color: #c00917;
 }
