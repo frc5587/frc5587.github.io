@@ -5,6 +5,7 @@
 body{
   padding-top: 80px;
 }
+
 .mainHeader {
   font-size: 30px;
 }
@@ -21,6 +22,10 @@ body{
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   position: relative;
+}
+
+.container { 
+  padding-top: 30px !important; 
 }
 
 .list-unstyled{
