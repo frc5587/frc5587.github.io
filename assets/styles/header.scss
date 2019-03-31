@@ -243,13 +243,14 @@ nav {
 
 .banner{
     background-color: #2a377c;
+    color: white;
     text-align: left;
     position: fixed;
     width:100%;
     z-index: 1000 !important;
     -webkit-transition: .3s;
     transition: .3s;
-    padding:5px;
+    padding-top: 7.5px;
 }
 
 .banner:hover{
