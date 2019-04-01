@@ -54,8 +54,8 @@ a{
 }
 
 .col-lg-4:hover{
-    -webkit-filter: brightness(50%) !important; /* Safari 6.0 - 9.0 */
-    filter: brightness(50%) !important;
+    -webkit-filter: contrast(110%) !important; /* Safari 6.0 - 9.0 */
+    filter: contrast(110%) !important;
 
     .camp_cover{
         display:none !important;
