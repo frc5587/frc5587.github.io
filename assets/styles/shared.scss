@@ -7,6 +7,10 @@ html body {
     width: 100%;
 }
 
+a {
+    color: white;
+}
+
 //Clearfix, which fixes the issues with the bounding-boxes of images
 .clearfix:after {
    content: ""; /* Older browser do not support empty content */
