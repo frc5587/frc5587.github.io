@@ -4,6 +4,10 @@ p{
     font-size:1.5em !important;
     text-align: left;
 
+    a { 
+        color:  #5466c0 !important;
+    }
+
 }
 
 h2 {
@@ -33,10 +37,6 @@ h3 h6{
     margin: 5%;
 }
 
-a{
-    color: white !important;
-}
-
 .col-lg-4{
     text-align: center;
     padding: 90px;
@@ -46,6 +46,10 @@ a{
     -webkit-transition: .3s;
     transition: .3s;
     background-position: center;
+
+    a { 
+        color:  #5466c0 !important;
+    }
 }
 
 .register{ 
