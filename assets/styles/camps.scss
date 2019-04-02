@@ -53,7 +53,7 @@ a{
     padding-top: 60px !important;
 }
 
-.col-lg-4:hover{
+.col-lg-4:hover, .col-lg-4:active, .col-lg-4:focus{
     -webkit-filter: contrast(110%) !important; /* Safari 6.0 - 9.0 */
     filter: contrast(110%) !important;
 
