@@ -1,0 +1,103 @@
+--- 
+--- 
+p{
+    font-size:1.5em !important;
+    text-align: left;
+
+}
+
+h2 {
+    padding-top:50px;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+h3{
+    font-weight: bold;
+}
+h3 h6{
+    text-shadow: 4px 4px 8px black;
+}
+
+@media(max-width:815px){
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+.row{
+    margin: 5%;
+}
+
+a{
+    color: white !important;
+}
+
+.col-lg-4{
+    text-align: center;
+    padding: 90px;
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    border: 5px solid #212322;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background-position: center;
+}
+
+.register{ 
+    padding: 30px !important;
+    padding-top: 60px !important;
+}
+
+.col-lg-4:hover{
+    -webkit-filter: contrast(110%) !important; /* Safari 6.0 - 9.0 */
+    filter: contrast(110%) !important;
+
+    .camp_cover{
+        display:none !important;
+        height:0px !important;
+    }
+
+    .camp_brief{
+        display:block !important;
+        margin: -80px !important;
+
+        -webkit-filter: brightness(150%) !important; /* Safari 6.0 - 9.0 */
+        filter: brightness(150%) !important;
+    }
+}
+
+
+.camp_brief{
+    display: none;
+}
+
+
+
+.blurb{
+    margin:0% 5%;
+}
+
+.physics{
+    background-image:url(/photos/camps/physics.JPG);
+}
+
+.mindstorms{
+    background-image:url(/photos/camps/mindstorms.png);
+}
+
+.rocketry{
+    background-image:url(/photos/camps/rocket.JPG);
+}
+
+.java{
+    background-image:url(/photos/camps/java.jpg)
+}
+
+.product{
+    background-image:url(/photos/camps/product.png)
+}

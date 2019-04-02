@@ -133,7 +133,7 @@ nav {
 .modal {
     display: none; // Hidden by default
     position: fixed; // Stay in place
-    z-index: 15; // Sit on top
+    z-index: 10000; // Sit on top
     padding-top: 100px; // Location of the box
     left: 0;
     top: 0;
@@ -241,6 +241,22 @@ nav {
 	}
 }
 
+.banner{
+    background-color: #2a377c;
+    color: white;
+    text-align: left;
+    position: fixed;
+    width:100%;
+    z-index: 1000 !important;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding-top: 7.5px;
+}
+
+.banner:hover{
+    -webkit-filter: brightness(150%) !important; /* Safari 6.0 - 9.0 */
+    filter: brightness(150%) !important;
+}
 .vertical-line {
 	border-left: 2px solid lightgrey;
     height: 90%;
@@ -363,4 +379,8 @@ nav {
     .modal-header h2 {
         font-size: 20px;
     }
+}
+
+h6 {
+    padding-left:25px;
 }
