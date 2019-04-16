@@ -8,7 +8,8 @@ html body {
 }
 
 a {
-    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
 }
 
 //Clearfix, which fixes the issues with the bounding-boxes of images
