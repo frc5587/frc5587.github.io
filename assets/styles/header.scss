@@ -230,10 +230,10 @@ nav {
     }
 
 	a {
-		width: 175px;
+		width: 207px;
 		margin-top: 25px;
-		margin-left: 0;
-		margin-right: 0;
+        margin-left: 25%;
+		margin-right: 25%;
 		margin-bottom: 35px;
 		height: 45px;
 		padding-top: 12.5px;
@@ -288,6 +288,9 @@ nav {
     }
 }
 
+h2{
+    padding: 1%;
+}
 @media (max-width: 1247px) {
     // h3 set to have donate buttons at the same height
     .specifier-box h3 {
