@@ -87,6 +87,7 @@ nav {
 .button-container{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .red-btn {
   text-align: center;
@@ -197,27 +198,20 @@ nav {
 	padding-left: 0;
 	padding-right: 0;
 	position: relative;
-	margin-bottom: 10px;
-
-    hr {
-        display: none;
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-        color: lightgrey;
-        background-color: lightgrey;
-        height: 2px;
-        border: none;
-    }
+    margin-bottom: 10px;
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: none;
 }
 .specifier-box {
-	width: 42%;
-	margin-right: 4%;
-	margin-left: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
- 	float: left;
 
 	h3 {
 		margin-top: 35px;
@@ -351,10 +345,8 @@ h2{
 	  	display: none;
 	}
 	.specifier-container {
-	  	flex-direction: column;
-        hr {
-            display: block;
-        }
+	  	grid-template-columns: none;
+        grid-template-rows: 50% 50%;
 	}
 	.specifier-box {
 		width: 80%;
