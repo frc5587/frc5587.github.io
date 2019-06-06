@@ -4,13 +4,7 @@
 .blurb {
   text-align: center;
   width: 75%;
-  margin: 70px auto 0 auto;
-}
-
-.hide-on-mobile {
-  margin-top: 35px;
-  margin-bottom: 0;
-  font-weight: bold;
+  margin: 70px auto 30px auto;
 }
 
 p {
@@ -32,8 +26,8 @@ p {
   position: relative;
   text-align: center;
   width: 25rem;
+  min-height: 450px;
   margin: 2%;
-  min-height: 350px;
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -41,29 +35,13 @@ p {
 }
 
 .camp-cover {
-  position: absolute;
-  // Centre the text horizontally and vertically despite position: absolute
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: 15px;
 }
 
 .camp-brief {
-  visibility: hidden;
-  margin-top: auto;
-  margin-bottom: auto;
   padding-left: 5%;
   padding-right: 5%;
-}
-
-// When hovering over a camp entry, switch what is visible
-.camp-entry:hover {
-  .camp-cover {
-    display: none;
-  }
-  .camp-brief {
-    visibility: visible;
-  }
+  margin-bottom: 15px;
 }
 
 // Background images for the camps
@@ -87,30 +65,5 @@ p {
 @media (max-width: 500px) {
   .blurb {
     width: 90%;
-  }
-  .hide-on-mobile {
-    display: none;
-  }
-
-  .camp-brief {
-    // Display the div all the time
-    visibility: visible;
-
-    margin-bottom: 15px;
-  }
-  
-  .camp-entry:hover {
-    .camp-cover {
-      // Don't hide the div when hover/clicking on mobile
-      display: block;
-    }
-  }
-  .camp-cover {
-    // Display the div where it should be in the DOM
-    position: static;
-    display: block;
-    transform: unset;
-
-    margin-top: 15px;
   }
 }
