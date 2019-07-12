@@ -8,7 +8,7 @@
 }
 
 p {
-  font-size: 1.5em
+  font-size: 1.5em;
 }
 
 .camp-grid {
@@ -45,23 +45,23 @@ p {
 }
 
 // Background images for the camps
-.physics{
-    background-image:url(/photos/camps/physics.JPG);
+.physics {
+  background-image: url(/photos/camps/physics.JPG);
 }
-.mindstorms{
-    background-image:url(/photos/camps/mindstorms.png);
+.mindstorms {
+  background-image: url(/photos/camps/mindstorms.png);
 }
-.rocketry{
-    background-image:url(/photos/camps/rocket.JPG);
+.rocketry {
+  background-image: url(/photos/camps/rocket.JPG);
 }
-.java{
-    background-image:url(/photos/camps/java.jpg)
+.java {
+  background-image: url(/photos/camps/java.jpg);
 }
-.product{
-    background-image:url(/photos/camps/product.png)
+.product {
+  background-image: url(/photos/camps/product.png);
 }
-.ftc{
-  background-image:url(/photos/camps/ftc.jpg)
+.ftc {
+  background-image: url(/photos/camps/ftc.jpg);
 }
 // Mobile layout
 @media (max-width: 500px) {
