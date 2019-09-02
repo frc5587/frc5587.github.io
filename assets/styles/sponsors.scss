@@ -1,101 +1,104 @@
 ---
 ---
+
 .content {
-  padding-top: 100px;
+  padding-top: 25px;
   padding-bottom: 35px;
   text-align: center;
 }
 
 //Font presets
 .sponsor-title {
-	text-align: center;
+  text-align: center;
 }
 
 .sponsor-subtitle {
-	padding-top: 15px;
-	padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 //Custom hr for seperation of sections
 hr {
-	margin-right: 10%;
-	margin-left: 10%;
-	margin-bottom: 40px;
-	border-color: #353839;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 40px;
+  border-color: #353839;
 }
 
 //Box for sponsor logos
-#logo-table-group, #food-donor-group {
-	width: 100%;
-	// margin-left: 5%;
-	// margin-right: 5%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+#logo-table-group,
+#food-donor-group {
+  width: 100%;
+  // margin-left: 5%;
+  // margin-right: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
 }
 
 #logo-table-group {
-	margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
-#logo-table-group > *, #food-donor-group > * {
-	padding: 10px;
-	flex-grow: 1;
-	flex-basis: auto;
+#logo-table-group > *,
+#food-donor-group > * {
+  padding: 10px;
+  flex-grow: 1;
+  flex-basis: auto;
 }
 
 #logo-table-group a div img {
-	width: 75%;
-	margin-top: 1px;
-	margin-bottom: 1px;
+  width: 75%;
+  margin-top: 1px;
+  margin-bottom: 1px;
 }
 
 #food-donor-group a div img {
-	width: 50%;
-	margin-top: 15px;
-	margin-bottom: 15px;
+  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 //Box for donors' names
 #donors-table-group {
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	text-align: center;
-	overflow: auto;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  overflow: auto;
 }
 #donors-table-group ul {
-	width: 33%;
-	float: left;
-	padding-left: 0;
+  width: 33%;
+  float: left;
+  padding-left: 0;
 }
 #donors-table-group li {
-	list-style-type: none;
+  list-style-type: none;
 }
 
-
 @media (max-width: 1098px) {
-	//The longer names begin to wrap (no-no)
-	#donors-table-group ul {
-		width: 50%;
-	}
+  //The longer names begin to wrap (no-no)
+  #donors-table-group ul {
+    width: 50%;
+  }
 }
 
 @media (max-width: 690px) {
-	//the longer names begin to wrap again
-	#donors-table-group ul, #logo-table-group ul {
-		width: 100%;
-	}
-	#donors-table-group br {
-		display: none;
-	}
-	.sponsor-title {
-		font-size: 32px;
+  //the longer names begin to wrap again
+  #donors-table-group ul,
+  #logo-table-group ul {
+    width: 100%;
+  }
+  #donors-table-group br {
+    display: none;
+  }
+  .sponsor-title {
+    font-size: 32px;
 
-    a{
-      font-size:22px;
+    a {
+      font-size: 22px;
     }
-	}
+  }
 }
