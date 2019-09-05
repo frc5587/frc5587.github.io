@@ -1,24 +1,25 @@
 ---
 ---
-body{
-  padding-top:70px;
-  padding-bottom: 2%
-}
 
-@media(max-width:1030px){
-  body{
-    padding-top: 70px !important;
-  }
+body {
+  padding-top: 0;
 }
 
 .container {
   padding-top: 60px !important;
 }
 
-.featurette-divider{
-  border-color:white !important;
+.row {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-.featurette-image{
-  width: 100% !important; 
+.featurette-divider {
+  border-color: #6c757d;
+}
+
+.featurette-image {
+  width: 100% !important;
 }
