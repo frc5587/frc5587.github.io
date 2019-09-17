@@ -4,26 +4,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="description"
+    content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <style>
     @import url('https://fonts.googleapis.com/css?family=Roboto');
   </style>
 
-  <link rel="icon" href="photos/roboticslogo(85-scaled).ico">
+  <link rel="icon" href="/photos/robotics_favicon.ico">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>  
-  
-  <link rel="stylesheet" href="/assets/styles/header.css"> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/assets/styles/header.css">
   <link rel="stylesheet" href="/assets/styles/shared.css">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   {% if page.stylesheets %}
-    {% for stylesheet in page.stylesheets %}
-      <link rel="stylesheet" href="/assets/styles/{{ stylesheet }}.css">
-    {% endfor %}
+  {% for stylesheet in page.stylesheets %}
+  <link rel="stylesheet" href="/assets/styles/{{ stylesheet }}.css">
+  {% endfor %}
   {% endif %}
 </head>

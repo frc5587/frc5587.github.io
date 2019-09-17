@@ -1,101 +1,82 @@
 ---
 ---
+
+// Styling for container around all content
 .content {
-  padding-top: 100px;
-  padding-bottom: 35px;
+  padding-top: 5px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
-//Font presets
-.sponsor-title {
-	text-align: center;
-}
-
+// Spacing for text
 .sponsor-subtitle {
-	padding-top: 15px;
-	padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+.food-donor-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-//Custom hr for seperation of sections
-hr {
-	margin-right: 10%;
-	margin-left: 10%;
-	margin-bottom: 40px;
-	border-color: #353839;
+// Custom hr for seperation of sections
+.title-hr,
+.sponsor-type-divider {
+  border-color: #353839;
+}
+.title-hr {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+}
+.sponsor-type-divider {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-//Box for sponsor logos
-#logo-table-group, #food-donor-group {
-	width: 100%;
-	// margin-left: 5%;
-	// margin-right: 5%;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-	align-content: stretch;
+// Table format used for all sections that display logos
+.sponsor-table {
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#logo-table-group {
-	margin-bottom: 50px;
+// Styling specific to any logo table
+.grant-table {
+  width: 100%;
+  a {
+    margin: 10px 25px;
+    width: 27.5%;
+    img {
+      // Only fill size of <a> as opposed to normal size of image
+      width: 100%;
+    }
+  }
 }
-
-#logo-table-group > *, #food-donor-group > * {
-	padding: 10px;
-	flex-grow: 1;
-	flex-basis: auto;
-}
-
-#logo-table-group a div img {
-	width: 75%;
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
-
-#food-donor-group a div img {
-	width: 50%;
-	margin-top: 15px;
-	margin-bottom: 15px;
-}
-
-//Box for donors' names
-#donors-table-group {
-	width: 60%;
-	margin-left: 20%;
-	margin-right: 20%;
-	text-align: center;
-	overflow: auto;
-}
-#donors-table-group ul {
-	width: 33%;
-	float: left;
-	padding-left: 0;
-}
-#donors-table-group li {
-	list-style-type: none;
-}
-
-
-@media (max-width: 1098px) {
-	//The longer names begin to wrap (no-no)
-	#donors-table-group ul {
-		width: 50%;
-	}
+.food-donor-table {
+  width: 70%;
+  margin: auto;
+  a {
+    margin: 10px 25px;
+    width: 25%;
+    img {
+      // Only fill size of <a> as opposed to normal size of image
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 690px) {
-	//the longer names begin to wrap again
-	#donors-table-group ul, #logo-table-group ul {
-		width: 100%;
-	}
-	#donors-table-group br {
-		display: none;
-	}
-	.sponsor-title {
-		font-size: 32px;
+  .food-donor-table {
+    width: 100%;
+  }
 
-    a{
-      font-size:22px;
+  .sponsor-title {
+    font-size: 32px;
+    a {
+      font-size: 22px;
     }
-	}
+  }
 }
