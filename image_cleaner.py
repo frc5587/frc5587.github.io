@@ -15,7 +15,7 @@ from html.parser import HTMLParser
 
 images_used = []
 blacklisted_img_files = [".DS_Store"]
-blacklisted_img_directories = ["photos/camps", "photos/Index-Images"]
+blacklisted_img_directories = ["/assets/images/Camps", "/assets/images/Index-Images"]
 
 
 class MyHTMLParser(HTMLParser):
@@ -51,9 +51,9 @@ for path in page_paths:
                 parser.feed(src_file.read())
             print()
 
-image_path = "photos/"
+image_path = "/assets/images/"
 all_images = []
-# Add all found images in specified photos directory to the all_images list
+# Add all found images in specified /assets/images directory to the all_images list
 for (dirpath, _, filenames) in walk(image_path):
     for file in filenames:
         if file not in all_images and file not in blacklisted_img_files and dirpath not in blacklisted_img_directories:
@@ -62,7 +62,7 @@ for (dirpath, _, filenames) in walk(image_path):
 
 images_used = set(images_used)
 
-# Remove all photos from images_used
+# Remove all /assets/images from images_used
 for image in images_used:
     if image in all_images:
         all_images.remove(image)

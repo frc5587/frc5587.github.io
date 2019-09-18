@@ -1,7 +1,7 @@
 <header class="site-header" role="banner">
   <nav class="navbar navbar-dark bg-dark fixed navbar-expand-md">
     <span class="nav navbar-nav  align-middle"><a href="/"><img class="robotics-logo"
-          src="/photos/robotics_logo.svg"></a></span>
+          src="/assets/images/robotics_logo.svg"></a></span>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header">&#x2630;</button>
     <div class="collapse navbar-collapse justify-content-between" id="header">
       <ul class="nav navbar-nav">
@@ -16,7 +16,7 @@
         <li class="nav-item social-icons">
           <a class="nav-link p-2" href="https://twitter.com/frc5587" target="_blank" rel="noopener"
             aria-label="twitter">
-            <img src="photos/Social-Icons/twitter.png" alt="twitter">
+            <img src="/assets/images/Social-Icons/twitter.png" alt="twitter">
             <title>Twitter</title>
           </a>
         </li>
@@ -24,7 +24,7 @@
         <li class="nav-item social-icons">
           <a class="nav-link p-2" href="https://www.instagram.com/frc5587/" target="_blank" rel="noopener"
             aria-label="instagram">
-            <img src="photos/Social-Icons/instagram.png" alt="twitter">
+            <img src="/assets/images/Social-Icons/instagram.png" alt="twitter">
             <title>Instagram</title>
           </a>
         </li>
@@ -32,7 +32,7 @@
         <li class="nav-item social-icons">
           <a class="nav-link p-2" href="https://www.facebook.com/frc5587/" target="_blank" rel="noopener"
             aria-label="facebook">
-            <img src="photos/Social-Icons/facebook.png" alt="facebook">
+            <img src="/assets/images/Social-Icons/facebook.png" alt="facebook">
             <title>Facebook</title>
           </a>
         </li>
@@ -40,7 +40,7 @@
         <li class="nav-item social-icons">
           <a class="nav-link p-2" href="https://github.com/frc5587" target="_blank" rel="noopener"
             aria-label="facebook">
-            <img src="photos/Social-Icons/github.png" alt="github">
+            <img src="/assets/images/Social-Icons/github.png" alt="github">
             <title>Github</title>
           </a>
         </li>
@@ -93,40 +93,3 @@
     </div>
   </div>
 </div>
-
-<script>
-
-  // Get the collapsible portion of the navbar and collapse button
-  var collapsibleRegion = document.getElementById("header");
-  var collapseButton = document.getElementsByClassName("navbar-toggle")[0];
-
-  // Modal components
-  var modal = document.getElementById('sponsor-modal'); // Sponsorship modal
-  var btn = document.getElementById("supportBtn"); // Button that opens the modal
-  var span = document.getElementsByClassName("close")[0]; // <span> element that closes the modal
-
-  // When the user clicks the button, open the modal
-  btn.onclick = () => {
-    if (modal.style.display == "flex") {
-      modal.style.display = "none";
-    }
-    else {
-      // Check to ensure that the navbar is closed; otherwise, close it
-      if ($(collapsibleRegion).attr("aria-expanded")) {
-        $(collapseButton).click();
-      }
-      modal.style.display = "flex";
-    }
-  }
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = () => {
-    modal.style.display = "none";
-  }
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = (event) => {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-</script>
