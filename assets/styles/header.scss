@@ -216,7 +216,7 @@ nav {
     margin-bottom: 10px;
     
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
 }
 .specifier-box {
@@ -356,7 +356,7 @@ h2{
 	}
 	.specifier-container {
 	  	grid-template-columns: none;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 1fr 1fr;
 	}
 	.specifier-box {
 		width: 80%;
@@ -372,7 +372,17 @@ h2{
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
-	}
+    }
+    
+    .modal {
+        align-items: flex-start;
+    }
+    .modal-content {
+        margin-top: 25px;
+    }
+    .modal-body {
+        padding: 0;
+    }
 }
 
 @media (max-width: 410px) {

@@ -7,12 +7,8 @@ var modal = document.getElementById("sponsor-modal"); // Sponsorship modal
 var btn = document.getElementById("supportBtn"); // Button that opens the modal
 var span = document.getElementsByClassName("close")[0]; // <span> element that closes the modal
 
-var pageContent = document.getElementsByTagName("main")[0];
-// const pageContent = document.getElementsByClassName("main")[0];
-
 function closeModal() {
   modal.style.display = "none";
-  pageContent.style.overflow = "visible";
 }
 
 function openModal() {
@@ -20,7 +16,6 @@ function openModal() {
   if ($(collapsibleRegion).attr("aria-expanded")) {
     $(collapseButton).click();
   }
-  pageContent.style.overflow = "hidden";
   // Now open the modal
   modal.style.display = "flex";
 }
