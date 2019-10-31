@@ -93,7 +93,7 @@ nav {
   text-align: center;
   border: none;
   color: white;
-  background: #c00917 !important;
+  background: #be2026 !important;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -105,7 +105,7 @@ nav {
   text-align: center;
   border: none;
   color: white;
-  background: #2a377c !important;
+  background: #2a397c !important;
   -o-transition: 0.5s;
   -ms-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -115,12 +115,12 @@ nav {
 
 .red-btn:hover {
   color: white;
-  background-color: #2a377c !important;
+  background-color: #2a397c !important;
 }
 
 .blue-btn:hover {
   color: white;
-  background-color: #c00917 !important;
+  background-color: #be2026 !important;
 }
 
 //Button for showing pages in compact view
@@ -252,7 +252,7 @@ nav {
 }
 
 .banner{
-    background-color: #2a377c;
+    background-color: #2a397c;
     color: white;
     text-align: left;
     position: fixed;
@@ -399,4 +399,8 @@ h2{
 
 h6 {
     padding-left:25px;
+}
+
+.new-background {
+    background-color: #212121 !important;
 }
