@@ -1,133 +1,131 @@
 ---
 ---
+
 nav {
-    background-color: #3A3F44 !important;
-	border-radius: 0 !important;
+    background-color: #3a3f44 !important;
+    border-radius: 0 !important;
     z-index: 1000 !important;
     border: none !important;
     padding-top: 1px;
     height: 70px;
 }
 
-.nav-link{
+.nav-link {
     line-height: 32px;
 }
 
 .navbar-nav {
-	margin-right: 0 !important;
-	margin-left: 0 !important;
-}
-.camp-banner {
-	background-color: #222222;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 //Making the navbar sticky
-.fixed{
-	position:fixed;
-	width: 100%;
-	top: 0;
-	z-index: 10;
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
 //logo in the left corner
-.robotics-logo{
-	width: 69px;
-	height: 50px;
-	padding: 0;
-	margin: 10px;
+.robotics-logo {
+    width: 69px;
+    height: 50px;
+    padding: 0;
+    margin: 10px;
 }
 
 //classes for link buttons in navbar
 .link-button {
-	padding-top: 10px;
-	padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 0;
-    color:#999 !important;
+    color: #999 !important;
 }
 .link-button a {
     font-size: 115%;
     font-weight: 500;
-	width: inherit;
-	height: 50px;
+    width: inherit;
+    height: 50px;
 }
 .active {
-	background-color: black;
+    background-color: black;
 }
 .link-button:hover {
-	color:white !important;
+    color: white !important;
 }
 
 .social-icons a img {
     width: 50px !important;
     height: auto !important;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     -webkit-filter: invert(40%); /* Safari 6.0 - 9.0 */
     filter: invert(40%);
 }
 
-.social-icons a img:hover{
+.social-icons a img:hover {
     -webkit-filter: invert(0%); /* Safari 6.0 - 9.0 */
     filter: invert(0%);
 }
 //"Donate Online Here!" button
 #supportBtn {
-  width: 155px;
-  margin: 0;
-  height: 53px;
-  line-height: 41px;
-  display: flex;
-  align-items: center;
+    width: 155px;
+    margin: 0;
+    height: 53px;
+    line-height: 41px;
+    display: flex;
+    align-items: center;
 }
 
 .btn-text {
-  font-size: 115%;
-  font-weight: bold;
-  width: 100%;
+    font-size: 115%;
+    font-weight: bold;
+    width: 100%;
 }
-.button-container{
+.button-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .red-btn {
-  text-align: center;
-  border: none;
-  color: white;
-  background: #be2026 !important;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    text-align: center;
+    border: none;
+    color: white;
+    background: #be2026 !important;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .blue-btn {
-  text-align: center;
-  border: none;
-  color: white;
-  background: #2a397c !important;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+    text-align: center;
+    border: none;
+    color: white;
+    background: #2a397c !important;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .red-btn:hover {
-  color: white;
-  background-color: #2a397c !important;
+    color: white;
+    background-color: #2a397c !important;
 }
 
 .blue-btn:hover {
-  color: white;
-  background-color: #be2026 !important;
+    color: white;
+    background-color: #be2026 !important;
 }
 
 //Button for showing pages in compact view
 .navbar-toggler {
     margin-right: 10px;
-	height: 45px;
-	width: 50px;
+    height: 45px;
+    width: 50px;
 }
 
 // The Modal (background)
@@ -142,8 +140,8 @@ nav {
     overflow: auto;
 
     // Translucent black and fallback colour w/o alpha
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 
     // Center child
     display: none; // Set to flex later in JS
@@ -153,11 +151,11 @@ nav {
 
 // Modal Content
 .modal-content {
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     background-color: #fefefe;
     padding: 0;
     width: 60%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -166,15 +164,26 @@ nav {
 
 // Add Animation
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
-
 
 // The sponshorship modal's close button
 .close {
@@ -183,7 +192,8 @@ nav {
     font-weight: bold;
     padding: 0 1em !important;
 }
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -197,7 +207,7 @@ nav {
     display: grid;
     grid-template-columns: max-content min-content;
     align-items: center;
-    
+
     // Override whatever a page may set for h2
     h2 {
         padding: 0;
@@ -206,15 +216,15 @@ nav {
 }
 
 .modal-body {
-	height: 25%;
-	color: black;
+    height: 25%;
+    color: black;
 }
 .specifier-container {
-	padding-left: 0;
-	padding-right: 0;
-	position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
     margin-bottom: 10px;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
@@ -224,12 +234,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-	h3 {
-		margin-top: 35px;
+    h3 {
+        margin-top: 35px;
     }
 
     p {
@@ -238,37 +248,36 @@ nav {
         width: 100%;
     }
 
-	a {
-		width: 207px;
-		margin-top: 25px;
+    a {
+        width: 207px;
+        margin-top: 25px;
         margin-left: 25%;
-		margin-right: 25%;
-		margin-bottom: 35px;
-		height: 45px;
-		padding-top: 12.5px;
+        margin-right: 25%;
+        margin-bottom: 35px;
+        height: 45px;
+        padding-top: 12.5px;
         padding-bottom: 12.5px;
-        
-	}
+    }
 }
 
-.banner{
+.banner {
     background-color: #2a397c;
     color: white;
     text-align: left;
     position: fixed;
-    width:100%;
+    width: 100%;
     z-index: 1000 !important;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
     padding-top: 7.5px;
 }
 
-.banner:hover{
+.banner:hover {
     -webkit-filter: brightness(150%) !important; /* Safari 6.0 - 9.0 */
     filter: brightness(150%) !important;
 }
 .vertical-line {
-	border-left: 2px solid lightgrey;
+    border-left: 2px solid lightgrey;
     height: 90%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -279,9 +288,9 @@ nav {
     width: 0;
 }
 .check-info-box {
-	margin-left: 10%;
-	margin-right: 10%;
-	width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
     text-align: center;
 
     .amazon-smile {
@@ -297,7 +306,7 @@ nav {
     }
 }
 
-h2{
+h2 {
     padding: 1%;
 }
 @media (max-width: 1247px) {
@@ -307,9 +316,9 @@ h2{
     }
 }
 
-@media(max-width: 1030px){
-    .social-icons{
-        display:none;
+@media (max-width: 1030px) {
+    .social-icons {
+        display: none;
     }
     .link-button {
         text-align: center;
@@ -317,21 +326,20 @@ h2{
 }
 
 @media (max-width: 825px) {
-
     nav {
         min-height: 70px;
         height: inherit;
     }
-   
+
     .navbar-nav {
         float: none !important;
         margin: 7.5px -15px;
     }
-    
-    .navbar-nav>li {
+
+    .navbar-nav > li {
         float: none;
     }
-    .navbar-nav>li>a {
+    .navbar-nav > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
@@ -340,7 +348,7 @@ h2{
         margin: 15px 0;
     }
     .navbar-collapse.collapse.in {
-        display:block !important;
+        display: block !important;
         background-color: #fff !important;
     }
     // .collapsing {
@@ -349,31 +357,31 @@ h2{
 
     // Adjust the modal for the new view
     .modal-content {
-    	width: 80%;
+        width: 80%;
     }
-	.vertical-line {
-	  	display: none;
-	}
-	.specifier-container {
-	  	grid-template-columns: none;
+    .vertical-line {
+        display: none;
+    }
+    .specifier-container {
+        grid-template-columns: none;
         grid-template-rows: 1fr 1fr;
-	}
-	.specifier-box {
-		width: 80%;
-		margin-left: 10%;
-		margin-right: 10%;
-		padding-top: 0;
-		padding-bottom: 0;
+    }
+    .specifier-box {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 0;
+        padding-bottom: 0;
         h3 {
             height: inherit;
         }
-	}
-	.check-info-box {
+    }
+    .check-info-box {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
     }
-    
+
     .modal {
         align-items: flex-start;
     }
@@ -398,11 +406,11 @@ h2{
 }
 
 h6 {
-    padding-left:25px;
+    padding-left: 25px;
 }
 
 @media (max-width: 825px) {
-	.page-content {
-		margin-top: 31px;
-	}
+    .page-content {
+        margin-top: 31px;
+    }
 }

@@ -1,22 +1,25 @@
 ---
 ---
-body{
+
+body {
     padding-top: 70px;
     width: 100%;
 }
 
-div#preload { display: none; }
-
-.left-text{
-    width:100% !important;
-    margin:auto !important;
-    text-shadow: 4px 4px 8px black;
-    padding:10% !important;
+div#preload {
+    display: none;
 }
 
-.parallax{
+.left-text {
+    width: 100% !important;
+    margin: auto !important;
+    text-shadow: 4px 4px 8px black;
+    padding: 10% !important;
+}
+
+.parallax {
     /* Set a specific height */
-    min-height: 100%; 
+    min-height: 100%;
     padding: 5%;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -25,42 +28,42 @@ div#preload { display: none; }
     background-size: cover;
 }
 
-.btn-primary{
-   background-color: #2a397c !important;
-   border-color: #2a397c !important;
-   -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  font-size: 1em !important;
-  text-shadow: none;
+.btn-primary {
+    background-color: #2a397c !important;
+    border-color: #2a397c !important;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-size: 1em !important;
+    text-shadow: none;
 }
 
-.btn-primary:hover{
-   background-color: #3d50af !important;
-   border-color: #3d50af !important;
-   text-shadow: none;
+.btn-primary:hover {
+    background-color: #3d50af !important;
+    border-color: #3d50af !important;
+    text-shadow: none;
 }
 
-p{
-    font-size:1.5em !important;
+p {
+    font-size: 1.5em !important;
 }
 
-.col-lg-6{
+.col-lg-6 {
     padding: 5% 5%;
 }
 
-.col-lg-7{
-    padding:5% 4% 2%;
+.col-lg-7 {
+    padding: 5% 4% 2%;
 }
 
-.col-lg-5{
-    padding-top:5%;
+.col-lg-5 {
+    padding-top: 5%;
 }
 
-.row{
-    margin:0 !important;
+.row {
+    margin: 0 !important;
     display: flex;
     align-items: center;
 }
@@ -73,7 +76,7 @@ h2 {
     font-size: 2.5rem;
 }
 
-@media(max-width:815px){
+@media (max-width: 815px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -82,19 +85,19 @@ h2 {
         font-size: 2rem;
     }
 
-    .parallax{
+    .parallax {
         background-attachment: local;
     }
 
-    p{
-        font-size:1em !important;
+    p {
+        font-size: 1em !important;
     }
 
-    .left-text{
-        width:100% !important;
+    .left-text {
+        width: 100% !important;
     }
 
-    .btn-primary{
+    .btn-primary {
         font-size: 1em !important;
     }
 }

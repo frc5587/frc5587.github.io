@@ -3,80 +3,80 @@
 
 // Styling for container around all content
 .content {
-  padding-top: 5px;
-  padding-bottom: 15px;
-  text-align: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
 // Spacing for text
 .sponsor-subtitle {
-  padding-top: 15px;
-  padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 .food-donor-title {
-  margin-top: 40px;
-  margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 // Custom hr for seperation of sections
 .title-hr,
 .sponsor-type-divider {
-  border-color: #393e44;
+    border-color: #393e44;
 }
 .title-hr {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
 }
 .sponsor-type-divider {
-  margin-left: 20%;
-  margin-right: 20%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 // Table format used for all sections that display logos
 .sponsor-table {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 // Styling specific to any logo table
 .grant-table {
-  width: 100%;
-  a {
-    margin: 10px 25px;
-    width: 27.5%;
-    img {
-      // Only fill size of <a> as opposed to normal size of image
-      width: 100%;
+    width: 100%;
+    a {
+        margin: 10px 25px;
+        width: 27.5%;
+        img {
+            // Only fill size of <a> as opposed to normal size of image
+            width: 100%;
+        }
     }
-  }
 }
 .food-donor-table {
-  width: 70%;
-  margin: auto;
-  a {
-    margin: 10px 25px;
-    width: 25%;
-    img {
-      // Only fill size of <a> as opposed to normal size of image
-      width: 100%;
+    width: 70%;
+    margin: auto;
+    a {
+        margin: 10px 25px;
+        width: 25%;
+        img {
+            // Only fill size of <a> as opposed to normal size of image
+            width: 100%;
+        }
     }
-  }
 }
 
 @media (max-width: 690px) {
-  .food-donor-table {
-    width: 100%;
-  }
-
-  .sponsor-title {
-    font-size: 32px;
-    a {
-      font-size: 22px;
+    .food-donor-table {
+        width: 100%;
     }
-  }
+
+    .sponsor-title {
+        font-size: 32px;
+        a {
+            font-size: 22px;
+        }
+    }
 }

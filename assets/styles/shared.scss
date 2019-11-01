@@ -1,22 +1,23 @@
 ---
 ---
+
 body {
-    background-color: #272B30;
+    background-color: #272b30;
     color: white;
     padding-top: 70px;
     width: 100%;
 }
 
 a {
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 //Clearfix, which fixes the issues with the bounding-boxes of images
 .clearfix:after {
-   content: ""; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+    content: ""; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
