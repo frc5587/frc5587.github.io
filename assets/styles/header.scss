@@ -1,11 +1,11 @@
 ---
 ---
 nav {
+    background-color: #3A3F44 !important;
 	border-radius: 0 !important;
     z-index: 1000 !important;
     border: none !important;
     padding-top: 1px;
-    // min-height: 70px;
     height: 70px;
 }
 
@@ -17,7 +17,7 @@ nav {
 	margin-right: 0 !important;
 	margin-left: 0 !important;
 }
-.container-fluid {
+.camp-banner {
 	background-color: #222222;
 }
 
@@ -401,6 +401,8 @@ h6 {
     padding-left:25px;
 }
 
-.new-background {
-    background-color: #212121 !important;
+@media (max-width: 825px) {
+	.page-content {
+		margin-top: 31px;
+	}
 }
