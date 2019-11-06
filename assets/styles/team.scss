@@ -1,24 +1,32 @@
 ---
 ---
-.content {
-  padding-top: 100px;
+
+.row {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #393e44;
+    text-align: center;
 }
 
-.row{
-	margin-bottom: 5%;
-	padding-bottom: 5%;
-	border-bottom: 1px solid white; 
+h3 {
+    text-align: center !important;
 }
 
-h3{
-	text-align: center !important;
+.team-photo {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.jumbotron{
-	background-image: url("/assets/images/Team/team.jpg") !important;
-	background-size: 100% auto;
-	padding: 150px !important;
-	-webkit-filter: brightness(50%) !important; /* Safari 6.0 - 9.0 */
-  filter: brightness(50%) !important;
+@media (max-width: 1000px) {
+    .row {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: none;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .col-lg-4 {
+        margin-bottom: 15px;
+    }
 }
-

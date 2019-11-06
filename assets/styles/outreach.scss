@@ -1,55 +1,65 @@
 ---
 ---
+
 //Font presets
 
-body{
-  padding-top: 80px;
+body {
+    padding-top: 80px;
 }
 
 .mainHeader {
-  font-size: 30px;
+    font-size: 30px;
 }
 
-.card{
-  border: none;
-  border-radius: 0px !important;
-  background-color:rgba(0,0,0,0);  
-  color:white !important;
+.card {
+    border: none;
+    border-radius: 0px !important;
+    background-color: rgba(0, 0, 0, 0);
+    color: white !important;
 }
 
 .content {
-  // color:black;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  position: relative;
+    // color:black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    position: relative;
 }
 
-.container { 
-  padding-top: 30px !important; 
+.container {
+    padding-top: 30px !important;
 }
 
-.list-unstyled{
-  color:black;
+.list-unstyled {
+    color: black;
 }
 
-@media (max-width: 576px) {
-  
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.outreach-column {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 @media (max-width: 461px) {
-  .mainHeader{
-    font-size: 30px;
-  }
+    .mainHeader {
+        font-size: 30px;
+    }
 }
 
-@media (max-width: 815px){
-  .removeWidget{
-    display:none;
-  }
+@media (max-width: 575px) {
+    .outreach-column {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
-.image{
-  width: 100%;
-  height: auto;
+@media (max-width: 815px) {
+    .removeWidget {
+        display: none;
+    }
 }
-
