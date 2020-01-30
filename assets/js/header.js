@@ -4,7 +4,8 @@ var collapseButton = document.getElementsByClassName("navbar-toggle")[0];
 
 // Modal components
 var modal = document.getElementById("sponsor-modal"); // Sponsorship modal
-var btn = document.getElementById("supportBtn"); // Button that opens the modal
+//var btn = document.getElementById("supportBtn"); // Button that opens the modal
+var sponsorshipButtons = [document.getElementById("supportBtn"), document.getElementById("indexBtn")]
 var span = document.getElementsByClassName("close")[0]; // <span> element that closes the modal
 
 function closeModal() {
@@ -21,9 +22,14 @@ function openModal() {
 }
 
 // When the user clicks the button, open the modal
-btn.onclick = () => {
-  modal.style.display == "flex" ? closeModal() : openModal();
-};
+function toggleModal(btn){
+    modal.style.display == "flex" ? closeModal() : openModal();
+}
+
+// for (let btn of sponsorshipButtons) {
+//   btn.onclick = () => {
+//     modal.style.display == "flex" ? closeModal() : openModal();
+// };
 // When the user clicks on <span> (x), close the modal
 span.onclick = () => {
   closeModal();
