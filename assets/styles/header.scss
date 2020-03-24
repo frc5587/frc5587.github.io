@@ -4,7 +4,7 @@
 nav {
     background-color: #3a3f44 !important;
     border-radius: 0 !important;
-    z-index: 1000 !important;
+    z-index: 10000 !important;
     border: none !important;
     padding-top: 1px;
     height: 70px;
@@ -266,16 +266,16 @@ nav {
     text-align: left;
     position: fixed;
     width: 100%;
-    z-index: 1000 !important;
+    z-index: 100 !important;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    padding-top: 7.5px;
+    padding-top: 40px;
 }
 
 .banner:hover {
-    -webkit-filter: brightness(150%) !important; /* Safari 6.0 - 9.0 */
-    filter: brightness(150%) !important;
+    background-color: #be2026;
 }
+
 .vertical-line {
     border-left: 2px solid lightgrey;
     height: 90%;
@@ -386,6 +386,9 @@ h2 {
     }
     .modal-body {
         padding: 0;
+    }
+    .banner{
+        padding-top:55px;
     }
 }
 
