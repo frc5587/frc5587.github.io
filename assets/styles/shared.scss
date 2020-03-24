@@ -8,6 +8,12 @@ body {
     width: 100%;
 }
 
+@media (max-width: 825px) {
+    body{
+        padding-top:125px;
+    }
+} 
+
 a {
     -webkit-transition: 0.3s;
     transition: 0.3s;
