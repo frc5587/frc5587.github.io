@@ -1,7 +1,7 @@
 ---
 ---
 
-.blurb {
+.title {
     text-align: center;
     width: 75%;
     margin: 70px auto 30px auto;
@@ -11,22 +11,32 @@ p {
     font-size: 1.5em;
 }
 
-.camp-featurette-image {
-    width: 100% !important;
-    opacity: .6;
+.image{
+    width:75%; 
+    padding-left: 25%; 
+    -webkit-filter: brightness(75%);
 }
 
 .centred {
     text-align: center;
 }
 
-.photo {
-    margin-bottom: 30px;
-}
-
 // Mobile layout
 @media (max-width: 500px) {
-    .blurb {
+    .title {
         width: 90%;
+        font-size: 1.5em !important;
+        padding-top: 5%;
+    }
+
+    .image{
+        padding:5%;
+        width:100%;
+    }
+
+    p{
+        font-size: 1em;
+        padding-left:5%;
+
     }
 }
