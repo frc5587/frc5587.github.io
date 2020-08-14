@@ -97,6 +97,11 @@ nav {
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+    
+    &:hover {
+        color: white;
+        background-color: #cf585c !important;
+    }
 }
 
 .blue-btn {
@@ -109,16 +114,11 @@ nav {
     -moz-transition: 0.5s;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-}
 
-.red-btn:hover {
-    color: white;
-    background-color: #2a397c !important;
-}
-
-.blue-btn:hover {
-    color: white;
-    background-color: #be2026 !important;
+    &:hover {
+        color: white;
+        background-color: #be2026 !important;
+    }
 }
 
 //Button for showing pages in compact view
@@ -271,10 +271,10 @@ nav {
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding-top: 40px;
-}
 
-.banner:hover {
-    background-color: #be2026;
+    &:hover {
+        background-color: #3d50af;
+    }
 }
 
 .vertical-line {

@@ -38,12 +38,11 @@ div#preload {
     transition: 0.5s;
     font-size: 1em !important;
     text-shadow: none;
-}
-
-.btn-primary:hover {
-    background-color: #3d50af !important;
-    border-color: #3d50af !important;
-    text-shadow: none;
+    &:hover {
+        background-color: #3d50af !important;
+        border-color: #3d50af !important;
+        text-shadow: none;
+    }
 }
 
 p {
