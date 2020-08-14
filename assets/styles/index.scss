@@ -1,20 +1,11 @@
 ---
 ---
 
-body {
-    padding-top: 70px;
-    width: 100%;
-}
-
-div#preload {
-    display: none;
-}
-
 .left-text {
-    width: 100% !important;
-    margin: auto !important;
+    width: 100%;
+    margin: auto;
     text-shadow: 4px 4px 8px black;
-    padding: 10% !important;
+    padding: 10%;
 }
 
 .parallax {
@@ -28,41 +19,17 @@ div#preload {
     background-size: cover;
 }
 
-.btn-primary {
-    background-color: #2a397c !important;
-    border-color: #2a397c !important;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    font-size: 1em !important;
-    text-shadow: none;
-    &:hover {
-        background-color: #3d50af !important;
-        border-color: #3d50af !important;
-        text-shadow: none;
-    }
-}
 
 p {
-    font-size: 1.5em !important;
+    font-size: 1.5em;
 }
 
 .col-lg-6 {
     padding: 5% 5%;
 }
 
-.col-lg-7 {
-    padding: 5% 4% 2%;
-}
-
-.col-lg-5 {
-    padding-top: 5%;
-}
-
 .row {
-    margin: 0 !important;
+    margin: 0;
     display: flex;
     align-items: center;
 }
@@ -89,14 +56,10 @@ h2 {
     }
 
     p {
-        font-size: 1em !important;
-    }
-
-    .left-text {
-        width: 100% !important;
+        font-size: 1em;
     }
 
     .btn-primary {
-        font-size: 1em !important;
+        font-size: 1em;
     }
 }

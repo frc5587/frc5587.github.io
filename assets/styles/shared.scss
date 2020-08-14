@@ -1,6 +1,11 @@
 ---
 ---
 
+$TR-blue: #2a397c;
+$light-blue: #3d50af;
+$TR-red: #be2026;
+$light-red: #cf585c;
+
 body {
     background-color: #272b30;
     color: white;
@@ -15,15 +20,32 @@ body {
 } 
 
 a {
-    -webkit-transition: 0.3s;
     transition: 0.3s;
+}
+
+div#preload {
+    display: none;
 }
 
 //Clearfix, which fixes the issues with the bounding-boxes of images
 .clearfix:after {
-    content: ""; /* Older browser do not support empty content */
+    content: ""; /* Older browsers do not support empty content */
     visibility: hidden;
     display: block;
     height: 0;
     clear: both;
+}
+
+
+.btn-primary {
+    background-color: $TR-blue;
+    border-color: $TR-blue;
+    transition: 0.5s;
+    font-size: 1em;
+    text-shadow: none;
+    &:hover {
+        background-color: $light-blue;
+        border-color: $light-blue;
+        text-shadow: none;
+    }
 }
