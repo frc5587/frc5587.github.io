@@ -36,16 +36,34 @@ div#preload {
     clear: both;
 }
 
-
-.btn-primary {
-    background-color: $TR-blue;
-    border-color: $TR-blue;
-    transition: 0.5s;
-    font-size: 1em;
+.btn {
+    padding: 13px 30px;
     text-shadow: none;
+    text-align: center;
+    border: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.btn-red {
+    background: $TR-red;
+
+    &:hover {
+        background-color: $light-red;
+    }
+}
+
+.btn-blue {
+    background: $TR-blue;
+
     &:hover {
         background-color: $light-blue;
-        border-color: $light-blue;
-        text-shadow: none;
     }
+}
+
+
+.btn-text {
+    font-size: 115%;
+    font-weight: bold;
+    width: 100%;
 }
