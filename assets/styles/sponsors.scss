@@ -1,5 +1,21 @@
 ---
 ---
+@import "shared";
+
+h2 a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #007BFF;
+    &:hover {
+        text-decoration: underline;
+        color: #003cff;
+    }
+}
+
+hr {
+    border-top: 1.5px solid white;
+    background-color: white;
+}
 
 // Styling for container around all content
 .content {
@@ -8,21 +24,20 @@
     text-align: center;
 }
 
+.sponsor-title {
+    font-size: 2.4rem;
+}
 // Spacing for text
 .sponsor-subtitle {
     padding-top: 15px;
     padding-bottom: 10px;
+    font-size: 2rem;
 }
 .food-donor-title {
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-// Custom hr for seperation of sections
-.title-hr,
-.sponsor-type-divider {
-    border-color: #393e44;
-}
 .title-hr {
     margin-left: 10%;
     margin-right: 10%;

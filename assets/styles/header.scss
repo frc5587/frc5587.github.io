@@ -1,5 +1,6 @@
 ---
 ---
+@import "shared";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 header {
@@ -8,16 +9,6 @@ header {
     font-family: Montserrat;
 }
 
-.navbar {
-    background-color: #3a3f44;
-    overflow: auto;
-    padding: 8px 16px;
-    width: 100%;
-    align-items: center;
-    box-sizing: border-box;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
 
 #roboticsLogo {
     float: left;
@@ -29,6 +20,17 @@ header {
 
 #supportBtn {
     display: block;
+}
+
+.navbar {
+    background-color: #3a3f44;
+    overflow: auto;
+    padding: 8px 16px;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .fixed-top {
@@ -51,6 +53,20 @@ ul.navbar-nav {
     list-style-type: none;
     align-items: center;
     justify-content: left;
+}
+
+.banner {
+    @extend .btn; 
+    @extend .btn-blue-simple;
+    position: relative;
+    top: 5px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    font-size: 120%;
+    margin: auto;
+    width: 99%;
+    font-weight: bold;
 }
 
 .social-icons,

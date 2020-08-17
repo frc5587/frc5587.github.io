@@ -1,5 +1,10 @@
 ---
 ---
+@import "shared";
+
+body {
+    padding-top: 50px;
+}
 
 .left-text {
     width: 80%;
@@ -19,27 +24,15 @@
     background-size: cover;
 }
 
-
-p {
-    font-size: 1.5em;
-}
-
 .col-lg-6 {
-    padding: 5% 5%;
+    width: 50%;
+    padding: 5%;
 }
 
 .row {
     margin: 0;
     display: flex;
     align-items: center;
-}
-
-h1 {
-    font-size: 3.5rem;
-}
-
-h2 {
-    font-size: 2.5rem;
 }
 
 @media (max-width: 815px) {
@@ -51,15 +44,15 @@ h2 {
         font-size: 2rem;
     }
 
-    .parallax {
-        background-attachment: local;
-    }
-
     p {
         font-size: 1em;
     }
 
-    .btn-primary {
+    .parallax {
+        background-attachment: local;
+    }
+
+    .btn-primary { // TODO
         font-size: 1em;
     }
 }

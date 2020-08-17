@@ -29,3 +29,6 @@ exclude:
   - image_cleaner.py
 include:
   - _pages
+
+sass:
+  sass_dir: assets/styles
