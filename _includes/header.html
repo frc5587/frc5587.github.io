@@ -1,10 +1,9 @@
-<header class="site-header" role="banner">
-  <nav class="navbar navbar-dark fixed navbar-expand-md">
-    <span class="nav navbar-nav  align-middle"><a href="/"><img class="robotics-logo"
-          src="/assets/images/robotics_logo.svg"></a></span>
+<header class="fixed-top" role="banner">
+  <nav class="navbar">
+    <a href="/"><img id="roboticsLogo" src="/assets/images/robotics_logo.svg"></a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header">&#x2630;</button>
-    <div class="collapse navbar-collapse justify-content-between" id="header">
-      <ul class="nav navbar-nav">
+    <div class="navbar-collapse" id="header">
+      <ul class="navbar-nav" id="navigation">
         <li class="link-button"><a href="/" class="nav-link">Home</a></li>
         <li class="link-button"><a href="/sponsors" class="nav-link">Sponsors</a></li>
         <li class="link-button"><a href="/robots" class="nav-link">Robots</a></li>
@@ -13,53 +12,53 @@
         <li class="link-button"><a href="/virtualcamp" class="nav-link">Camp</a></li>
       </ul>
 
-      <ul class="nav navbar-nav">
+      <ul class="navbar-nav" id="socialMedia">
         <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://twitter.com/frc5587" target="_blank" rel="noopener"
-            aria-label="twitter">
+          <a href="https://twitter.com/frc5587" target="_blank" rel="noopener" aria-label="twitter">
             <img src="/assets/images/Social-Icons/twitter.png" alt="twitter">
             <title>Twitter</title>
           </a>
         </li>
 
         <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://www.instagram.com/frc5587/" target="_blank" rel="noopener"
-            aria-label="instagram">
+          <a href="https://www.instagram.com/frc5587/" target="_blank" rel="noopener" aria-label="instagram">
             <img src="/assets/images/Social-Icons/instagram.png" alt="twitter">
             <title>Instagram</title>
           </a>
         </li>
 
         <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://www.facebook.com/frc5587/" target="_blank" rel="noopener"
-            aria-label="facebook">
+          <a href="https://www.facebook.com/frc5587/" target="_blank" rel="noopener" aria-label="facebook">
             <img src="/assets/images/Social-Icons/facebook.png" alt="facebook">
             <title>Facebook</title>
           </a>
         </li>
-
+        
         <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://github.com/frc5587" target="_blank" rel="noopener"
-            aria-label="facebook">
+          <a href="https://github.com/frc5587" target="_blank" rel="noopener" aria-label="facebook">
             <img src="/assets/images/Social-Icons/github.png" alt="github">
             <title>Github</title>
           </a>
         </li>
-
-        <li class="nav navbar-nav button-container">
-          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleModal()"><span class="btn-text">Support Us</span></a>
+        
+        <li class="nav-item social-icons">
+          <a href="https://www.youtube.com/channel/UC8N-t5Xb14t3yVvV6SPiSxw/featured" target="_blank" rel="noopener"
+            aria-label="youtube">
+            <img src="/assets/images/Social-Icons/youtube.png" alt="youtube">
+            <title>Facebook</title>
+          </a>
+        </li>
+        
+        <li class="navbar-nav btn-container">
+          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleModal()">Support Us</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <a href="/virtualoutreach">
-    <nav class="fixed banner">
-      <div class="banner">
-        <h5 style="padding-left:40px"> COVID-19 Update: Virtual Outreach and Camp Cancellations</h5>
-      </div>
-    </nav>
-  </a>
+  <nav>
+    <a class="banner" href="/virtualoutreach">COVID-19 Update: Virtual Outreach and Camp Cancellations</a>
+  </nav>
 </header>
 
 <!-- Camp Banner   -->
