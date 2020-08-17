@@ -2,21 +2,6 @@
 ---
 @import "shared";
 
-h2 a {
-    text-decoration: none;
-    transition: 0.5s;
-    color: #007BFF;
-    &:hover {
-        text-decoration: underline;
-        color: #003cff;
-    }
-}
-
-hr {
-    border-top: 1.5px solid white;
-    background-color: white;
-}
-
 // Styling for container around all content
 .content {
     padding-top: 5px;

@@ -2,25 +2,47 @@
 ---
 @import "shared"; 
 
-body {
-    padding-top: 0;
+h2 {
+    font-size: 32px;
+    padding: 8px;
+    margin: 0 0 8px;
 }
 
-.container {
-    padding-top: 60px !important;
+p {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+hr {
+    border-top: 1px;
+}
+
+.text-muted {
+    color: #6c757d;
 }
 
 .row {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.featurette-divider {
-    border-color: #6c757d;
+.text {
+    width: 700px;
+    padding: 0 15px;
+}
+
+.img {
+    width: 450px;
+    padding: 0 15px;
 }
 
 .featurette-image {
-    width: 100% !important;
+    width: 100%;
+}
+
+.container {
+    padding: 0 60px;
 }
