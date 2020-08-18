@@ -1,3 +1,4 @@
+//= require simplebar
 // Get the collapsible portion of the navbar and collapse button
 var collapsibleRegion = document.getElementById("header");
 var collapseButton = document.getElementsByClassName("navbar-toggle")[0];

@@ -51,10 +51,11 @@ hr {
     background-color: white;
 }
 
-h2 a, p a {
+h2 a,
+p a {
     text-decoration: none;
     transition: 0.5s;
-    color: #007BFF;
+    color: #007bff;
     &:hover {
         text-decoration: underline;
         color: #003cff;
