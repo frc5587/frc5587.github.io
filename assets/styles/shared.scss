@@ -71,7 +71,17 @@ p a {
     clear: both;
 }
 
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
 .btn {
+    line-height: initial;
+    display: inline-block;
     padding: 16px 35px;
     text-shadow: none;
     text-align: center;
@@ -82,11 +92,17 @@ p a {
 
     border-radius: 100px;
     cursor: pointer;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .btn-container {
     position: relative;
     z-index: 1;
+    display: inline-block;
 }
 
 .btn-red {

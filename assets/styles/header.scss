@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "shared";
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
@@ -9,7 +10,6 @@ header {
     font-family: Montserrat;
 }
 
-
 #roboticsLogo {
     float: left;
     width: 4.5rem;
@@ -18,8 +18,8 @@ header {
     margin: 2px 18px 2px 10px;
 }
 
-#supportBtn {
-    display: block;
+#supportBtnContainer {
+    right: 0px;
 }
 
 .navbar {
@@ -31,6 +31,8 @@ header {
     box-sizing: border-box;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    transition: 1s;
+    overflow: hidden;
 }
 
 .fixed-top {
@@ -40,23 +42,31 @@ header {
 
 .navbar-collapse {
     margin-left: 18px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     font-weight: 600;
+    justify-content: space-between;
+    justify-items: right;
+
+    &,
+    .button-group {
+        position: relative;
+        display: flex;
+        vertical-align: middle;
+    }
 }
 
 ul.navbar-nav {
-    display: flex;
+    display: inline-block;
     padding: 0px;
     margin: 0px;
     list-style-type: none;
     align-items: center;
     justify-content: left;
+    overflow: auto;
+    flex-wrap: nowrap;
 }
 
 .banner {
-    @extend .btn; 
+    @extend .btn;
     @extend .btn-blue-simple;
     position: relative;
     top: 5px;
@@ -78,7 +88,7 @@ ul.navbar-nav {
         text-decoration: none;
         font-size: 120%;
         display: flex;
-        transition: .3s;
+        transition: 0.3s;
         opacity: 0.5;
         padding: 0 8px;
 
@@ -190,18 +200,116 @@ ul.navbar-nav {
     }
 }
 
-@media (max-width: 1030px) {
-    .social-icons {
-        display: none;
+.navbar-toggler {
+    cursor: pointer;
+    display: none;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    height: 45px;
+    width: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+    float: right;
+    margin-right: 10px;
+
+    &:hover {
+        color: white;
     }
 }
 
-.navbar-toggler:not(:disabled):not(.disabled) {
-    cursor: pointer;
+@media (max-width: 1204px) {
+    .social-icons {
+        a {
+            padding: 0 4px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    #socialMedia {
+        width: 120px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
-@media (min-width: 768px) {
-    .navbar-toggler {
+@media (max-width: 926px) {
+    #navigation,
+    #supportBtn {
         display: none;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        float: right;
+    }
+
+    .show {
+        display: block;
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+        overflow: hidden;
+        // transform: scaleY(0.5);
+        // transition: height 1s;
+        animation: expand 0.3s ease-out;
+
+        #navigation {
+            overflow: hidden;
+            width: 100%;
+            display: block;
+
+            .link-button {
+                width: 100%;
+                display: block;
+                a {
+                    justify-content: center;
+                }
+            }
+        }
+        #socialMedia {
+            width: 200px;
+            padding: 12px;
+        }
+        #supportBtn {
+            margin: 12px;
+            display: inline-block;
+        }
+        .button-group {
+            margin: auto;
+            width: 250px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@keyframes expand {
+    from {
+        height: 0;
+    }
+    to {
+        height: 412px;
+    }
+}
+
+@media (max-width: 650px) {
+    .banner {
+        text-align: center;
+    }
+}
+
+@media (max-width: 405px) {
+    .banner {
+        font-size: 100%;
     }
 }
