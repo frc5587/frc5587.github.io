@@ -1,9 +1,24 @@
 ---
 ---
+
 @import "shared";
 
 body {
     padding-top: 50px;
+}
+
+h1,
+h2,
+p {
+    margin: 0 0 16px 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.btn-container {
+    margin: 0;
 }
 
 .left-text {
@@ -35,6 +50,16 @@ body {
     align-items: center;
 }
 
+@media (max-width: 992px) {
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+    }
+}
+
 @media (max-width: 815px) {
     h1 {
         font-size: 2.5rem;
@@ -52,7 +77,13 @@ body {
         background-attachment: local;
     }
 
-    .btn-primary { // TODO
+    .btn-primary {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 651px) {
+    .wrapper .parallax:first-child {
+        padding-top: 70px;
     }
 }

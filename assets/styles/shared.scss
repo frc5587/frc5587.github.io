@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 $TR-blue: #2a397c;
 $light-blue: #3d50af;
@@ -52,6 +52,7 @@ hr {
 }
 
 h2 a,
+h3 a,
 p a {
     text-decoration: none;
     transition: 0.5s;
@@ -60,6 +61,14 @@ p a {
         text-decoration: underline;
         color: #003cff;
     }
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+img {
+    border-radius: 10px;
 }
 
 //Clearfix, which fixes the issues with the bounding-boxes of images

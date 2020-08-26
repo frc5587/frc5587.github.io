@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "shared";
 
 //Font presets
@@ -8,19 +9,23 @@ body {
     padding-top: 80px;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 .mainHeader {
     font-size: 30px;
 }
 
-.centre{
+.centre {
     text-align: center;
 }
 
 .card {
     border: none;
-    border-radius: 0px !important;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 0);
-    color: white !important;
+    color: white;
 }
 
 .content {
@@ -31,7 +36,9 @@ body {
 }
 
 .container {
-    padding-top: 30px !important;
+    max-width: 1140px;
+    padding-top: 30px;
+    margin: 0 auto;
 }
 
 .list-unstyled {
@@ -49,9 +56,29 @@ body {
     margin-right: 15%;
 }
 
-@media (max-width: 461px) {
-    .mainHeader {
-        font-size: 30px;
+
+@media (max-width: 815px) {
+    .removeWidget {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+        max-width: 540px;
     }
 }
 
@@ -63,8 +90,8 @@ body {
     }
 }
 
-@media (max-width: 815px) {
-    .removeWidget {
-        display: none;
+@media (max-width: 461px) {
+    .mainHeader {
+        font-size: 30px;
     }
 }

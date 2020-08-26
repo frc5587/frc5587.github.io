@@ -1,8 +1,8 @@
 <header class="fixed-top" role="banner">
   <nav class="navbar">
     <a href="/"><img id="roboticsLogo" src="/assets/images/robotics_logo.svg"></a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header">&#x2630;</button>
-    <div class="navbar-collapse collapse" id="header">
+    <button type="button" class="navbar-toggler" onclick="toggleHeader()">&#x2630;</button>
+    <div class="navbar-collapse collapsed" id="header">
       <ul class="navbar-nav" id="navigation">
         <li class="link-button"><a href="/" class="nav-link">Home</a></li>
         <li class="link-button"><a href="/sponsors" class="nav-link">Sponsors</a></li>
@@ -81,18 +81,20 @@
       <span class="close">&#xD7;</span>
     </div>
 
+    <hr>
+
     <div class="modal-body">
       <div class="specifier-container clearfix">
         <div class="specifier-box">
           <h3>Are you an individual?</h3>
-          <div class="button-container">
+          <div class="btn-container">
             <a href="https://www.paypal.com/us/fundraiser/charity/2714254" target="_blank" class="btn btn-red"
               role="button">Donate with PayPal Here</a>
           </div>
         </div>
         <div class="specifier-box">
           <h3>Are you a corporate entity?</h3>
-          <div class="button-container">
+          <div class="btn-container">
             <a href="/sponsors" class="btn btn-red" role="button">Sponsor Us</a>
           </div>
         </div>

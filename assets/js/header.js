@@ -41,3 +41,21 @@ window.onclick = event => {
     closeModal();
   }
 };
+
+function toggleHeader() {
+  var classes = collapsibleRegion.classList
+  if (!classes.contains("collapsing")) {
+    if (classes.contains("collapsed")) {
+      classes.add("show")
+      classes.add("collapsing")
+
+      classes.remove("collapsed")
+    } else {
+      classes.add("collapsed")
+      classes.add("collapsing")
+
+      classes.remove("show")
+    }
+    setTimeout(() => classes.remove("collapsing"), 295)
+  }
+}
