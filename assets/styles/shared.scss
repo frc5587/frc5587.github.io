@@ -32,8 +32,12 @@ h2 {
     font-size: 2.8rem;
 }
 
+h3 {
+    font-size: 1.75rem;
+}
+
 p {
-    font-size: 1.6em;
+    font-size: 1.6rem;
     line-height: 1.8;
 }
 
@@ -55,7 +59,7 @@ h2 a,
 h3 a,
 p a {
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #007bff;
     &:hover {
         text-decoration: underline;
@@ -170,4 +174,29 @@ img {
     font-size: 115%;
     font-weight: bold;
     width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+        max-width: 540px;
+    }
 }

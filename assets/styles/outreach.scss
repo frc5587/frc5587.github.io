@@ -35,12 +35,6 @@ h1 {
     position: relative;
 }
 
-.container {
-    max-width: 1140px;
-    padding-top: 30px;
-    margin: 0 auto;
-}
-
 .list-unstyled {
     color: black;
 }
@@ -60,25 +54,6 @@ h1 {
 @media (max-width: 815px) {
     .removeWidget {
         display: none;
-    }
-}
-
-@media (max-width: 1200px) {
-    .container {
-        max-width: 960px;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        max-width: 720px;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding-top: 60px;
-        max-width: 540px;
     }
 }
 

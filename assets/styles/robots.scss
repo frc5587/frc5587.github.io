@@ -15,7 +15,7 @@ p {
 
 hr {
     border-top: 1px;
-    width: 1200px;
+    width: 100%;
 }
 
 img {
@@ -27,16 +27,19 @@ img {
 }
 
 .row {
-    // overflow: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+}
+
+.container :nth-child(4n+3) {
+    flex-direction: row-reverse;
 }
 
 .text {
@@ -49,18 +52,7 @@ img {
     padding: 0 15px;
 }
 
-
-@media (max-width: 1200px) {
-    .row, hr {
-        width: 960px
-    }
-}
-@media (max-width: 1000px) {
-    .row, hr {
-        width: 720px
-    }
-}
-@media (max-width: 760px) {
+@media (max-width: 766px) {
     .row {
         display: flex;
         flex-wrap: wrap;
@@ -68,13 +60,5 @@ img {
 
     .row, hr, .text, .img {
         width: 90%;
-    }
-
-    .container :nth-child(4n+3) {
-        flex-direction: column-reverse;
-
-        // .img {
-        //     float: left;
-        // }
     }
 }
