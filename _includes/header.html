@@ -1,66 +1,73 @@
-<header class="site-header" role="banner">
-  <nav class="navbar navbar-dark fixed navbar-expand-md">
-    <span class="nav navbar-nav  align-middle"><a href="/"><img class="robotics-logo"
-          src="/assets/images/robotics_logo.svg"></a></span>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#header">&#x2630;</button>
-    <div class="collapse navbar-collapse justify-content-between" id="header">
-      <ul class="nav navbar-nav">
-        <li class="link-button nav-item"><a href="/" class="nav-link">Home</a></li>
-        <li class="link-button nav-item"><a href="/sponsors" class="nav-link">Sponsors</a></li>
-        <li class="link-button nav-item"><a href="/robots" class="nav-link">Robots</a></li>
-        <li class="link-button nav-item"><a href="/outreach" class="nav-link">Outreach</a></li>
-        <li class="link-button nav-item"><a href="/team" class="nav-link">Team</a></li>
-        <li class="link-button nav-item"><a href="/virtualcamp" class="nav-link">Camp</a></li>
+<header class="fixed-top" role="banner">
+  <nav class="navbar">
+    <a href="/"><img id="roboticsLogo" src="/assets/images/robotics_logo.svg"></a>
+    <button type="button" class="navbar-toggler" onclick="toggleHeader()">&#x2630;</button>
+    <div class="navbar-collapse collapsed" id="header">
+      <ul class="navbar-nav" id="navigation">
+        <li class="link-button"><a href="/" class="nav-link">Home</a></li>
+        <li class="link-button"><a href="/sponsors" class="nav-link">Sponsors</a></li>
+        <li class="link-button"><a href="/robots" class="nav-link">Robots</a></li>
+        <li class="link-button"><a href="/outreach" class="nav-link">Outreach</a></li>
+        <li class="link-button"><a href="/team" class="nav-link">Team</a></li>
+        <li class="link-button"><a href="/virtualcamp" class="nav-link">Camp</a></li>
       </ul>
 
-      <ul class="nav navbar-nav">
-        <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://twitter.com/frc5587" target="_blank" rel="noopener"
-            aria-label="twitter">
-            <img src="/assets/images/Social-Icons/twitter.png" alt="twitter">
-            <title>Twitter</title>
-          </a>
-        </li>
-
-        <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://www.instagram.com/frc5587/" target="_blank" rel="noopener"
-            aria-label="instagram">
-            <img src="/assets/images/Social-Icons/instagram.png" alt="twitter">
-            <title>Instagram</title>
-          </a>
-        </li>
-
-        <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://www.facebook.com/frc5587/" target="_blank" rel="noopener"
-            aria-label="facebook">
-            <img src="/assets/images/Social-Icons/facebook.png" alt="facebook">
-            <title>Facebook</title>
-          </a>
-        </li>
-
-        <li class="nav-item social-icons">
-          <a class="nav-link p-2" href="https://github.com/frc5587" target="_blank" rel="noopener"
-            aria-label="facebook">
-            <img src="/assets/images/Social-Icons/github.png" alt="github">
-            <title>Github</title>
-          </a>
-        </li>
-
-        <li class="nav navbar-nav button-container">
-          <a id="supportBtn" class="red-btn btn btn-secondary" role="button" onclick="toggleModal()"><span class="btn-text">Support
-              Us</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      <div class="button-group">
+        <ul class="navbar-nav" id="socialMedia">
+          <li class="nav-item social-icons">
+            <a href="https://twitter.com/frc5587" target="_blank" rel="noopener" aria-label="twitter">
+              <img src="/assets/images/Social-Icons/twitter.png" alt="twitter">
+              <title>Twitter</title>
+            </a>
+          </li>
   
-  <a href="/virtualoutreach">
-  <nav class="fixed banner">
-    <div class="banner">
-    <h5 style="padding-left:40px"> COVID-19 Update: Virtual Outreach and Camp Cancelations</h5>
+          <li class="nav-item social-icons">
+            <a href="https://www.instagram.com/frc5587/" target="_blank" rel="noopener" aria-label="instagram">
+              <img src="/assets/images/Social-Icons/instagram.png" alt="twitter">
+              <title>Instagram</title>
+            </a>
+          </li>
+  
+          <li class="nav-item social-icons">
+            <a href="https://www.facebook.com/frc5587/" target="_blank" rel="noopener" aria-label="facebook">
+              <img src="/assets/images/Social-Icons/facebook.png" alt="facebook">
+              <title>Facebook</title>
+            </a>
+          </li>
+  
+          <li class="nav-item social-icons">
+            <a href="https://github.com/frc5587" target="_blank" rel="noopener" aria-label="github">
+              <img src="/assets/images/Social-Icons/github.png" alt="github">
+              <title>Github</title>
+            </a>
+          </li>
+  
+          <li class="nav-item social-icons">
+            <a href="https://www.youtube.com/channel/UC8N-t5Xb14t3yVvV6SPiSxw/featured" target="_blank" rel="noopener"
+              aria-label="youtube">
+              <img src="/assets/images/Social-Icons/youtube.png" alt="youtube">
+              <title>Youtube</title>
+            </a>
+          </li>
+  
+          <li class="nav-item social-icons">
+            <a href="mailto:tcwilliamsrobotics@gmail.com" target="_blank" rel="noopener" aria-label="email">
+              <img src="/assets/images/Social-Icons/email.png" alt="email">
+              <title>Email</title>
+            </a>
+          </li>
+        </ul>
+  
+        <div class="navbar-nav btn-container" id="supportBtnContainer">
+          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleModal()">Support Us</a>
+        </div>
+      </div>
     </div>
   </nav>
-  </a>
+
+  <nav>
+    <a class="banner" href="/virtualoutreach">COVID-19 Update: Virtual Outreach and Camp Cancellations</a>
+  </nav>
 </header>
 
 <!-- Camp Banner   -->
@@ -74,19 +81,21 @@
       <span class="close">&#xD7;</span>
     </div>
 
+    <hr class="divider">
+
     <div class="modal-body">
       <div class="specifier-container clearfix">
         <div class="specifier-box">
           <h3>Are you an individual?</h3>
-          <div class="button-container">
-            <a href="https://www.paypal.com/us/fundraiser/charity/2714254" target="_blank" class="btn red-btn"
+          <div class="btn-container">
+            <a href="https://www.paypal.com/us/fundraiser/charity/2714254" target="_blank" class="btn btn-red"
               role="button">Donate with PayPal Here</a>
           </div>
         </div>
         <div class="specifier-box">
           <h3>Are you a corporate entity?</h3>
-          <div class="button-container">
-            <a href="/sponsors" class="btn red-btn" role="button">Sponsor Us</a>
+          <div class="btn-container">
+            <a href="/sponsors" class="btn btn-red" role="button">Sponsor Us</a>
           </div>
         </div>
       </div>

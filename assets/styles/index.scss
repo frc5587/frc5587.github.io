@@ -1,20 +1,31 @@
 ---
 ---
 
+@import "shared";
+
 body {
-    padding-top: 70px;
-    width: 100%;
+    padding-top: 50px;
 }
 
-div#preload {
-    display: none;
+h1,
+h2,
+p {
+    margin: 0 0 16px 0;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.btn-container {
+    margin: 0;
 }
 
 .left-text {
-    width: 100% !important;
-    margin: auto !important;
+    width: 80%;
+    margin: auto;
     text-shadow: 4px 4px 8px black;
-    padding: 10% !important;
+    padding: 10%;
 }
 
 .parallax {
@@ -28,52 +39,25 @@ div#preload {
     background-size: cover;
 }
 
-.btn-primary {
-    background-color: #2a397c !important;
-    border-color: #2a397c !important;
-    -o-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    font-size: 1em !important;
-    text-shadow: none;
-}
-
-.btn-primary:hover {
-    background-color: #3d50af !important;
-    border-color: #3d50af !important;
-    text-shadow: none;
-}
-
-p {
-    font-size: 1.5em !important;
-}
-
 .col-lg-6 {
-    padding: 5% 5%;
-}
-
-.col-lg-7 {
-    padding: 5% 4% 2%;
-}
-
-.col-lg-5 {
-    padding-top: 5%;
+    width: 50%;
+    padding: 5%;
 }
 
 .row {
-    margin: 0 !important;
+    margin: 0;
     display: flex;
     align-items: center;
 }
 
-h1 {
-    font-size: 3.5rem;
-}
+@media (max-width: 992px) {
+    .row {
+        flex-wrap: wrap;
+    }
 
-h2 {
-    font-size: 2.5rem;
+    .col-lg-6 {
+        width: 100%;
+    }
 }
 
 @media (max-width: 815px) {
@@ -85,19 +69,21 @@ h2 {
         font-size: 2rem;
     }
 
+    p {
+        font-size: 1em;
+    }
+
     .parallax {
         background-attachment: local;
     }
 
-    p {
-        font-size: 1em !important;
-    }
-
-    .left-text {
-        width: 100% !important;
-    }
-
     .btn-primary {
-        font-size: 1em !important;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 651px) {
+    .wrapper .parallax:first-child {
+        padding-top: 70px;
     }
 }
