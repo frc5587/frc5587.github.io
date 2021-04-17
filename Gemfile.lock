@@ -255,6 +255,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  kramdown (>= 1.17.0)
   tzinfo-data
 
 RUBY VERSION
