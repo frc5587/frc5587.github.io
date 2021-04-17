@@ -27,6 +27,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - image_cleaner.py
+  - vendor
+
 include:
   - _pages
 
