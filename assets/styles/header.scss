@@ -3,8 +3,6 @@
 
 @import "shared";
 
-$nav-color: #3a3f44;
-
 header {
     width: 100%;
     z-index: 10;
@@ -25,7 +23,7 @@ header {
 }
 
 .navbar {
-    background-color: $nav-color;
+    background-color: $bg-color;
     overflow: auto;
     padding: 8px 16px;
     width: 100%;
@@ -150,7 +148,7 @@ ul.navbar-nav {
 .modal-content {
     color: white;
     border-radius: 10px;
-    background-color: $nav-color;
+    background-color: $bg-color;
     padding: 0;
     width: 60%;
     max-width: 800px;

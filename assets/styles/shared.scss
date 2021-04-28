@@ -5,9 +5,10 @@ $TR-blue: #2a397c;
 $light-blue: #3d50af;
 $TR-red: #be2026;
 $light-red: #cf585c;
+$bg-color: #272b30;
 
 body {
-    background-color: #272b30;
+    background-color: $bg-color;
     color: white;
     padding-top: 120px;
     margin: 0px;
