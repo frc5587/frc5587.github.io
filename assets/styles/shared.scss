@@ -184,6 +184,10 @@ img {
     padding: 30px 15px 0 15px;
 }
 
+img.darken {
+    filter: brightness(80%);
+}
+
 @media (max-width: 1200px) {
     .container {
         max-width: 960px;
