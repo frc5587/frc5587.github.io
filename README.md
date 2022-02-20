@@ -6,24 +6,11 @@ This is the public website for FRC Team 5587, Titan Robotics. The website is hos
 
 ### Install Dependencies
 
-* Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/) through instructions on their site for your specific operating system. You can check for an installation of Ruby by running
+* Install [Ruby](https://www.ruby-lang.org/en/documentation/installation/) through this link for [x64](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.0-1/rubyinstaller-devkit-2.7.0-1-x64.exe) or [x86](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.0-1/rubyinstaller-devkit-2.7.0-1-x86.exe)-based systems. You can check for an installation of Ruby by running
     ```Shell
     $ ruby -v
     ```
-    However, the installation listed is not necessarily the most up-to-date version of ruby your system will use. Research information about Ruby for your operating system if your Ruby version is severely out of date.
-
-* Install [RubyGems](https://rubygems.org/pages/download) through download links on their website. If RubyGems is already installed, run
-
-    ```Shell
-    $ gem update --system    # may need to be administrator/root
-    ```
-
-    Or for older versions of RubyGems
-
-    ```Shell
-    $ gem install rubygems-update  # again, might need to be admin/root
-    $ update_rubygems              # ... here too
-    ```
+    *It's strongly recommended to use Ruby v2.7.\* as it has the strongest long-term support for both Jekyll & Ruby itself.* 
 
 * Install [Jekyll](https://jekyllrb.com/) and [Bundler](https://bundler.io/)
     ```Shell
