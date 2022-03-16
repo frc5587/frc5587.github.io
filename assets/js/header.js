@@ -33,6 +33,7 @@ function toggleModal(btn){
 // };
 // When the user clicks on <span> (x), close the modal
 span.onclick = () => {
+  console.log("CLICKED SPONSOR")
   closeModal();
 };
 // When the user clicks anywhere outside of the modal, close it
