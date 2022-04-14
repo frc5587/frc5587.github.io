@@ -13,6 +13,13 @@
       </ul>
 
       <div class="button-group">
+
+        <div class="navbar-nav btn-container" id="supportBtnContainer">
+          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleWorldsModal()" style="
+            margin-left: -215px
+          ">FIRST <br> Championships</a>
+        </div>
+
         <ul class="navbar-nav" id="socialMedia">
           <li class="nav-item social-icons">
             <a href="https://twitter.com/frc5587" target="_blank" rel="noopener" aria-label="twitter">
@@ -59,7 +66,7 @@
         </ul>
   
         <div class="navbar-nav btn-container" id="supportBtnContainer">
-          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleModal()">Support Us</a>
+          <a id="supportBtn" class="btn btn-red" role="button" onclick="toggleSponsorModal()">Support Us</a>
         </div>
       </div>
     </div>
@@ -74,12 +81,67 @@
 
 </header>
 
+<!-- Worlds modal -->
+<div id="worlds-modal" class="modal">
+  <div id="worlds-modal-content" class="modal-content">
+      <span id="worlds-close" class="close" style="float: right; margin-top: 20px; margin-right: 15px;">&#xD7;</span>
+      <div class="modal-header">
+          <a href="/assets/images/Index-Images/2022_dcmp_chairmans.jpg">
+              <img src="/assets/images/Index-Images/2022_dcmp_chairmans.jpg" height="170" />
+          </a>
+          <h2 style="font-size: 35px;">We're going to... <br> 2022 FIRST Championships!</h2>
+      </div>
+
+      <hr class="divider">
+
+      <div class="modal-body">
+          <div class="check-info-box">
+              <div class="amazon-smile">
+                  <h3>SUPPORT US ON:</h3>
+              </div>
+          </div>
+          <div class="specifier-container clearfix">
+              <div class="specifier-box">
+                  <h3>GoFundMe:</h3>
+                  <div class="btn-container">
+                      <a href="https://gofund.me/84ae54f2" target="_blank" class="btn btn-red" role="button">
+                          GoFundMe
+                      </a>
+                  </div>
+              </div>
+              <div style="
+                  position: fixed;
+                  width: 500px;
+                  height: 200px;
+                  top: 50%;
+                  left: 50%;
+                  margin-top: 85px;
+                  margin-left: -250px
+              ">
+                  <h3>OR</h3>
+              </div>
+              <div class="specifier-box">
+                  <h3>Spring2Action:</h3>
+                  <div class="btn-container">
+                      <a href="https://www.spring2action.org/organizations/titan-robotics" class="btn btn-red" role="button">
+                          Spring2Action
+                      </a>
+                  </div>
+              </div>
+
+              <br><br><br>
+
+          </div>
+      </div>
+  </div>
+</div>
+
 <!-- Sponsorship modal -->
 <div id="sponsor-modal" class="modal">
-  <div class="modal-content">
+  <div id="sponsor-modal-content"  class="modal-content">
     <div class="modal-header">
       <h2>Support Our Team</h2>
-      <span class="close">&#xD7;</span>
+      <span id="sponsor-close" class="close">&#xD7;</span>
     </div>
 
     <hr class="divider">

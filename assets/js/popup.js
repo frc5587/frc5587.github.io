@@ -1,7 +1,8 @@
 var popup = document.getElementById("popup-modal");
-var span = document.getElementsByClassName("close")[1]; // <span> element that closes the modal
+var span = document.getElementById("popup-close"); // <span> element that closes the modal
 
 function closePopup() {
+    console.log("closed popup");
     popup.style.display = "none";
 }
 
