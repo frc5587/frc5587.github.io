@@ -5,6 +5,7 @@ var collapseButton = document.getElementsByClassName("navbar-toggle")[0];
 
 // Modal components
 var modal = document.getElementById("sponsor-modal"); // Sponsorship modal
+var modalContent = document.getElementById("sponsor-modal-content"); // Sponsorship modal
 //var btn = document.getElementById("supportBtn"); // Button that opens the modal
 var sponsorshipButtons = [document.getElementById("supportBtn"), document.getElementById("indexBtn")]
 var span = document.getElementsByClassName("close")[0]; // <span> element that closes the modal
@@ -36,12 +37,32 @@ span.onclick = () => {
   console.log("CLICKED SPONSOR")
   closeModal();
 };
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = event => {
-  if (event.target == modal) {
+
+
+var modalClicked = false;
+var modalContentClicked = false;
+
+modalContent.addEventListener('click', function handleClick() {
+  console.log('content clicked');
+  modalContentClicked = true;
+  setTimeout(function () { modalContentClicked = false; }, 200);
+});
+modal.addEventListener('click', function handleClick() {
+  console.log('modal clicked');
+  modalClicked = true;
+
+  if (modalContentClicked == false) {
+    modalClicked = false;
+    modalContentClicked = false;
     closeModal();
   }
-};
+});
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = event => {
+//   if (event.target == modal) {
+//     closeModal();
+//   }
+// };
 
 function toggleHeader() {
   var classes = collapsibleRegion.classList
