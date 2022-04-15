@@ -65,9 +65,22 @@ ul.navbar-nav {
     flex-wrap: nowrap;
 }
 
-.banner {
+.banner-blue {
     @extend .btn;
     @extend .btn-blue-simple;
+    position: relative;
+    top: 5px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    font-size: 120%;
+    margin: auto;
+    width: 99%;
+    font-weight: bold;
+}
+.banner-red {
+    @extend .btn;
+    @extend .btn-red-simple;
     position: relative;
     top: 5px;
     text-align: left;
