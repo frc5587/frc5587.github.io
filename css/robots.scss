@@ -1,0 +1,64 @@
+---
+---
+@import "shared"; 
+
+h2 {
+    font-size: 32px;
+    padding: 8px;
+    margin: 0 0 8px -8px;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+hr {
+    border-top: 1px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.container :nth-child(4n+3) {
+    flex-direction: row-reverse;
+}
+
+.text {
+    width: 700px;
+    padding: 0 15px;
+}
+
+.img {
+    width: 450px;
+    padding: 0 15px;
+}
+
+@media (max-width: 766px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row, hr, .text, .img {
+        width: 90%;
+    }
+}

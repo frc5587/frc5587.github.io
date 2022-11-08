@@ -1,0 +1,464 @@
+---
+---
+
+@import "shared";
+
+header {
+    width: 100%;
+    z-index: 10;
+    font-family: Montserrat;
+}
+
+#roboticsLogo {
+    float: left;
+    width: 4.5rem;
+    height: 3rem;
+    padding: 0;
+    margin: 2px 18px 2px 10px;
+    border-radius: 0;
+}
+
+#supportBtnContainer {
+    right: 0px;
+}
+
+.navbar {
+    background-color: $bg-color;
+    overflow: auto;
+    padding: 16px 16px;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    // border-bottom-left-radius: 30px;
+    // border-bottom-right-radius: 30px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0px;
+}
+
+.navbar-collapse {
+    margin-left: 18px;
+    font-weight: 600;
+    justify-content: space-between;
+    justify-items: right;
+
+    &,
+    .button-group {
+        position: relative;
+        display: flex;
+        vertical-align: middle;
+    }
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: left;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+
+.banner-blue {
+    @extend .btn;
+    @extend .btn-blue-simple;
+    position: relative;
+    top: 5px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    font-size: 120%;
+    margin: auto;
+    width: 99%;
+    font-weight: bold;
+}
+.banner-red {
+    @extend .btn;
+    @extend .btn-red-simple;
+    position: relative;
+    top: 5px;
+    text-align: left;
+    display: block;
+    box-sizing: border-box;
+    font-size: 120%;
+    margin: auto;
+    width: 99%;
+    font-weight: bold;
+}
+
+.social-icons,
+.link-button {
+    float: left;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 120%;
+        display: flex;
+        transition: 0.3s;
+        opacity: 0.5;
+        padding: 0 8px;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            transition: 0.3s;
+        }
+
+        &.nav-link {
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(255, 255, 255);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 520px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -260px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+// --- modal stuff ---
+.modal {
+    // Fill all of screen, staying on the top
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    // Stay in place and enable scroll
+    position: fixed;
+    overflow: auto;
+
+    // Translucent black and fallback colour w/o alpha
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+
+    // Center child
+    display: none; // Set to flex later in JS
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+}
+
+.modal-content {
+    color: white;
+    border-radius: 10px;
+    background-color: $bg-color;
+    padding: 0;
+    width: 60%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    animation: animatetop 0.4s;
+
+    /* Allows for scrolling of the modal
+    max-height: calc(100vh - 100px);
+    overflow-y: auto; */
+}
+
+.modal-body {
+    height: 25%;
+}
+
+.modal-header {
+    display: grid;
+    grid-template-columns: max-content min-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    h2 {
+        padding: 0 0 0 16px;
+        margin: 0;
+    }
+}
+
+.specifier-box {
+    margin: 0 auto;
+    justify-items: center;
+    display: grid;
+}
+
+.specifier-container {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    margin-bottom: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    justify-content: center;
+}
+
+.check-info-box {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    text-align: center;
+
+    .amazon-smile {
+        margin-top: 20px;
+        margin-bottom: 35px;
+
+        h3 {
+            margin: 0;
+        }
+        h4 {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.close {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0 24px;
+    opacity: 0.5;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+        text-decoration: none;
+    }
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    display: none;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+    height: 45px;
+    width: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+    float: right;
+    margin-right: 10px;
+
+    &:hover {
+        color: white;
+    }
+}
+
+.divider {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@keyframes animatetop {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    from {
+        height: 50px;
+    }
+    to {
+        height: 412px;
+    }
+}
+
+@keyframes collapse {
+    from {
+        height: 412px;
+    }
+    to {
+        height: 0px;
+    }
+}
+
+@media (max-width: 1214px) {
+    .social-icons {
+        a {
+            padding: 0 4px;
+
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+
+    #socialMedia {
+        width: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .specifier-box h3 {
+        height: 52px;
+    }
+}
+
+@media (max-width: 934px) {
+    #navigation,
+    #supportBtn {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: inline-block;
+    }
+
+    .navbar-collapse {
+        float: right;
+    }
+
+    .show.collapsing {
+        animation: expand 0.3s ease-out;
+    }
+
+    .collapsed.collapsing {
+        animation: collapse 0.3s ease-out;
+    }
+
+    .show,
+    .collapsed.collapsing {
+        display: block;
+        width: 100%;
+        margin: 0;
+        overflow: auto;
+        overflow: hidden;
+
+        #navigation {
+            overflow: hidden;
+            width: 100%;
+            display: block;
+
+            .link-button {
+                width: 100%;
+                display: block;
+                a {
+                    justify-content: center;
+                }
+            }
+        }
+        #socialMedia {
+            width: 200px;
+            padding: 12px;
+        }
+        #supportBtn {
+            margin: 12px;
+            display: inline-block;
+        }
+        .button-group {
+            margin: auto;
+            width: 250px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media (max-width: 825px) {
+    .modal-content {
+        position: relative;
+        top: 100px;
+        margin: 200px 0;
+        width: 80%;
+    }
+
+    .specifier-box {
+        width: 100%;
+    }
+
+    .specifier-container {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .modal-header h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 651px) {
+    .banner {
+        text-align: center;
+    }
+
+    .modal-header h2 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width: 418px) {
+    .banner {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 330px) {
+    #socialMedia {
+        display: none;
+    }
+}

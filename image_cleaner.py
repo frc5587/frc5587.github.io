@@ -15,7 +15,7 @@ from html.parser import HTMLParser
 
 images_used = []
 blacklisted_img_files = [".DS_Store"]
-blacklisted_img_directories = ["/assets/images/Camps", "/assets/images/Index-Images"]
+blacklisted_img_directories = ["/assets/media/Camps", "/assets/media/Index-Images"]
 
 
 class MyHTMLParser(HTMLParser):
@@ -51,7 +51,7 @@ for path in page_paths:
                 parser.feed(src_file.read())
             print()
 
-image_path = "/assets/images/"
+image_path = "/assets/media/"
 all_images = []
 # Add all found images in specified /assets/images directory to the all_images list
 for (dirpath, _, filenames) in walk(image_path):

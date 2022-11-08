@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+$TR-blue: #2a397c;
+$light-blue: #3d50af;
+$TR-red: #be2026;
+$light-red: #cf585c;
+$bg-color: #272b30;
+
+body {
+    background-color: $bg-color;
+    color: white;
+    padding-top: 120px;
+    margin: 0px;
+    width: 100%;
+    font-family: Roboto;
+}
+
+@media (max-width: 825px) {
+    body {
+        padding-top: 125px;
+    }
+}
+
+a {
+    transition: 0.3s;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+div#preload {
+    display: none;
+}
+
+hr {
+    border-top: 1.5px solid white;
+    background-color: white;
+}
+
+h2 a,
+h3 a,
+p a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #007bff;
+    &:hover {
+        text-decoration: underline;
+        color: #003cff;
+    }
+}
+
+h3, h4 {
+    font-weight: 500;
+}
+
+img {
+    border-radius: 10px;
+}
+
+//Clearfix, which fixes the issues with the bounding-boxes of images
+.clearfix:after {
+    content: ""; /* Older browsers do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.btn {
+    line-height: initial;
+    display: inline-block;
+    padding: 16px 35px;
+    text-shadow: none;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    color: white;
+    transition: 0.3s;
+
+    border-radius: 100px;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.btn-container {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.btn-red {
+    outline: none;
+    position: relative;
+    background-color: rgba($TR-red, 0.4);
+
+    &:hover {
+        &::before {
+            height: 100%;
+            transform: scaleX(1);
+        }
+    }
+
+    &::before {
+        content: "";
+        transition: 0.3s;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 0;
+        height: 0;
+        width: 100%;
+        border-radius: 100px;
+        background-color: $TR-red;
+        transform: scaleX(0.75);
+    }
+}
+
+.btn-blue {
+    @extend .btn-red;
+    background-color: rgba($TR-blue, 0.4);
+
+    &::before {
+        background-color: $TR-blue;
+    }
+}
+
+.btn-blue-simple {
+    background-color: rgba($TR-blue, 0.7);
+
+    &:hover {
+        background-color: $TR-blue;
+    }
+}
+
+.btn-red-simple {
+    background-color: rgba($TR-red, 0.7);
+
+    &:hover {
+        background-color: $TR-red;
+    }
+}
+
+.btn-text {
+    font-size: 115%;
+    font-weight: bold;
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 30px 15px 0 15px;
+}
+
+img.darken {
+    filter: brightness(80%);
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-top: 60px;
+        max-width: 540px;
+    }
+}
