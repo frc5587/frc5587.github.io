@@ -21,7 +21,7 @@ This is the public website for FRC Team 5587, Titan Robotics. The website is hos
 
 1. Clone repository and enter it
     ```Shell
-    $ git clone https://github.com/Team5587/team5587.github.io.git
+    $ git clone https://github.com/frc5587/frc5587.github.io.git
     $ cd team5587.github.io
     ```
 2. Install all build dependencies through Bundler
