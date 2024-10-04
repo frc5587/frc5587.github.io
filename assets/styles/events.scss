@@ -2,9 +2,7 @@
 ---
 @import "shared";
 
-.featurette-divider {
-    margin: 80px 0; // Divider between sections
-}
+// Featurette layout and styles for responsive event sections
 
 .featurette {
     padding-top: 80px;
@@ -20,58 +18,86 @@
     }
 }
 
+// Styling for the headings
 .featurette-heading {
     font-size: 40px;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: -1px;
     color: white;
-}
-
-.text-muted {
-    color: #6c757d;
-}
-
-.featurette-image {
-    flex: 1;
-    max-width: 50%;
-    margin: 0 20px;
-
-    &.pull-left {
-        margin-right: 40px;
-    }
-
-    &.pull-right {
-        margin-left: 40px;
-    }
 
     @media (max-width: 768px) {
-        max-width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+// Text and image layout for each event
+.text {
+    flex: 1 1 45%;
+    margin: 0 20px;
+
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
+        margin: 20px 0;
+        text-align: center;
+    }
+}
+
+.img {
+    flex: 1 1 45%;
+    margin: 0 20px;
+
+    @media (max-width: 768px) {
+        flex: 1 1 100%;
         margin: 20px 0;
     }
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+// Adjusting title and lead text
 .title {
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
     color: white;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
 }
 
 .lead {
     font-size: 1.4rem;
     line-height: 1.6;
     color: white;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
+// Divider style
+.featurette-divider {
+    margin: 80px 0;
+}
+
+// Event buttons styling
 .btn-event {
     @extend .btn;
     background-color: $light-blue;
+
     &:hover {
         background-color: $TR-blue;
     }
 }
 
+// Footer style for event details
 footer {
     font-size: 14px;
     color: #888;
@@ -79,6 +105,7 @@ footer {
     margin-top: 20px;
 }
 
+// Adjusting layout for small screens
 @media (max-width: 768px) {
     .featurette {
         flex-direction: column;
