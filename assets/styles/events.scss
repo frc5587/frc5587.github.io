@@ -2,131 +2,158 @@
 ---
 @import "shared";
 
-// Featurette layout and styles for responsive event sections
 
-.featurette {
+// Font family and presets from outreach
+body {
+    font-family: "Roboto", sans-serif;
     padding-top: 80px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        padding-top: 60px;
-    }
 }
 
-// Styling for the headings
 
-.text-muted{
-    color: #6c757d;
+h1 {
+    font-size: 2.5rem;  // Match outreach
 }
 
-.featurette-heading {
-    font-size: 40px;
-    font-weight: 300;
-    line-height: 1.2;
-    letter-spacing: -1px;
-    color: white;
 
-    @media (max-width: 768px) {
-        font-size: 30px;
-        text-align: center;
-    }
+.mainHeader {
+    font-size: 2rem;  // Match outreach
 }
 
-// Text and image layout for each event
-.text {
-    flex: 1 1 45%;
-    margin: 0 20px;
 
-    @media (max-width: 768px) {
-        flex: 1 1 100%;
-        margin: 20px 0;
-        text-align: center;
-    }
-}
-
-.img {
-    flex: 1 1 45%;
-    margin: 0 20px;
-
-    @media (max-width: 768px) {
-        flex: 1 1 100%;
-        margin: 20px 0;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-// Adjusting title and lead text
-.title {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: white;
-
-    @media (max-width: 768px) {
-        font-size: 30px;
-    }
-}
-
-.lead {
+h4 {
     font-size: 1.4rem;
-    line-height: 1.6;
-    color: white;
-
-    @media (max-width: 768px) {
-        text-align: center;
-    }
+    color: gray;
+    margin-top: 0px;
 }
 
-// Divider style
-.featurette-divider {
-    margin: 80px 0;
+
+.centre {
+    text-align: center;
 }
 
-// Event buttons styling
-.btn-event {
-    @extend .btn;
-    background-color: $light-blue;
+
+// Container styles for events
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+// Card styles
+.card {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s, box-shadow 0.3s;
+
 
     &:hover {
-        background-color: $TR-blue;
+        transform: translateY(-5px);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+    .image {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover;  // Ensure aspect ratio is maintained and image covers the container
+    }
+
+
+    .card-body {
+        padding: 20px;
+
+
+        .mainHeader {
+            font-size: 2rem;  // Match outreach
+            color: #333;
+            margin: 0;
+            line-height: 1.2;
+        }
+
+
+        .text-muted {
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+
+        .content {
+            font-family: "Roboto", sans-serif;  // Match outreach
+            font-size: 18px;  // Match outreach
+            line-height: 1.5;
+            color: #555;
+            margin: 15px 0;
+        }
+
+
+        footer {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #888;
+            text-align: left;
+        }
     }
 }
 
-// Footer style for event details
-footer {
-    font-size: 14px;
-    color: #888;
-    text-align: center;
-    margin-top: 20px;
-}
 
-// Adjusting layout for small screens
+// Responsive styles
 @media (max-width: 768px) {
-    .featurette {
-        flex-direction: column;
+    .container {
+        padding: 10px;
     }
 
-    .featurette-heading {
-        font-size: 1.8rem;
-        text-align: center;
+
+    .card {
+        margin-bottom: 20px;
     }
 
-    .lead {
-        text-align: center;
+
+    .image {
+        max-height: 300px;  // Limit image height on smaller devices
+        object-fit: cover;
     }
 
-    .img {
-        margin: 0 auto;
-        max-width: 100%;
+
+    .mainHeader {
+        font-size: 1.5rem;  // Responsive font size for smaller screens
+    }
+
+
+    .content {
+        font-size: 1rem;
     }
 }
+
+
+@media (max-width: 575px) {
+    .container {
+        padding: 5px;  // Reduced padding for mobile
+    }
+
+
+    .card {
+        margin-bottom: 15px;  // Reduce card margin for mobile
+    }
+
+
+    .card-body {
+        padding: 15px;  // Smaller padding inside cards for smaller devices
+    }
+
+
+    .mainHeader {
+        font-size: 1.2rem;  // Smaller heading for mobile
+    }
+
+
+    .content {
+        font-size: 0.9rem;  // Smaller content font for better readability on mobile
+    }
+}
+
+
