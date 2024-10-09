@@ -3,9 +3,7 @@
 @import "shared";
 
 
-// Font family and presets from outreach
 body {
-    font-family: "Roboto", sans-serif;
     padding-top: 80px;
 }
 
@@ -16,7 +14,7 @@ h1 {
 
 
 .mainHeader {
-    font-size: 2rem;  // Match outreach
+    font-size: 2rem;
 }
 
 
@@ -36,24 +34,16 @@ h4 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 35px;
 }
 
 
 // Card styles
 .card {
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.9);
-    transition: transform 0.3s, box-shadow 0.3s;
-
-
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-    }
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
 
 
     .image {
@@ -70,31 +60,31 @@ h4 {
 
         .mainHeader {
             font-size: 2rem;  // Match outreach
-            color: #333;
+            color: #ffffff;
             margin: 0;
             line-height: 1.2;
         }
 
 
         .text-muted {
-            font-size: 0.9rem;
+            font-size: 2rem;
             color: #6c757d;
         }
 
 
         .content {
-            font-family: "Roboto", sans-serif;  // Match outreach
-            font-size: 18px;  // Match outreach
+            font-family: "Roboto", sans-serif;  
+            font-size: 20px;  
             line-height: 1.5;
-            color: #555;
+            color: #ffffff;
             margin: 15px 0;
         }
 
 
         footer {
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #888;
+            margin-top: 8px;
+            font-size: 1.2 rem;
+            color: #b1acac;
             text-align: left;
         }
     }
