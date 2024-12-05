@@ -1,22 +1,23 @@
 ---
 ---
+
 @import "shared";
 
+hr {
+    margin: 30px 0;  
+  }
 
 body {
     padding-top: 80px;
 }
 
-
 h1 {
-    font-size: 2.5rem;  // Match outreach
+    font-size: 2.5rem;
 }
-
 
 .mainHeader {
     font-size: 2rem;
 }
-
 
 h4 {
     font-size: 1.4rem;
@@ -24,126 +25,89 @@ h4 {
     margin-top: 0px;
 }
 
-
 .centered {
     text-align: center;
 }
 
+.card {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-bottom: 30px;
+}
 
-// Container styles for events
+.content {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 35px;
 }
 
-
-// Card styles
-.card {
-    border: none;
-    border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-
-
-    .image {
-        width: 100%;
-        height: auto;
-        display: block;
-        object-fit: cover;  // Ensure aspect ratio is maintained and image covers the container
-    }
-
-
-    .card-body {
-        padding: 20px;
-
-
-        .mainHeader {
-            font-size: 2rem;  // Match outreach
-            color: #ffffff;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-
-        .text-muted {
-            font-size: 2rem;
-            color: #6c757d;
-        }
-
-
-        .content {
-            font-family: "Roboto", sans-serif;  
-            font-size: 20px;  
-            line-height: 1.5;
-            color: #ffffff;
-            margin: 15px 0;
-        }
-
-
-        footer {
-            margin-top: 8px;
-            font-size: 1.2 rem;
-            color: #b1acac;
-            text-align: left;
-        }
-    }
+.text-muted {
+    font-size: 1.45rem;
+    color: #6c757d;
 }
 
-
-// Responsive styles
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
 
-
     .card {
         margin-bottom: 20px;
     }
 
-
     .image {
-        max-height: 300px;  // Limit image height on smaller devices
-        object-fit: cover;
+        width: 100%;
+        height: auto;
     }
-
 
     .mainHeader {
-        font-size: 1.5rem;  // Responsive font size for smaller screens
+        font-size: 1.5rem;
     }
-
 
     .content {
         font-size: 1rem;
     }
-}
 
+    .text-muted {
+        font-size: 1rem;
+    }
+}
 
 @media (max-width: 575px) {
     .container {
-        padding: 5px;  // Reduced padding for mobile
+        padding: 5px;
     }
-
 
     .card {
-        margin-bottom: 15px;  // Reduce card margin for mobile
+        margin-bottom: 15px;
     }
-
 
     .card-body {
-        padding: 15px;  // Smaller padding inside cards for smaller devices
+        padding: 15px;
     }
-
 
     .mainHeader {
-        font-size: 1.2rem;  // Smaller heading for mobile
+        font-size: 1.2rem;
     }
-
 
     .content {
-        font-size: 0.9rem;  // Smaller content font for better readability on mobile
+        font-size: 0.9rem;
+    }
+
+    .text-muted {
+        font-size: 1rem;
     }
 }
-
-
