@@ -1,0 +1,113 @@
+---
+---
+
+@import "shared";
+
+hr {
+    margin: 30px 0;  
+  }
+
+body {
+    padding-top: 80px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.mainHeader {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    color: gray;
+    margin-top: 0px;
+}
+
+.centered {
+    text-align: center;
+}
+
+.card {
+    border: none;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-bottom: 30px;
+}
+
+.content {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.text-muted {
+    font-size: 1.45rem;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .mainHeader {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .text-muted {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 5px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .mainHeader {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        font-size: 0.9rem;
+    }
+
+    .text-muted {
+        font-size: 1rem;
+    }
+}
