@@ -1,0 +1,122 @@
+---
+layout: default
+permalink: /test
+stylesheets:
+- test
+---
+
+<!-- Outreach Format 
+    <div class = "card mb-4">
+      <img class= "image" src="(image link)" alt="Image name">
+      <div class="card-body">
+          <h2 class="mainHeader"> (Event Name & Year) </h2>
+          <p class="content"> event info
+          </p>
+      </div>
+    </div>
+-->
+
+<div class="container">
+    <div class="outreach-column">
+        <div class="centre">
+            <h1 class="my-4" id="2026">Community Outreach</h1>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Highlights')"><h2 class="mainHeader">Highlights</h2></button>
+            <button class="tablinks" onclick="openTab(event, 'All Events')"><h2 class="mainHeader">All Events</h2></button>
+        </div>
+
+
+        <div id="Highlights" class="tabcontent">
+            <div class = "card mb-4">
+                <img class= "image" src="/assets/images/Outreach-Images/pentagon.jpeg" alt="Pentagon Take-Your-Kid-to-Work-Day">
+                <div class="card-body">
+                    <h2 class="mainHeader">Pentagon Take-Your-Kid-to-Work-Day (04/24/2025)</h2>
+                    <p class="content">This year was the team's first time attending the Pentagon’s Take-You-Kid-to-Work-Day and it was a hit, with over 8,000 in attendance. 
+                        We taught kids how to drive our robot, iBeam, launched our mini-button making activity, and helped kids build and code FLL bots. 
+                        The event offered various networking opportunities, with booths of government officials, tech businesses, and more.  
+                    </p>
+                </div>
+            </div>
+
+            <div class = "card mb-4">
+                <img class = "image" src="/assets/images/Outreach-Images/art_on_avenue.jpeg" alt="Art on the Avenue">
+                <div class="card-body">
+                    <h2 class="mainHeader">Art on the Avenue (10/04/2025)</h2>
+                    <p class="content">This is a regional multicultural arts and music festival held along Mount Vernon Avenue in Del Rey running from morning to evening. 
+                        It’s one of Alexandria’s biggest events with over 50,000 attendees. This year we presented a demonstration of our robot, 
+                        where attendants were given the ability to drive the robot, a design-your-own robot station, and a button making station. 
+                    </p>
+                </div>
+            </div>
+
+            <div class = "card mb-4">
+                <div class="card-body">
+                    <h2 class="mainHeader">Spooky Science Expo (10/18/2025)</h2>
+                    <p class="content">This year, we were partners in running the event and assisted in volunteer coordination. 
+                        Along with  robot demonstration, button making, and FLL bot coding, we debuted the Halloween pamphlet Timothy Goes To The Haunted House. 
+                        This was made by operations students in the weeks leading up to the event, combining technical knowledge, graphic design skills, and rhyming skills. 
+                        This spooky story taught kids the basics of robotics. 
+                    </p>
+                </div>
+            </div>
+
+            <div class = "card mb-4">
+                <div class="card-body">
+                    <h2 class="mainHeader">National Advocacy Conference (07/22/25 - 07/24/25)</h2>
+                    <p class="content">NAC is an annual conference held on Capital Hill over the summer, 
+                        where robotics members from around the country were allowed to network with policy makers and learn about the intricacies of how STEM funding is involved with the government. 
+                        Our students advocated STEM educational bills to congress members and established strong connections. 
+                    </p>
+                </div>
+            </div>
+
+            <div class = "card mb-4">
+                <div class="card-body">
+                    <h2 class="mainHeader">AMT and Chesapeake FIRST Invitational (09/11/25)</h2>
+                    <p class="content">Titan Robotics was invited to AMT and Chesapeake FIRST’s Invitational. 
+                        In preparation, a select group of students worked to compile a presentation breaking down our team structure, various outreach projects, and business strategy using a Shark-Tank style pitch. 
+                        They then presented in front of a group of 50+ AMT employees and, after competing against a fellow FRC team, were awarded AMT’s Audience Choice Award. 
+                        Along with a GOAT trophy to show their win, TR was granted $2,000! 
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="mainHeader">WEBA Signature Event (10/29/25)</h2>
+                </div>
+                <p class="content">Members from Titan Robotics went to a local event to celebrate small business and non profit organizations. 
+                    As a 501(c)(3) organization, we showcased our team's accomplishments, business model, and provided a robot demonstration. 
+                    Through this event we were able to meet influential figures, such as the keynote speaker, and establish connections we plan to use down the line.  
+                </p>
+            </div>
+        </div>
+
+        <div id="All Events" class="tabcontent">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openTab(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
