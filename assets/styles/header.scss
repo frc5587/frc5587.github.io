@@ -65,6 +65,60 @@ ul.navbar-nav {
     flex-wrap: nowrap;
 }
 
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 120%;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: inherit;
+  background-color: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding: 0 8px;
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown:hover .dropbtn {
+  color: white;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  min-width: 160px;
+  box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .banner-blue {
     @extend .btn;
     @extend .btn-blue-simple;
