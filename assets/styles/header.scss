@@ -474,19 +474,22 @@ ul.navbar-nav {
     bottom: 20px;
     right: 20px;
     width: 320px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
+    background-color: rgba($bg-color, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #cc0000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     padding: 20px;
     z-index: 9999;
-    border-left: 5px solid #cc0000;
     font-family: inherit;
     box-sizing: border-box;
 
     h3 {
         margin: 0 0 10px 0;
         font-size: 1.1rem;
-        color: #333;
+        color: #ffffff;
         padding-right: 20px;
         text-align: left;
     }
@@ -494,7 +497,7 @@ ul.navbar-nav {
     p {
         margin: 0 0 15px 0;
         font-size: 0.9rem;
-        color: #555;
+        color: rgba(255, 255, 255, 0.75);
         line-height: 1.4;
         font-weight: normal;
     }
