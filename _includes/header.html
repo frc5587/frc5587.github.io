@@ -68,21 +68,40 @@
 
 <!-- Persistent banner -->
 <nav>
-  <!-- <div id="banner">
-    <a class="banner-blue" onclick="toggleModal()">Support Titan Robotics on Giving Tuesday, November 28th!</a>
-  </div> -->
-  <!-- <div id="banner">
-    <a class="banner-blue" href="https://www.spring2action.org/organizations/titan-robotics">Spring2Action has begun. Donate to support Titan Robotics!</a>
-  </div> -->
-     <div id="banner">
-    <a class="banner-blue" href="/summercamp">Summer Camp registration is open!</a>
+  <!-- Giving Tuesday -->
+  <!--
+  <div id="banner" style="display: flex; justify-content: center; align-items: center; position: relative;">
+    <a class="banner-blue" onclick="toggleModal()" style="flex-grow: 1; text-align: center; cursor: pointer;">Support Titan Robotics on Giving Tuesday, November 28th!</a>
+    <button id="close-banner-btn" onclick="document.getElementById('banner').style.display='none'" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer; padding: 0 15px; position: absolute; right: 0;">&times;</button>
   </div> 
-  <!-- <div id="banner"></div> 
-    <a class = "banner-blue" href="/events">Check out our latest event!!</a>
-  </div> -->
+  -->
+
+  <!-- Spring2Action -->
+  <!-- 
+  <div id="banner" style="display: flex; justify-content: center; align-items: center; position: relative;">
+    <a class="banner-blue" href="https://www.spring2action.org/organizations/titan-robotics" style="flex-grow: 1; text-align: center;">Spring2Action has begun. Donate to support Titan Robotics!</a>
+    <button id="close-banner-btn" onclick="document.getElementById('banner').style.display='none'" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer; padding: 0 15px; position: absolute; right: 0;">&times;</button>
+  </div> 
+  -->
+
+  <!-- Summer Camp -->
+  <div id="banner" style="display: flex; justify-content: center; align-items: center; position: relative;">
+    <a class="banner-blue" href="/summercamp" style="flex-grow: 1; text-align: center;">Summer Camp registration is open!</a>
+    <button id="close-banner-btn" onclick="document.getElementById('banner').style.display='none'" style="background: none; border: none; color: white; font-size: 20px; cursor: pointer; padding: 0 15px; position: absolute; right: 0;">&times;</button>
+  </div>
 </nav> 
 
 </header>
+
+<!-- Petition Pop-up -->
+<div id="petition-popup" class="petition-widget">
+  <span class="petition-close" onclick="document.getElementById('petition-popup').style.display='none'">&times;</span>
+  <h3>Please Help Save Our Space!</h3>
+  <p>ACPS and ACHS plans to move Titan Robotics into a small classroom space, risking student safety and program operations. Please help and learn more by signing our petition.</p>
+  <div class="btn-container">
+    <a href="http://ipetitions.com/petition/keep-titan-robotics-in-their-space" target="_blank" rel="noopener" class="btn btn-red">Sign Our Petition</a>
+  </div>
+</div>
 
 <!-- Sponsorship modal -->
 <div id="sponsor-modal" class="modal">
